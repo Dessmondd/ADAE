@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "915717290837",
+    "project_id": "pokemoncard-f77c4",
+    "storage_bucket": "pokemoncard-f77c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915717290837:android:d0e593d4dc8835c43e4ddc",
+        "android_client_info": {
+          "package_name": "com.example.adae"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915717290837-pb2g1pj6p18ch6n9ld8amc62c7u12k56.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adae",
+            "certificate_hash": "9e466e27bf2222c7e8f263351a1c8ba446fe0c21"
+          }
+        },
+        {
+          "client_id": "915717290837-8g6f8esgj3v0nhdth7i6moompuhe298n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmDG42AgYwRlHHYsPlWFhLDSiBKI6sHQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "915717290837-8g6f8esgj3v0nhdth7i6moompuhe298n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
