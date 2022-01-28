@@ -5,8 +5,10 @@
       <map>
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22135416666666666" />
-        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/activity_main.xml" value="0.2760416666666667" />
-        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/menu.xml" value="0.221875" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/login.xml" value="0.25" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/menu.xml" value="0.25" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/register.xml" value="0.221875" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/splash.xml" value="0.2760416666666667" />
       </map>
     </option>

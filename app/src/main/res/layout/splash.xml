@@ -13,5 +13,4 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="-159dp">
     </pl.droidsonroids.gif.GifImageView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

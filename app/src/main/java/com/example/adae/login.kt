@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import androidx.appcompat.app.AlertDialog
@@ -19,7 +18,7 @@ class login : AppCompatActivity() {
     private val GOOGLE_SIGN_IN = 100
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.login)
         checkSession()
         supportActionBar?.hide()
         val googleConf = GoogleSignInOptions.
@@ -42,7 +41,7 @@ class login : AppCompatActivity() {
 //Login simple
     fun onClickLoginNext(view: View) {
         var email: EditText = findViewById(R.id.email2);
-        var passw: EditText = findViewById(R.id.editTextTextPassword2);
+        var passw: EditText = findViewById(R.id.password2);
         if (email.text.isNotEmpty() && passw.text.isNotEmpty()) {
             try {
                 FirebaseAuth.getInstance()
@@ -118,18 +117,7 @@ private fun logout(){
         }
     }
 
-    fun irRegistro(view: android.view.View){
-        var irRegistro = Intent (this, MainActivity::class.java).apply{
 
-        }
-        startActivity(irRegistro)
-    }
-fun irLoginMovil(view: android.view.View){
-    var irMovil = Intent(this, LoginMovil::class.java).apply{
-
-    }
-    startActivity(irMovil)
-}
 
 }
 

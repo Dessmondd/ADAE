@@ -47,6 +47,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
     implementation 'com.chaos.view:pinview:1.4.3'
+    implementation 'com.firebaseui:firebase-ui-auth:4.3.2'
 }
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
