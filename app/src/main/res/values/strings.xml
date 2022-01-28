@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ADAE</string>
+    <string name="preferences">com.example.adae.PREFERENCE_KEY</string>
 </resources>
