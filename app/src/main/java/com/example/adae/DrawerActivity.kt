@@ -27,9 +27,11 @@ class DrawerActivity : AppCompatActivity() {
         setSupportActionBar(binding.appBarDrawer.toolbar)
 
         binding.appBarDrawer.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+
+
+
         }
+
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_drawer)
@@ -51,4 +53,5 @@ class DrawerActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_drawer)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
 }

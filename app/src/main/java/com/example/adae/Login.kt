@@ -41,7 +41,7 @@ class login : AppCompatActivity() {
 //Login simple
     fun onClickLoginNext(view: View) {
         var email: EditText = findViewById(R.id.email2);
-        var passw: EditText = findViewById(R.id.editTextTextPassword2);
+        var passw: EditText = findViewById(R.id.password2);
         if (email.text.isNotEmpty() && passw.text.isNotEmpty()) {
             try {
                 FirebaseAuth.getInstance()
@@ -58,6 +58,7 @@ class login : AppCompatActivity() {
             } catch (ex: Exception) {
                 ShowAlert2()
             }
+
 
         }
 

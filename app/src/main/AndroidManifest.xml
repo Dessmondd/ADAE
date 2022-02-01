@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ADAE">
         <activity
+            android:name=".Coleecion"
+            android:exported="false" />
+        <activity
             android:name=".DrawerActivity"
             android:exported="false"
             android:label="@string/title_activity_drawer"
@@ -27,14 +30,17 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".logout"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".login"
-            android:exported="true"></activity>
-    </application>
+            android:exported="true" />
+        <activity
+            android:name=".Coleecion"
+            android:exported="true" />
 
+    </application>
 
 </manifest>
