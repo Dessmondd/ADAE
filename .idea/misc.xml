@@ -5,11 +5,24 @@
       <map>
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/drawable/ic_menu_camera.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/drawable/side_nav_bar.xml" value="0.1" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/activity_drawer.xml" value="0.22395833333333334" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/app_bar_drawer.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/content_drawer.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/fragment_gallery.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/fragment_home.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/fragment_slideshow.xml" value="0.22395833333333334" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/login.xml" value="0.25" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/logout.xml" value="0.22395833333333334" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/menu.xml" value="0.25" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/nav_header_drawer.xml" value="0.22395833333333334" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/register.xml" value="0.221875" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/splash.xml" value="0.2760416666666667" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/menu/activity_main_drawer.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/menu/drawer.xml" value="0.22395833333333334" />
       </map>
     </option>
   </component>

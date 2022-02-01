@@ -41,7 +41,7 @@ class login : AppCompatActivity() {
 //Login simple
     fun onClickLoginNext(view: View) {
         var email: EditText = findViewById(R.id.email2);
-        var passw: EditText = findViewById(R.id.password2);
+        var passw: EditText = findViewById(R.id.editTextTextPassword2);
         if (email.text.isNotEmpty() && passw.text.isNotEmpty()) {
             try {
                 FirebaseAuth.getInstance()
@@ -63,14 +63,14 @@ class login : AppCompatActivity() {
 
     }
 private fun logout(){
-    var logout = Intent(this, login::class.java)
+    var logout = Intent(this, Menu::class.java)
     startActivity(logout)
 }
     private fun login() {
         var login = Intent(this, Menu::class.java)
         startActivity(login)
-    }
-//En caso de error, se muestra un mensaje
+    }//En caso de error, se muestra un mensaje
+
     private fun ShowAlert2() {
         var builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
@@ -117,7 +117,12 @@ private fun logout(){
         }
     }
 
+    fun irRegistro(view: android.view.View){
+        var irRegistro = Intent (this, MainActivity::class.java).apply{
 
+        }
+        startActivity(irRegistro)
+    }
 
 }
 
