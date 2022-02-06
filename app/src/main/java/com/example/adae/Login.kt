@@ -119,7 +119,7 @@ private fun logout(){
     }
 
     fun irRegistro(view: android.view.View){
-        var irRegistro = Intent (this, MainActivity::class.java).apply{
+        var irRegistro = Intent (this, Register::class.java).apply{
 
         }
         startActivity(irRegistro)

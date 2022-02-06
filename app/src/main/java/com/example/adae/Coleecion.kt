@@ -1,32 +1,54 @@
 package com.example.adae
-
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.database.*
+import com.squareup.picasso.Picasso
 
-class Coleecion : AppCompatActivity() {
+
+class Coleecion: AppCompatActivity() {
+    // Initializing the ImageView
+    var rImage: ImageView? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_coleecion)
 
-        loadFotos()
-    }
+        // getting ImageView by its id
+        rImage = findViewById(R.id.rImage)
 
-    fun loadFotos() {
-        val firebaseDatabase: DatabaseReference = FirebaseDatabase.getInstance()
+        // we will get the default FirebaseDatabase instance
+        val firebaseDatabase = FirebaseDatabase.getInstance()
 
         // we will get a DatabaseReference for the database root node
-        val databaseReference: DatabaseReference = firebaseDatabase.getReference()
+        val databaseReference = firebaseDatabase.reference
 
+        // Here "image" is the child node value we are getting
+        // child node data in the getImage variable
+        val getImage = databaseReference.child("image")
 
-        // recuperas el valor
-        var poke_array_ultra = mDatabase.child("ultra").child(userId).get().addOnSuccessListener {
-            Log.i("firebase", "Got value ${it.value}")
-        }.addOnFailureListener {
-            Log.e("firebase", "Error getting data", it)
-        }
-        for (num 0..poke_array_ultra.size - 1){
-            val dex = pok_raro.get(num)
-        }
+        // Adding listener for a single change
+        // in the data at this location.
+        // this listener will triggered once
+        // with the value of the data at the location
+        getImage.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                // getting a DataSnapshot for the location at the specified
+                // relative path and getting in the link variable
+                val link = dataSnapshot.getValue(String::class.java)
+
+                // loading that data into rImage
+                // variable which is ImageView
+                Picasso.get().load(link).into(rImage)
+            }
+
+            // this will called when any problem
+            // occurs in getting data
+            override fun onCancelled(databaseError: DatabaseError) {
+                // we are showing that error message in toast
+                Toast.makeText(this@Coleecion, "Error Loading Image", Toast.LENGTH_SHORT).show()
+            }
+        })
     }
 }
 

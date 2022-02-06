@@ -1,5 +1,6 @@
 package com.example.adae
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import com.google.android.material.snackbar.Snackbar
@@ -27,9 +28,7 @@ class DrawerActivity : AppCompatActivity() {
         setSupportActionBar(binding.appBarDrawer.toolbar)
 
         binding.appBarDrawer.fab.setOnClickListener { view ->
-
-
-
+            irMenu()
         }
 
         val drawerLayout: DrawerLayout = binding.drawerLayout
@@ -52,6 +51,11 @@ class DrawerActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_drawer)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    private fun irMenu(){
+        val irMenu = Intent(this, logout::class.java)
+        startActivity(irMenu)
     }
 
 }

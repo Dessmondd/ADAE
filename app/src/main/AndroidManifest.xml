@@ -38,7 +38,7 @@
             android:name=".login"
             android:exported="true" />
         <activity
-            android:name=".Coleecion"
+            android:name=".Register"
             android:exported="true" />
 
     </application>

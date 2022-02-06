@@ -6,4 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".Coleecion">
 
+    <ImageView
+        android:id="@+id/rImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="320dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
