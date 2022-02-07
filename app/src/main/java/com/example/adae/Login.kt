@@ -1,8 +1,10 @@
 package com.example.adae
 
+import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.ImageButton
@@ -13,6 +15,8 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class login : AppCompatActivity() {
     private val GOOGLE_SIGN_IN = 100
@@ -68,9 +72,10 @@ private fun logout(){
     startActivity(logout)
 }
     private fun login() {
-        var login = Intent(this, Menu::class.java)
+        var login = Intent(this, logout::class.java)
         startActivity(login)
-    }//En caso de error, se muestra un mensaje
+    }
+    //En caso de error, se muestra un mensaje
 
     private fun ShowAlert2() {
         var builder = AlertDialog.Builder(this)
@@ -123,6 +128,12 @@ private fun logout(){
 
         }
         startActivity(irRegistro)
+    }
+    fun irRecuperar(view: android.view.View){
+        var recuperar= Intent (this, RecoverPassword::class.java).apply{
+
+        }
+        startActivity(recuperar)
     }
 
 }

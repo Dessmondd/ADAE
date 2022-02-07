@@ -1,8 +1,10 @@
 package com.example.adae
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.adae.models.Pokemon
 import com.google.firebase.database.*
 import com.squareup.picasso.Picasso
 
@@ -50,6 +52,10 @@ class Coleecion: AppCompatActivity() {
             }
         })
     }
+
+
+
+    
 }
 
 

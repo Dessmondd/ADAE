@@ -24,9 +24,10 @@
         android:id="@+id/imageButton"
         android:layout_width="185dp"
         android:layout_height="176dp"
-        android:background="android:color/transparent"
+        android:background="@null"
+        android:onClick="coleccion"
         app:srcCompat="@drawable/coleccionbuttonbigger"
         tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="472dp" />
+        tools:layout_editor_absoluteY="498dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

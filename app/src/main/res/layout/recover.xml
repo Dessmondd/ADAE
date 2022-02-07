@@ -12,27 +12,29 @@
         android:id="@+id/recover"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onClickNext"
-        android:text="Registrar"
+        android:onClick="sendPasswordReset"
+        android:text="Recuperar contraseña"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.591"
         tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/volver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onClickvolverLogin"
+        android:onClick="volveralLogin"
         android:text="Volver al login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.571"
-        tools:ignore="OnClick" />
+        app:layout_constraintVertical_bias="0.682"
+
+        />
 
     <EditText
         android:id="@+id/email"
@@ -46,20 +48,6 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.223" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.288" />
+        app:layout_constraintVertical_bias="0.409" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

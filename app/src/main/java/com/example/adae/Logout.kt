@@ -4,13 +4,33 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 
 
 class logout : AppCompatActivity() {
+    lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.logout)
+
+        auth= FirebaseAuth.getInstance()
+        var currentUser=auth.currentUser
+
+//        Reference
+        val logout=findViewById<Button>(R.id.logout)
+
+        if(currentUser==null){
+            startActivity(Intent(this,login::class.java))
+            finish()
+        }
+        logout.setOnClickListener{
+            auth.signOut()
+            startActivity(Intent(this,login::class.java))
+            finish()
+        }
+
     }
 
 
@@ -50,4 +70,11 @@ class logout : AppCompatActivity() {
         var home = Intent(this, DrawerActivity::class.java)
         startActivity(home)
     }
+    private fun coleccion(view: android.view.View){
+        val home = Intent(this, Coleecion::class.java).apply{
+        }
+        startActivity(home)
+    }
+
+
     }

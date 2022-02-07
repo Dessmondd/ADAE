@@ -28,6 +28,7 @@ class DrawerActivity : AppCompatActivity() {
         setSupportActionBar(binding.appBarDrawer.toolbar)
 
         binding.appBarDrawer.fab.setOnClickListener { view ->
+            //not finish yet
             irMenu()
         }
 
