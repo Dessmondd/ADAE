@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/menubackground">
 
-
-
     <Button
         android:id="@+id/logout"
         android:layout_width="wrap_content"
@@ -17,32 +15,17 @@
         app:iconTint="#00FFCC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.91" />
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="185dp"
-        android:layout_height="176dp"
+        android:layout_width="222dp"
+        android:layout_height="170dp"
         android:background="@null"
-        android:onClick="coleccion"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.585"
-        app:srcCompat="@drawable/coleccionbuttonbigger" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="267dp"
-        android:layout_height="173dp"
-        android:background="@null"
-        app:srcCompat="@drawable/battlebutton"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="262dp" />
-
+        app:srcCompat="@drawable/battle_button"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="217dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
