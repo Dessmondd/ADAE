@@ -1,9 +1,13 @@
 package com.example.adae
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityOptionsCompat
+import com.bumptech.glide.Glide
 import com.example.adae.models.Pokemon
 import com.google.firebase.database.*
 import com.squareup.picasso.Picasso
@@ -11,13 +15,14 @@ import com.squareup.picasso.Picasso
 
 class Coleecion: AppCompatActivity() {
     // Initializing the ImageView
-    var rImage: ImageView? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_coleecion)
 
         // getting ImageView by its id
-        rImage = findViewById(R.id.rImage)
+        var rImage = findViewById<ImageView>(R.id.rImage)
+
 
         // we will get the default FirebaseDatabase instance
         val firebaseDatabase = FirebaseDatabase.getInstance()
@@ -27,12 +32,15 @@ class Coleecion: AppCompatActivity() {
 
         // Here "image" is the child node value we are getting
         // child node data in the getImage variable
-        val getImage = databaseReference.child("image")
 
+        val getImage = databaseReference.child("pidgey")
         // Adding listener for a single change
         // in the data at this location.
         // this listener will triggered once
         // with the value of the data at the location
+
+
+        val activity = this
         getImage.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 // getting a DataSnapshot for the location at the specified
@@ -41,7 +49,8 @@ class Coleecion: AppCompatActivity() {
 
                 // loading that data into rImage
                 // variable which is ImageView
-                Picasso.get().load(link).into(rImage)
+                Glide.with(activity).load(getImage).into(rImage)
+
             }
 
             // this will called when any problem
@@ -51,11 +60,12 @@ class Coleecion: AppCompatActivity() {
                 Toast.makeText(this@Coleecion, "Error Loading Image", Toast.LENGTH_SHORT).show()
             }
         })
+
     }
 
 
 
-    
+
 }
 
 
