@@ -22,15 +22,15 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="222dp"
-        android:layout_height="170dp"
+        android:layout_width="415dp"
+        android:layout_height="177dp"
         android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.139"
+        app:layout_constraintVertical_bias="0.131"
         app:srcCompat="@drawable/battle_button" />
 
     <ImageView
@@ -59,39 +59,41 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="241dp"
-        android:layout_height="166dp"
+        android:layout_width="418dp"
+        android:layout_height="164dp"
         android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.39"
+        app:layout_constraintVertical_bias="0.433"
         app:srcCompat="@drawable/arena_button" />
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_width="413dp"
+        android:layout_height="154dp"
+        android:layout_marginBottom="4dp"
         android:background="@null"
+        android:onClick="coleccion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/collection_button" />
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="406dp"
+        android:layout_height="161dp"
         android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.679"
+        app:layout_constraintVertical_bias="0.726"
         app:srcCompat="@drawable/mazo_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -49,7 +49,7 @@ class Coleecion: AppCompatActivity() {
 
                 // loading that data into rImage
                 // variable which is ImageView
-                Glide.with(activity).load(getImage).into(rImage)
+                Glide.with(activity).load("https://firebasestorage.googleapis.com/v0/b/pokemoncard-f77c4.appspot.com/o/comunes%2F%23016-Pidgey.png?alt=media&token=940d67dc-4804-4fc2-b1e3-0074fa418790").into(rImage)
 
             }
 
@@ -57,7 +57,7 @@ class Coleecion: AppCompatActivity() {
             // occurs in getting data
             override fun onCancelled(databaseError: DatabaseError) {
                 // we are showing that error message in toast
-                Toast.makeText(this@Coleecion, "Error Loading Image", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@Coleecion, "Error cogiendo la imagen de la base de datos", Toast.LENGTH_SHORT).show()
             }
         })
 

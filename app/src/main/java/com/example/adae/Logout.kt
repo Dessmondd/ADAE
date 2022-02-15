@@ -14,11 +14,11 @@ class logout : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.logout)
-
+        // check if users is logged or not, if login token doesn't exist user can't skip layouts
         auth= FirebaseAuth.getInstance()
         var currentUser=auth.currentUser
 
-//        Reference
+//        Reference should work for now
         val logout=findViewById<Button>(R.id.logout)
 
         if(currentUser==null){
@@ -41,8 +41,8 @@ class logout : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val item_selected: Int = item.itemId
-        if (item_selected == R.id.login) {
-
+        if (item_selected == R.id.logout) {
+            logout()
         } else if (item_selected == R.id.perfil) {
 
         }
@@ -70,11 +70,15 @@ class logout : AppCompatActivity() {
         var home = Intent(this, DrawerActivity::class.java)
         startActivity(home)
     }
-    private fun coleccion(view: android.view.View){
+     fun coleccion(view: android.view.View){
         val home = Intent(this, Coleecion::class.java).apply{
         }
         startActivity(home)
     }
 
+    private fun logout(){
+        val logout = Intent(this, login::class.java)
+            startActivity(logout)
 
+    }
     }
