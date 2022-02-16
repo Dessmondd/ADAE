@@ -10,6 +10,9 @@ import androidx.core.app.ActivityOptionsCompat
 import com.bumptech.glide.Glide
 import com.example.adae.models.Pokemon
 import com.google.firebase.database.*
+import com.google.firebase.ktx.Firebase
+import com.google.firebase.*
+import com.google.firebase.storage.ktx.storage
 import com.squareup.picasso.Picasso
 
 
@@ -19,7 +22,7 @@ class Coleecion: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_coleecion)
-
+    loadWithGlide()
         // getting ImageView by its id
         var rImage = findViewById<ImageView>(R.id.rImage)
 
@@ -33,14 +36,17 @@ class Coleecion: AppCompatActivity() {
         // Here "image" is the child node value we are getting
         // child node data in the getImage variable
 
-        val getImage = databaseReference.child("pidgey")
+        //val getImage = databaseReference.child("pidgey")
         // Adding listener for a single change
         // in the data at this location.
         // this listener will triggered once
         // with the value of the data at the location
-
-
         val activity = this
+        // Reference to an image file in Cloud Storage
+
+        //Glide.with(activity).load(getImage).into(rImage)
+
+/*
         getImage.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 // getting a DataSnapshot for the location at the specified
@@ -60,10 +66,29 @@ class Coleecion: AppCompatActivity() {
                 Toast.makeText(this@Coleecion, "Error cogiendo la imagen de la base de datos", Toast.LENGTH_SHORT).show()
             }
         })
-
+*/
     }
 
-
+    fun loadWithGlide() {
+        // [START storage_load_with_glide]
+        // Reference to an image file in Cloud Storage
+        val storageReference = Firebase.storage.reference //.toString() + "/comunes/#016-Pidgey.png"//Firebase.storage.reference
+        var comunes =storageReference.child(getString(R.string.comunes))
+        var pidgey = comunes.child("/#016-Pidgey.png")
+        // ImageView in your Activity
+        val imageView = findViewById<ImageView>(R.id.rImage)
+        val url = pidgey.downloadUrl.addOnSuccessListener {
+            // Got the download URL for 'users/me/profile.png'
+            // (See MyAppGlideModule for Loader registration)
+            Glide.with(this /* context */)
+                .load(it)
+                .into(imageView)
+            // [END storage_load_with_glide]
+        }.addOnFailureListener {
+            // Handle any errors
+            // Download directly from StorageReference using Glide
+        }
+    }
 
 
 }
