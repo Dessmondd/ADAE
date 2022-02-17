@@ -12,6 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ADAE">
         <activity
+            android:name=".Shop"
+            android:exported="false"
+            android:label="@string/title_activity_shop"
+            android:theme="@style/Theme.ADAE.NoActionBar" />
+        <activity
             android:name=".Coleecion"
             android:exported="false" />
         <activity
@@ -43,8 +48,9 @@
         <activity android:name=".RecoverPassword">
             android:exported="true"
         </activity>
-
-
+        <activity android:name=".Main"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

@@ -74,15 +74,30 @@ class Coleecion: AppCompatActivity() {
         // Reference to an image file in Cloud Storage
         val storageReference = Firebase.storage.reference //.toString() + "/comunes/#016-Pidgey.png"//Firebase.storage.reference
         var comunes =storageReference.child(getString(R.string.comunes))
+        var a = comunes.listAll()
+       var b = arrayOf(a)
         var pidgey = comunes.child("/#016-Pidgey.png")
+        var pidgey2 = comunes.child("/#016-Pidgey.png")
         // ImageView in your Activity
         val imageView = findViewById<ImageView>(R.id.rImage)
+        val imageView2 = findViewById<ImageView>(R.id.rImage3)
         val url = pidgey.downloadUrl.addOnSuccessListener {
             // Got the download URL for 'users/me/profile.png'
             // (See MyAppGlideModule for Loader registration)
             Glide.with(this /* context */)
                 .load(it)
                 .into(imageView)
+            // [END storage_load_with_glide]
+        }.addOnFailureListener {
+            // Handle any errors
+            // Download directly from StorageReference using Glide
+        }
+        val url2 = pidgey2.downloadUrl.addOnSuccessListener {
+            // Got the download URL for 'users/me/profile.png'
+            // (See MyAppGlideModule for Loader registration)
+            Glide.with(this /* context */)
+                .load(it)
+                .into(imageView2)
             // [END storage_load_with_glide]
         }.addOnFailureListener {
             // Handle any errors

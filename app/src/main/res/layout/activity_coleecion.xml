@@ -4,14 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Coleecion">
+    tools:context=".Coleecion"
+    android:background="@drawable/fui_idp_button_background_twitter">
+
+    <ImageView
+        android:id="@+id/rImage3"
+        android:layout_width="195dp"
+        android:layout_height="321dp"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </ImageView>
 
     <ImageView
         android:id="@+id/rImage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="320dp">
+        android:layout_width="195dp"
+        android:layout_height="321dp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="-1dp">
 
     </ImageView>
 </androidx.constraintlayout.widget.ConstraintLayout>
