@@ -22,7 +22,7 @@ class login : AppCompatActivity() {
     private val GOOGLE_SIGN_IN = 100
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.login)
+        setContentView(R.layout.activity_login)
         checkSession()
         supportActionBar?.hide()
         val googleConf = GoogleSignInOptions.
@@ -44,8 +44,8 @@ class login : AppCompatActivity() {
     }
 //Login simple
     fun onClickLoginNext(view: View) {
-        var email: EditText = findViewById(R.id.email2);
-        var passw: EditText = findViewById(R.id.password2);
+        var email: EditText = findViewById(R.id.usernameEt);
+        var passw: EditText = findViewById(R.id.passwordEt);
         if (email.text.isNotEmpty() && passw.text.isNotEmpty()) {
             try {
                 FirebaseAuth.getInstance()
