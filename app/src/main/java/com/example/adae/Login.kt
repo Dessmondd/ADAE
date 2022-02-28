@@ -44,8 +44,8 @@ class login : AppCompatActivity() {
     }
 //Login simple
     fun onClickLoginNext(view: View) {
-        var email: EditText = findViewById(R.id.usernameEt);
-        var passw: EditText = findViewById(R.id.passwordEt);
+        var email: EditText = findViewById(R.id.usuario);
+        var passw: EditText = findViewById(R.id.password);
         if (email.text.isNotEmpty() && passw.text.isNotEmpty()) {
             try {
                 FirebaseAuth.getInstance()
