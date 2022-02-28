@@ -66,6 +66,19 @@ dependencies {
     implementation "com.google.firebase:firebase-storage-ktx:20.0.0"
     implementation 'com.firebaseui:firebase-ui-storage:8.0.0'
     implementation 'io.github.kaustubhpatange:paypal-checkout:1.4'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    //RxJava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.6'
+
+    
+    //chip
+    implementation 'com.robertlevonyan.view:MaterialChipView:1.2.4'
+
+    //search bar library
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.2'
+
 }
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
