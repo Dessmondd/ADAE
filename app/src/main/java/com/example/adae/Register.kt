@@ -22,7 +22,7 @@ class Register : AppCompatActivity() {
             val email : EditText = findViewById(R.id.email);
             //Hay que poner minimo 6 caracteres sino se crashea
             val passw : EditText = findViewById(R.id.editTextTextPassword);
-
+            var trofeos : String = "0"
             //Comprobamos que los campos no son nulos
             if (email.text != null && passw.text != null){
                 //Comprobamos que los campos no son vacios
@@ -33,7 +33,7 @@ class Register : AppCompatActivity() {
                         if (it.isSuccessful){
                             register()
                             db.collection("users").document(email.text.toString()).set (hashMapOf("email" to email.text.toString(),
-                                "password" to passw.text.toString()))
+                                "password" to passw.text.toString(), "trofeos" to trofeos))
                         } else {
                             ShowError()
 

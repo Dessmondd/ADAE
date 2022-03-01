@@ -26,6 +26,8 @@ class RecoverPassword : AppCompatActivity() {
                 if (task.isSuccessful) {
                     Log.d(TAG, "Email sent.")
                     login()
+                }else{
+                    Log.d(TAG, "La cuenta no existe.")
                 }
             }
         // [END send_password_reset]
