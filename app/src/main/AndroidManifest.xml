@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ADAE">
         <activity
+            android:name=".bomberman"
+            android:exported="false"
+            android:theme="@style/Theme.ADAE.NoActionBar" />
+        <activity
             android:name=".Shop"
             android:exported="false"
             android:label="@string/title_activity_shop"
@@ -48,10 +52,9 @@
         <activity android:name=".RecoverPassword">
             android:exported="true"
         </activity>
-        <activity android:name=".Main"
-            android:exported="true">
-        </activity>
-
+        <activity
+            android:name=".Main"
+            android:exported="true"></activity>
     </application>
 
 </manifest>

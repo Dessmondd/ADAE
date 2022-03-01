@@ -45,6 +45,8 @@ class logout : AppCompatActivity() {
             logout()
         } else if (item_selected == R.id.perfil) {
 
+        } else if (item_selected == R.id.bomberman){
+
         }
 
 
@@ -80,5 +82,8 @@ class logout : AppCompatActivity() {
         val logout = Intent(this, login::class.java)
             startActivity(logout)
 
+    }
+    private fun bomberman(){
+        val empezar = Intent()
     }
     }

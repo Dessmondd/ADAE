@@ -17,12 +17,15 @@
         <entry key="..\:/Users/Dessmondd/Proyecto/app/src/main/res/layout/menu.xml" value="0.35054347826086957" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.32037037037037036" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/drawable/ic_menu_camera.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/activity_bomberman.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/activity_coleecion.xml" value="0.1" />
+        <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/activity_login.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/activity_shop.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/content_shop.xml" value="0.11296296296296296" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/fragment_first.xml" value="0.1" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/fragment_gallery.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/fragment_main.xml" value="0.25" />
+        <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/fragment_slideshow.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/login.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/logout.xml" value="0.33" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/main.xml" value="0.17831813576494426" />
@@ -31,19 +34,19 @@
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/recover.xml" value="0.33" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/register.xml" value="0.28940217391304346" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/splash.xml" value="0.28940217391304346" />
+        <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/menu/drawer.xml" value="0.1" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/drawable/ic_a_day_at_the_park.xml" value="0.228" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/activity_coleecion.xml" value="0.1" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/activity_drawer.xml" value="0.24322916666666666" />
-        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/activity_login.xml" value="0.3136094674556213" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/app_bar_drawer.xml" value="0.24322916666666666" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/buttonpressed.xml" value="0.24322916666666666" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/login.xml" value="0.33" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/logout.xml" value="0.33" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/menu.xml" value="0.25" />
-        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/recover.xml" value="0.1" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/register.xml" value="0.221875" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/layout/splash.xml" value="0.2760416666666667" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/menu/activity_main_drawer.xml" value="0.24205128205128204" />
