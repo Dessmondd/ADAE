@@ -44,7 +44,7 @@
             android:inputType="text"
             android:paddingStart="40dp"
             android:paddingEnd="40dp" />
-        android:id="@+id/usuario"
+            android:id="@+id/usuario"
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -56,7 +56,8 @@
         app:hintTextAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintEnd_toEndOf="@+id/usernameEt"
         app:layout_constraintStart_toStartOf="@+id/usernameEt"
-        app:layout_constraintTop_toBottomOf="@+id/usernameEt">
+        app:layout_constraintTop_toBottomOf="@+id/usernameEt"
+        app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password"

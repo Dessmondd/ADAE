@@ -19,8 +19,10 @@
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/drawable/ic_menu_camera.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/activity_bomberman.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/activity_coleecion.xml" value="0.1" />
-        <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/activity_login.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/activity_drawer.xml" value="0.1" />
+        <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/activity_shop.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/content_bomberman.xml" value="0.1" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/content_shop.xml" value="0.11296296296296296" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/fragment_first.xml" value="0.1" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/fragment_gallery.xml" value="0.17831813576494426" />
@@ -33,7 +35,7 @@
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/perfiljugador.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/recover.xml" value="0.33" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/register.xml" value="0.28940217391304346" />
-        <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/splash.xml" value="0.28940217391304346" />
+        <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/layout/splash.xml" value="0.1" />
         <entry key="..\:/Users/Dessmondd/StudioProjects/ADAE/app/src/main/res/menu/drawer.xml" value="0.1" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/ADAE/app/src/main/res/drawable/ic_a_day_at_the_park.xml" value="0.228" />
