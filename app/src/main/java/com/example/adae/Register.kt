@@ -3,6 +3,7 @@ package com.example.adae
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
 import com.google.firebase.auth.FirebaseAuth
@@ -13,6 +14,27 @@ class Register : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.register)
+        var trofeos = 0;
+
+        db.collection("users").whereEqualTo("email", "danilillo55@gmail.com")
+            .get()
+            .addOnSuccessListener { documents ->
+                for (document in documents) {
+                    Log.d("", "${document.id} => ${document.data}")
+                    trofeos = document.data.get("trofeos") as Int
+
+                }
+            }
+            .addOnFailureListener { exception ->
+                Log.w("", "Error getting documents: ", exception)
+            }
+        if(trofeos < 50){
+
+        }
+        else
+            if(trofeos <= 100){
+
+            }
     }
 
 
@@ -36,7 +58,6 @@ class Register : AppCompatActivity() {
                                 "password" to passw.text.toString(), "trofeos" to trofeos))
                         } else {
                             ShowError()
-
                         }
                     }
                 }

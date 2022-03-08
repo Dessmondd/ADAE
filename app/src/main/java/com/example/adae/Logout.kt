@@ -46,7 +46,7 @@ class logout : AppCompatActivity() {
         } else if (item_selected == R.id.perfil) {
 
         } else if (item_selected == R.id.bomberman){
-
+            bomberman()
         }
 
 
@@ -84,6 +84,8 @@ class logout : AppCompatActivity() {
 
     }
     private fun bomberman(){
-        val empezar = Intent()
+        val empezar = Intent(this, bomberman::class.java)
+            startActivity(empezar)
     }
+
     }
