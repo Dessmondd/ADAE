@@ -77,7 +77,7 @@ class Coleecion: AppCompatActivity() {
         var a = comunes.listAll()
        var b = arrayOf(a)
         var pidgey = comunes.child("/#016-Pidgey.png")
-        var pidgey2 = comunes.child("/#016-Pidgey.png")
+        var pidgeotto = comunes.child("/#017-Pidgeotto.png")
         // ImageView in your Activity
         val imageView = findViewById<ImageView>(R.id.rImage)
         val imageView2 = findViewById<ImageView>(R.id.rImage3)
