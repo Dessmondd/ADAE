@@ -3,12 +3,17 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
+import android.widget.Adapter
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityOptionsCompat
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.adae.databinding.ActivityColeecionBinding
 import com.example.adae.models.Pokemon
+import com.example.adae.models.PokemonRecycler
 import com.google.firebase.database.*
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.*
@@ -18,15 +23,16 @@ import com.squareup.picasso.Picasso
 
 class Coleecion: AppCompatActivity() {
     // Initializing the ImageView
-
+    private lateinit var binding: ActivityColeecionBinding
+    var recyclerView: RecyclerView? = null
+    var Manager: GridLayoutManager? = null
+    var adapter: Adapter? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_coleecion)
+        binding = ActivityColeecionBinding.inflate(layoutInflater)
+
     loadWithGlide()
         // getting ImageView by its id
-        var rImage = findViewById<ImageView>(R.id.rImage)
-
-
         // we will get the default FirebaseDatabase instance
         val firebaseDatabase = FirebaseDatabase.getInstance()
 
@@ -70,39 +76,52 @@ class Coleecion: AppCompatActivity() {
     }
 
     fun loadWithGlide() {
+
+        val view = binding.root
+        setContentView(view)
         // [START storage_load_with_glide]
         // Reference to an image file in Cloud Storage
+        val recyclerview = findViewById<RecyclerView>(R.id.recyclerview)
+        // this creates a vertical layout Manager
+        recyclerview.layoutManager = GridLayoutManager(this, 2)
+        // ArrayList of class ItemsViewModel
+        val data = ArrayList<PokemonRecycler>()
+        // This loop will create 20 Views containing
+        // the image with the count of view
+
         val storageReference = Firebase.storage.reference //.toString() + "/comunes/#016-Pidgey.png"//Firebase.storage.reference
         var comunes =storageReference.child(getString(R.string.comunes))
-        var a = comunes.listAll()
+
+        var a = comunes
        var b = arrayOf(a)
-        var pidgey = comunes.child("/#016-Pidgey.png")
-        var pidgeotto = comunes.child("/#017-Pidgeotto.png")
+
+        for(i in 1..2){
+            var pidgey = comunes.child("/"+i.toString() +".png")
+
+           data.add(PokemonRecycler("Erika", pidgey))
+
+           /*
+           val imageView = findViewById<ImageView>(R.id.rImage)
+
+                val url = pidgey.downloadUrl.addOnSuccessListener {
+                    // Got the download URL for 'users/me/profile.png'
+                    // (See MyAppGlideModule for Loader registration)
+
+                    // [END storage_load_with_glide]
+                }.addOnFailureListener {
+                    // Handle any errors
+                    // Download directly from StorageReference using Glide
+                }
+           * */
+
+        }
+
         // ImageView in your Activity
-        val imageView = findViewById<ImageView>(R.id.rImage)
-        val imageView2 = findViewById<ImageView>(R.id.rImage3)
-        val url = pidgey.downloadUrl.addOnSuccessListener {
-            // Got the download URL for 'users/me/profile.png'
-            // (See MyAppGlideModule for Loader registration)
-            Glide.with(this /* context */)
-                .load(it)
-                .into(imageView)
-            // [END storage_load_with_glide]
-        }.addOnFailureListener {
-            // Handle any errors
-            // Download directly from StorageReference using Glide
-        }
-        val url2 = pidgey2.downloadUrl.addOnSuccessListener {
-            // Got the download URL for 'users/me/profile.png'
-            // (See MyAppGlideModule for Loader registration)
-            Glide.with(this /* context */)
-                .load(it)
-                .into(imageView2)
-            // [END storage_load_with_glide]
-        }.addOnFailureListener {
-            // Handle any errors
-            // Download directly from StorageReference using Glide
-        }
+
+        // This will pass the ArrayList to our Adapter
+        val adapter = AlumnoAdapter(this@Coleecion ,data)
+        // Setting the Adapter with the recyclerview
+        recyclerview.adapter = adapter
     }
 
 

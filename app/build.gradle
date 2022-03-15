@@ -66,6 +66,8 @@ dependencies {
     implementation "com.google.firebase:firebase-storage-ktx:20.0.0"
     implementation 'com.firebaseui:firebase-ui-storage:8.0.0'
     implementation 'io.github.kaustubhpatange:paypal-checkout:1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
 }
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
