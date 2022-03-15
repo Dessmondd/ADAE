@@ -31,7 +31,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         val options = Paypal.Options(
             paypalButtonId = "LE4DPD9LCBG3U",
             purchaseCompleteUrl = "https://www.pokemon.com/es/jcc-pokemon/jugar-en-linea/",
-            isSandbox = true // Set this to false to accept live payments
+            isSandbox = true // Para aceptar pagos reales hay que cambiarlo a false
         )
 
         paypal = Paypal.Builder(options)

@@ -19,9 +19,9 @@ class Register : AppCompatActivity() {
 
 
     fun onClickNext(view: android.view.View) {
-            val email : EditText = findViewById(R.id.email);
+            val email : EditText = findViewById(R.id.usuarioEr);
             //Hay que poner minimo 6 caracteres sino se crashea
-            val passw : EditText = findViewById(R.id.editTextTextPassword);
+            val passw : EditText = findViewById(R.id.passwordEr);
             var trofeos : String = "0"
             //Comprobamos que los campos no son nulos
             if (email.text != null && passw.text != null){

@@ -24,7 +24,7 @@ class RecoverPassword : AppCompatActivity() {
         Firebase.auth.sendPasswordResetEmail(email.text.toString())
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
-                    Log.d(TAG, "Email sent.")
+                    Log.d(TAG, "Email enviado")
                     login()
                 }else{
                     Log.d(TAG, "La cuenta no existe.")

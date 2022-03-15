@@ -31,7 +31,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.131"
-        app:srcCompat="@drawable/battle_button" />
+        app:srcCompat="@drawable/battle_button"/>
 
     <ImageView
         android:id="@+id/imageView2"

@@ -29,6 +29,7 @@
     <string name="username">Usuario</string>
     <string name="password">Contraseña</string>
     <string name="login">Login</string>
+    <string name="register">Registrarse</string>
     <string name="forgot_password">¿Olvidó la contraseña?</string>
     <string name="new_user">¿Nuevo usuario?</string>
     <string name="title_activity_bomberman">bomberman</string>
