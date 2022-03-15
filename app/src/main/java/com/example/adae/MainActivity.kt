@@ -2,7 +2,6 @@ package com.example.adae
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.adae.interfaces.PokeService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
