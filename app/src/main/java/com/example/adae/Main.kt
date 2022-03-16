@@ -23,7 +23,7 @@ class Main: AppCompatActivity() {
     }
 }
 
-class MainFragment : Fragment(R.layout.fragment_main) {
+class MainFragment : Fragment(R.layout.activity_shop2) {
     private lateinit var paypal: Paypal
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -55,7 +55,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             val details = data?.getSerializableExtra(Paypal.PURCHASE_DATA) as? Paypal.History
             AlertDialog.Builder(requireContext())
                 .setTitle("Comprada completada")
-                .setMessage("Pago completado para la cuenta  ${details?.email} for Id: ${paypal.options.paypalButtonId}")
+                .setMessage("Pago completado para la cuenta  ${details?.email} con Id: ${paypal.options.paypalButtonId}")
                 .setPositiveButton("Todo OK", null)
                 .show()
 
