@@ -15,7 +15,7 @@ class Main: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.main)
+        setContentView(R.layout.activity_shop2)
 
         supportFragmentManager.beginTransaction()
             .replace(R.id.container, MainFragment())
@@ -23,7 +23,7 @@ class Main: AppCompatActivity() {
     }
 }
 
-class MainFragment : Fragment(R.layout.fragment_main) {
+class MainFragment : Fragment(R.layout.activity_shop2) {
     private lateinit var paypal: Paypal
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -37,7 +37,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         paypal = Paypal.Builder(options)
             .setCallingContext(this)
 
-        val button = view.findViewById<Button>(R.id.btn_checkout)
+        val button = view.findViewById<Button>(R.id.button)
         button.setOnClickListener {
             paypal.checkout()
         }
@@ -47,10 +47,9 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         super.onActivityResult(requestCode, resultCode, data)
         if (paypal.isPurchaseComplete(requestCode, resultCode)) {
             /**
-             * Called when whole payment process is completed
-             * This will called after onCheckOutComplete.
+             * Esta funciono solo se llama cuando el pago se completa
+             * lo llamamos después de onCheckOutComplete
              *
-             * You can also fetch purchase details from [Intent]
              */
             val details = data?.getSerializableExtra(Paypal.PURCHASE_DATA) as? Paypal.History
             AlertDialog.Builder(requireContext())
