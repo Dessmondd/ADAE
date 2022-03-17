@@ -1,17 +1,18 @@
 package com.example.adae.interfaces
 
-import android.telecom.Call
-import retrofit2.http.GET
-
+import retrofit2.Call
 import com.example.adae.models.Pokemon
+import retrofit2.http.GET
+import retrofit2.http.Path
+
 
 interface PokemonAPI {
-    @GET("pokeapi.co/api/v2/")
+    @GET("")
     fun findPokedex()
 
-    @GET("pokeapi.co/api/v2/pokemon/")
-    fun findPokemon(id : String) : Call
+    @GET("pokemon/")
+    fun findPokemon(id : String) : Call<List<Pokemon>>
 
-    @GET("")
-    fun findAttack(id : String) : Call
+    @GET("pokemon/{dexNumOrName}/")
+    fun getPokemonByDexNumOrName(@Path("dexNumOrName") dexNumOrName: String?): Call<Pokemon>
 }

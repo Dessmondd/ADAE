@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.adae.databinding.ActivityColeecionBinding
+import com.example.adae.interfaces.PokemonAPI
 import com.example.adae.models.Pokemon
 import com.example.adae.models.PokemonRecycler
 import com.google.firebase.database.*
@@ -19,6 +20,11 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.*
 import com.google.firebase.storage.ktx.storage
 import com.squareup.picasso.Picasso
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 
 class Coleecion: AppCompatActivity() {
@@ -95,10 +101,34 @@ class Coleecion: AppCompatActivity() {
         var a = comunes
        var b = arrayOf(a)
 
+        var retr = getRetrofit()
+        var pokeApi = retr.create(PokemonAPI::class.java)
+
         for(i in 1..2){
+
             var pidgey = comunes.child("/"+i.toString() +".png")
 
-           data.add(PokemonRecycler("Erika", pidgey))
+//Llamar nombre desde Pokeapi
+            var nombre = ""
+            var callPoke = pokeApi.getPokemonByDexNumOrName(i.toString())
+            callPoke.execute()
+            object: Callback<Pokemon> {
+                override fun onResponse(
+                    call: Call<Pokemon>?,
+                    response: Response<Pokemon>?
+                ){
+                    var pokemon : Pokemon? = response?.body()
+                    if(pokemon?.name != null){
+                        nombre = pokemon.name!!
+                    }
+                }
+                override fun onFailure(call: Call<Pokemon>, t: Throwable) {
+                }
+
+            }
+
+
+           data.add(PokemonRecycler(nombre, pidgey))
 
            /*
            val imageView = findViewById<ImageView>(R.id.rImage)
@@ -123,7 +153,12 @@ class Coleecion: AppCompatActivity() {
         // Setting the Adapter with the recyclerview
         recyclerview.adapter = adapter
     }
+private fun getRetrofit():Retrofit{
+    return Retrofit.Builder().
+            baseUrl("https://pokeapi.co/api/v2/")
+        .addConverterFactory(GsonConverterFactory.create()).build()
 
+}
 
 }
 

@@ -18,7 +18,7 @@ class RecoverPassword : AppCompatActivity() {
     }
 
     fun sendPasswordReset(view: android.view.View) {
-        // [START send_password_reset]
+        // Inicia el proceso de restauración de contraseña
         var email: EditText = findViewById(R.id.email);
 
         Firebase.auth.sendPasswordResetEmail(email.text.toString())
@@ -30,7 +30,7 @@ class RecoverPassword : AppCompatActivity() {
                     Log.d(TAG, "La cuenta no existe.")
                 }
             }
-        // [END send_password_reset]
+        // Termina de enviar la petición de resetear
     }
 
     fun login() {

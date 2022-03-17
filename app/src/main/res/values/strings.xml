@@ -27,9 +27,11 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="remember_me">Recordar datos</string>
     <string name="username">Usuario</string>
+    <string name="email">Email</string>
     <string name="password">Contraseña</string>
     <string name="login">Login</string>
     <string name="register">Registrarse</string>
+    <string name="recuperar">Recuperar contraseña</string>
     <string name="forgot_password">¿Olvidó la contraseña?</string>
     <string name="new_user">¿Nuevo usuario?</string>
     <string name="title_activity_bomberman">bomberman</string>
