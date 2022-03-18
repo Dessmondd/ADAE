@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RecoverPassword"
-    android:background="@drawable/backgroundregister">
+    android:background="@drawable/elmanin3">
 
     <TextView
         android:id="@+id/titleTv"
@@ -16,7 +16,7 @@
         android:layout_marginTop="76dp"
         android:text="@string/recuperar"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/colorBlueMidnight"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/usernameEt"
         app:layout_constraintTop_toTopOf="parent" />

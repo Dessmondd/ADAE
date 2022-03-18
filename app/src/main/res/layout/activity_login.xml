@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/loginbackground">
+    android:background="@drawable/elmanin">
 
 
     <TextView
@@ -79,7 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/remember_me"
-        android:textColor="@color/colorBlueMidnight"
+        android:textColor="@color/colorWhite"
         app:layout_constraintEnd_toStartOf="@+id/forgotPasswordTv"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/passwordEt"
@@ -91,7 +91,7 @@
         android:layout_height="wrap_content"
         android:background="?android:attr/selectableItemBackground"
         android:text="@string/forgot_password"
-        android:textColor="@color/colorPurple"
+        android:textColor="@color/colorWhite"
         app:layout_constraintBaseline_toBaselineOf="@+id/rememberMeBtn"
         app:layout_constraintEnd_toEndOf="@+id/passwordEt"
         app:layout_constraintHorizontal_bias="0.5"
@@ -100,8 +100,8 @@
 
     <ImageButton
         android:id="@+id/buttonId"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_width="42dp"
+        android:layout_height="49dp"
         android:onClick="onClickGoogle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
