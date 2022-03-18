@@ -31,8 +31,12 @@
     <string name="password">Contraseña</string>
     <string name="login">Login</string>
     <string name="register">Registrarse</string>
+    <string name="recuperarcontraseña">Recuperar</string>
     <string name="recuperar">Recuperar contraseña</string>
     <string name="forgot_password">¿Olvidó la contraseña?</string>
+    <string name="uno">Comprar 1(1€)</string>
+    <string name="diez">Comprar 10(9.50€)</string>
+    <string name="veinte">Comprar 20(17.99€)</string>
     <string name="new_user">¿Nuevo usuario?</string>
     <string name="title_activity_bomberman">bomberman</string>
 </resources>

@@ -55,7 +55,7 @@
         android:layout_height="46dp"
         android:background="@color/colorOrange"
         android:onClick="sendPasswordReset"
-        android:text="@string/register"
+        android:text="@string/recuperarcontraseña"
         android:textColor="@color/colorWhite"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

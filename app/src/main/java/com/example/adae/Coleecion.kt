@@ -101,15 +101,15 @@ class Coleecion: AppCompatActivity() {
         var a = comunes
        var b = arrayOf(a)
 
-        var retr = getRetrofit()
-        var pokeApi = retr.create(PokemonAPI::class.java)
+        // var retr = getRetrofit()
+        //var pokeApi = retr.create(PokemonAPI::class.java)
 
-        for(i in 1..2){
+        for(i in 1..31){
 
             var pidgey = comunes.child("/"+i.toString() +".png")
 
 //Llamar nombre desde Pokeapi
-            var nombre = ""
+            /*var nombre = ""
             var callPoke = pokeApi.getPokemonByDexNumOrName(i.toString())
             callPoke.execute()
             object: Callback<Pokemon> {
@@ -128,7 +128,10 @@ class Coleecion: AppCompatActivity() {
             }
 
 
-           data.add(PokemonRecycler(nombre, pidgey))
+*/
+
+
+           data.add(PokemonRecycler("Pokemon", pidgey))
 
            /*
            val imageView = findViewById<ImageView>(R.id.rImage)

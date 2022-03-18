@@ -15,13 +15,20 @@ class Main: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_shop2)
+        setContentView(R.layout.main)
 
         supportFragmentManager.beginTransaction()
             .replace(R.id.container, MainFragment())
             .commit()
+
+
+    }
+    fun getInicio (view: android.view.View) {
+        var inicio = Intent(this, logout::class.java)
+        startActivity(inicio)
     }
 }
+
 
 class MainFragment : Fragment(R.layout.activity_shop2) {
     private lateinit var paypal: Paypal
@@ -37,10 +44,11 @@ class MainFragment : Fragment(R.layout.activity_shop2) {
         paypal = Paypal.Builder(options)
             .setCallingContext(this)
 
-        val button = view.findViewById<Button>(R.id.button)
+        val button = view.findViewById<Button>(R.id.button3)
         button.setOnClickListener {
             paypal.checkout()
         }
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -65,5 +73,8 @@ class MainFragment : Fragment(R.layout.activity_shop2) {
              */
             Toast.makeText(requireContext(), "Compra cancelada por el usuario", Toast.LENGTH_SHORT).show()
         }
+
     }
+
+
 }

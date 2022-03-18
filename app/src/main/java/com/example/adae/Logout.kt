@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 
@@ -44,9 +45,9 @@ class logout : AppCompatActivity() {
         if (item_selected == R.id.logout) {
             logout()
         } else if (item_selected == R.id.perfil) {
-
+            inProgress()
         } else if (item_selected == R.id.bomberman){
-
+            inProgress()
         }
 
 
@@ -78,12 +79,13 @@ class logout : AppCompatActivity() {
         startActivity(home)
     }
 
-    private fun logout(){
-        val logout = Intent(this, login::class.java)
-            startActivity(logout)
 
-    }
-    private fun bomberman(){
-        val empezar = Intent()
+
+    private fun inProgress(){
+        val text = "No disponible en la alpha"
+        val duration = Toast.LENGTH_SHORT
+
+        val toast = Toast.makeText(applicationContext, text, duration)
+        toast.show()
     }
     }

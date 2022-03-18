@@ -10,6 +10,6 @@
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:itemCount="10"
-        tools:listitem="@layout/cardview" />
+        tools:itemCount="31"
+        tools:listitem="@layout/cardview"/>
 </LinearLayout>
