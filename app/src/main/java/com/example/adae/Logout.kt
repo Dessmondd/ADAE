@@ -45,13 +45,7 @@ class logout : AppCompatActivity() {
         if (item_selected == R.id.logout) {
             logoutv2()
             popuplogout()
-        } else if (item_selected == R.id.perfil) {
-            inProgress()
-        } else if (item_selected == R.id.bomberman){
-            inProgress()
         }
-
-
         return super.onOptionsItemSelected(item)
     }
 
