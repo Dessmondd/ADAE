@@ -44,6 +44,7 @@ class logout : AppCompatActivity() {
         val item_selected: Int = item.itemId
         if (item_selected == R.id.logout) {
             logoutv2()
+            popuplogout()
         } else if (item_selected == R.id.perfil) {
             inProgress()
         } else if (item_selected == R.id.bomberman){
@@ -111,5 +112,11 @@ class logout : AppCompatActivity() {
         auth.signOut()
         startActivity(Intent(this,login::class.java))
         finish()
+    }
+    private fun popuplogout(){
+        val text = "Desconectado con éxito"
+        val duration = Toast.LENGTH_SHORT
+        val toast = Toast.makeText(applicationContext, text, duration)
+        toast.show()
     }
     }
