@@ -102,7 +102,7 @@ class Coleecion: AppCompatActivity() {
 
         var a = comunes
        var b = arrayOf(a)
-
+        //
         // var retr = getRetrofit()
         //var pokeApi = retr.create(PokemonAPI::class.java)
 
