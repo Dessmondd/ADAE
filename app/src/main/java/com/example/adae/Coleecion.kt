@@ -174,11 +174,16 @@ private fun getRetrofit():Retrofit{
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val item_selected: Int = item.itemId
         if (item_selected == R.id.inicio) {
-
+                inicio()
         }
 
 
         return super.onOptionsItemSelected(item)
+    }
+
+    fun inicio(){
+        val inicio = Intent(this, logout::class.java)
+        startActivity(inicio)
     }
 
 }

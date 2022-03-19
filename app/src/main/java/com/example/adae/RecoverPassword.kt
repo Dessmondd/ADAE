@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
+import android.widget.Toast
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
@@ -26,6 +27,7 @@ class RecoverPassword : AppCompatActivity() {
                 if (task.isSuccessful) {
                     Log.d(TAG, "Email enviado")
                     login()
+                    popuppassword()
                 }else{
                     Log.d(TAG, "La cuenta no existe.")
                 }
@@ -42,5 +44,12 @@ class RecoverPassword : AppCompatActivity() {
 
         }
     startActivity(volverLogin)
+    }
+    fun popuppassword(){
+        val text = "Email de recuperación enviado con éxito"
+        val duration = Toast.LENGTH_LONG
+
+        val toast = Toast.makeText(applicationContext, text, duration)
+        toast.show()
     }
 }
