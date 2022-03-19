@@ -75,6 +75,8 @@ private fun logout(){
         var login = Intent(this, logout::class.java)
         startActivity(login)
     }
+
+
     //En caso de error, se muestra un mensaje
 
     private fun ShowAlert2() {

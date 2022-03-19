@@ -6,25 +6,15 @@
     android:layout_height="match_parent"
     android:background="@drawable/test2">
 
-    <Button
-        android:id="@+id/logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="MainActivity"
-        android:shadowColor="@color/colorAccent"
-        android:text="logout"
-        app:iconTint="#00FFCC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+
+
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="415dp"
         android:layout_height="177dp"
         android:background="@null"
+        android:onClick="inProgressv2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -77,6 +67,7 @@
         android:layout_width="415dp"
         android:layout_height="177dp"
         android:background="@null"
+        android:onClick="inProgressv2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -91,6 +82,7 @@
         android:onClick="coleccion"
         app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.451"
@@ -101,6 +93,7 @@
         android:layout_width="415dp"
         android:layout_height="177dp"
         android:background="@null"
+        android:onClick="inProgressv2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1"
@@ -154,7 +147,6 @@
         android:layout_height="151dp"
         android:layout_marginTop="576dp"
         android:background="@null"
-
         android:onClick="shop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.032"

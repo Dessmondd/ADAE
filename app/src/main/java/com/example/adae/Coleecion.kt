@@ -2,6 +2,8 @@ package com.example.adae
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.Adapter
 import android.widget.ImageView
@@ -156,12 +158,28 @@ class Coleecion: AppCompatActivity() {
         // Setting the Adapter with the recyclerview
         recyclerview.adapter = adapter
     }
+
 private fun getRetrofit():Retrofit{
     return Retrofit.Builder().
             baseUrl("https://pokeapi.co/api/v2/")
         .addConverterFactory(GsonConverterFactory.create()).build()
 
 }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.drawer2, menu)
+        return true;
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val item_selected: Int = item.itemId
+        if (item_selected == R.id.inicio) {
+
+        }
+
+
+        return super.onOptionsItemSelected(item)
+    }
 
 }
 

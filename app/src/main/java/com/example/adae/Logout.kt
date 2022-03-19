@@ -43,7 +43,7 @@ class logout : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val item_selected: Int = item.itemId
         if (item_selected == R.id.logout) {
-            //logoutv2()
+            logoutv2()
         } else if (item_selected == R.id.perfil) {
             inProgress()
         } else if (item_selected == R.id.bomberman){
@@ -79,7 +79,13 @@ class logout : AppCompatActivity() {
         startActivity(home)
     }
 
+   fun inProgressv2(view: android.view.View){
+        val text = "No disponible en la alpha"
+        val duration = Toast.LENGTH_SHORT
 
+        val toast = Toast.makeText(applicationContext, text, duration)
+        toast.show()
+    }
 
     private fun inProgress(){
         val text = "No disponible en la alpha"
