@@ -48,7 +48,14 @@ class MainFragment : Fragment(R.layout.activity_shop2) {
         button.setOnClickListener {
             paypal.checkout()
         }
-
+        val button2 = view.findViewById<Button>(R.id.button2)
+        button2.setOnClickListener {
+            paypal.checkout()
+        }
+        val button3 = view.findViewById<Button>(R.id.button5)
+        button3.setOnClickListener {
+            paypal.checkout()
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

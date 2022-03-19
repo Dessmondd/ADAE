@@ -20,18 +20,18 @@ class logout : AppCompatActivity() {
         var currentUser=auth.currentUser
 
 //        Reference should work for now
-        val logout=findViewById<Button>(R.id.logout)
+       // val logout=findViewById<Button>(R.id.logout)
 
         if(currentUser==null){
             startActivity(Intent(this,login::class.java))
             finish()
         }
-        logout.setOnClickListener{
+        /*logout.setOnClickListener{
             auth.signOut()
             startActivity(Intent(this,login::class.java))
             finish()
         }
-
+    */
     }
 
 
@@ -43,7 +43,7 @@ class logout : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val item_selected: Int = item.itemId
         if (item_selected == R.id.logout) {
-            logout()
+            //logoutv2()
         } else if (item_selected == R.id.perfil) {
             inProgress()
         } else if (item_selected == R.id.bomberman){
@@ -87,5 +87,23 @@ class logout : AppCompatActivity() {
 
         val toast = Toast.makeText(applicationContext, text, duration)
         toast.show()
+    }
+    fun shop(view: android.view.View){
+        var shop = Intent(this, Main::class.java).apply {
+
+        }
+        startActivity(shop)
+    }
+    fun user(view: android.view.View){
+        val text = "No disponible en la alpha"
+        val duration = Toast.LENGTH_SHORT
+
+        val toast = Toast.makeText(applicationContext, text, duration)
+        toast.show()
+    }
+    fun logoutv2(){
+        auth.signOut()
+        startActivity(Intent(this,login::class.java))
+        finish()
     }
     }
