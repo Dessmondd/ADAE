@@ -111,7 +111,7 @@ private fun logout(){
                     FirebaseAuth.getInstance().signInWithCredential(credential)
                         .addOnCompleteListener {
                             if (it.isSuccessful) {
-                                logout()
+                                login()
                             } else {
 
                             }

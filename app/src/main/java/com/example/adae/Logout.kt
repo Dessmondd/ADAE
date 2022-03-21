@@ -49,7 +49,6 @@ class logout : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
-
     fun MainActivity(view: android.view.View) {
         val logout = Intent(this, login::class.java).apply {
         }

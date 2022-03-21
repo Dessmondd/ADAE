@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "915717290837",
+    "firebase_url": "https://pokemoncard-f77c4-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "pokemoncard-f77c4",
     "storage_bucket": "pokemoncard-f77c4.appspot.com"
   },
@@ -14,11 +15,19 @@
       },
       "oauth_client": [
         {
-          "client_id": "915717290837-pb2g1pj6p18ch6n9ld8amc62c7u12k56.apps.googleusercontent.com",
+          "client_id": "915717290837-b722r0sah1t3o0t3jr9gjvogku560gm0.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.adae",
-            "certificate_hash": "9e466e27bf2222c7e8f263351a1c8ba446fe0c21"
+            "certificate_hash": "9b594a7dcf798376c91e216b104b734381b71f26"
+          }
+        },
+        {
+          "client_id": "915717290837-j8t4jt40jn9q4cnle4g1igb2rh76g4m0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adae",
+            "certificate_hash": "276bf8940f615185d6f11d43f6a51e5a31ddb159"
           }
         },
         {
