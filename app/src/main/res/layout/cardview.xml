@@ -13,8 +13,8 @@
         <ImageView
             android:src="@drawable/pokeball"
             android:id="@+id/imageViewIdCard"
-            android:layout_width="190dp"
-            android:layout_height="340dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
