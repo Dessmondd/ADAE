@@ -38,7 +38,6 @@ class Coleecion: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityColeecionBinding.inflate(layoutInflater)
-
     loadWithGlide()
         // getting ImageView by its id
         // we will get the default FirebaseDatabase instance
