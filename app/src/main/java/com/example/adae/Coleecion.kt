@@ -10,6 +10,7 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityOptionsCompat
+import androidx.navigation.ui.AppBarConfiguration
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -31,7 +32,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class Coleecion: AppCompatActivity() {
     // Initializing the ImageView
+
     private lateinit var binding: ActivityColeecionBinding
+    private lateinit var appBarConfiguration: AppBarConfiguration
     var recyclerView: RecyclerView? = null
     var Manager: GridLayoutManager? = null
     var adapter: Adapter? = null
@@ -39,6 +42,7 @@ class Coleecion: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityColeecionBinding.inflate(layoutInflater)
     loadWithGlide()
+        supportActionBar?.hide()
         // getting ImageView by its id
         // we will get the default FirebaseDatabase instance
         val firebaseDatabase = FirebaseDatabase.getInstance()
@@ -79,7 +83,12 @@ class Coleecion: AppCompatActivity() {
                 Toast.makeText(this@Coleecion, "Error cogiendo la imagen de la base de datos", Toast.LENGTH_SHORT).show()
             }
         })
+
 */
+        val fab: View = findViewById(R.id.fab)
+        fab.setOnClickListener { view ->
+            inicio()
+        }
     }
 
     fun loadWithGlide() {
@@ -170,15 +179,17 @@ private fun getRetrofit():Retrofit{
         return true;
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val item_selected: Int = item.itemId
-        if (item_selected == R.id.inicio) {
-                inicio()
-        }
+    //override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        //val item_selected: Int = item.itemId
+       // if (item_selected == R.id.inicio) {
+        //        inicio()
+        //}
 
 
-        return super.onOptionsItemSelected(item)
-    }
+   // return super.onOptionsItemSelected(item)
+   // }
+
+
 
     fun inicio(){
         val inicio = Intent(this, logout::class.java)
