@@ -3,13 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.FirstFragment">
+    tools:context=".fragments.SecFragment">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Para alcanzar esta arena se necesitan entre 1 y 5 cartas"
+        android:text="Para alcanzar esta arena se necesitan entre 5 y 15 cartas"
         android:textSize="35sp" />
-
 </RelativeLayout>

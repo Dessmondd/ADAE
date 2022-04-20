@@ -1,12 +1,14 @@
 package com.example.adae
 
 import android.content.Intent
+import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.firebase.auth.FirebaseAuth
 
 
@@ -15,6 +17,13 @@ class logout : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.logout)
+        supportActionBar?.hide()
+
+        val constraintLayout = findViewById<ConstraintLayout>(R.id.layout2)
+        val animationDrawable: AnimationDrawable = constraintLayout.background as AnimationDrawable
+        animationDrawable.setEnterFadeDuration(3000)
+        animationDrawable.setExitFadeDuration(4000)
+        animationDrawable.start()
         // check if users is logged or not, if login token doesn't exist user can't skip layouts
         auth= FirebaseAuth.getInstance()
         var currentUser=auth.currentUser
@@ -32,6 +41,10 @@ class logout : AppCompatActivity() {
             finish()
         }
     */
+
+
+
+
     }
 
 
@@ -43,7 +56,6 @@ class logout : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val item_selected: Int = item.itemId
         if (item_selected == R.id.logout) {
-            logoutv2()
             popuplogout()
         }
         return super.onOptionsItemSelected(item)
@@ -101,7 +113,7 @@ class logout : AppCompatActivity() {
         val toast = Toast.makeText(applicationContext, text, duration)
         toast.show()
     }
-    fun logoutv2(){
+    fun logoutv2(view: android.view.View){
         auth.signOut()
         startActivity(Intent(this,login::class.java))
         finish()
@@ -112,4 +124,11 @@ class logout : AppCompatActivity() {
         val toast = Toast.makeText(applicationContext, text, duration)
         toast.show()
     }
+     fun progression(view: android.view.View){
+        val progression = Intent(this, ProgressionActivity::class.java).apply {
+
+        }
+        startActivity(progression)
+        }
     }
+

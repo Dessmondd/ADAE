@@ -11,16 +11,16 @@ class Splash : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash)
         supportActionBar?.hide()
-        music()
         Handler().postDelayed({
-            val intent = Intent(this, login::class.java)
+          val intent = Intent(this, login::class.java)
             startActivity(intent)
             finish()
             music()
         },3000)
+        
     }
 
-
+    //need revamp
     fun music(){
         var mediaPlayer: MediaPlayer = MediaPlayer.create(this, R.raw.backgroundsound)
         mediaPlayer.isLooping;

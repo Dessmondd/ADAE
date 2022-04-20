@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher2"
@@ -11,6 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher2_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ADAE">
+        <activity
+            android:name=".ProgressionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".arenas"
+            android:exported="false" />
         <activity
             android:name=".Shop"
             android:exported="false"
@@ -45,7 +52,7 @@
             android:exported="true" />
         <activity
             android:name=".login"
-            android:exported="true" />
+            android:exported="true"></activity>
         <activity
             android:name=".Register"
             android:exported="true" />

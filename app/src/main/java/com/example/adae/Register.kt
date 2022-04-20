@@ -33,7 +33,7 @@ class Register : AppCompatActivity() {
                         if (it.isSuccessful){
                             register()
                             db.collection("users").document(email.text.toString()).set (hashMapOf("email" to email.text.toString(),
-                                "password" to passw.text.toString(), "trofeos" to trofeos))
+                                "password" to passw.text.toString(), "cartas" to trofeos))
                         } else {
                             ShowError()
 
@@ -54,7 +54,7 @@ class Register : AppCompatActivity() {
     private fun ShowError(){
         var builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
-        builder.setMessage("Se ha producido un error con Firebase")
+        builder.setMessage("No hay conexión con la base de datos o los datos son incorrectos")
         builder.setPositiveButton("Aceptar", null)
         val dialog: AlertDialog = builder.create()
         dialog.show()

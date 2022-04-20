@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ADAE"
 include ':app'
+include ':intro'

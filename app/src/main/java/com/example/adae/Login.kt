@@ -3,6 +3,7 @@ package com.example.adae
 import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.Intent
+import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -10,6 +11,8 @@ import android.widget.EditText
 import android.widget.ImageButton
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
@@ -41,6 +44,12 @@ class login : AppCompatActivity() {
 
 
 
+
+        val constraintLayout = findViewById<ConstraintLayout>(R.id.layout)
+        val animationDrawable: AnimationDrawable = constraintLayout.background as AnimationDrawable
+        animationDrawable.setEnterFadeDuration(2000)
+        animationDrawable.setExitFadeDuration(4000)
+        animationDrawable.start()
     }
 //Login simple
     fun onClickLoginNext(view: View) {
@@ -127,7 +136,6 @@ private fun logout(){
 
     fun irRegistro(view: android.view.View){
         var irRegistro = Intent (this, Register::class.java).apply{
-
         }
         startActivity(irRegistro)
     }
