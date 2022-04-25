@@ -23,7 +23,7 @@ class ProgressionActivity : AppCompatActivity() {
             when(position){
                 0->{
                     tab.text="Arena 1"
-                }
+                    }
                 1->{
                     tab.text="Arena 2"
                 }

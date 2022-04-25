@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.FirstFragment">
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="349dp"
+        android:background="@null"
+        android:src="@drawable/ciudad_azafran" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Para alcanzar esta arena se necesitan entre 1 y 5 cartas"
+        android:id="@+id/textView11"
+        android:layout_width="335dp"
+        android:layout_height="136dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="452dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="143dp"
+        android:text="Para alcanzar esta arena se necesitan entre 5 y 15 cartas"
         android:textSize="35sp" />
+
 
 </RelativeLayout>

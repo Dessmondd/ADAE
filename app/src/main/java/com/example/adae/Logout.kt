@@ -1,6 +1,7 @@
 package com.example.adae
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
 import android.view.Menu
@@ -43,7 +44,7 @@ class logout : AppCompatActivity() {
     */
 
 
-
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
 
     }
 

@@ -1,4 +1,5 @@
-package gaur.himanshu.august.tablayout.fragments
+package com.example.adae
+
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
