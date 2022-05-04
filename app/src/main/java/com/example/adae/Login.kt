@@ -10,6 +10,7 @@ import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -73,6 +74,7 @@ class login : AppCompatActivity() {
                         } else {
                             //error
                             ShowAlert2()
+
                         }
                     }
 
@@ -152,6 +154,14 @@ private fun logout(){
 
         }
         startActivity(recuperar)
+    }
+
+    fun inProgressv2(){
+        val text = "No disponible en la alpha"
+        val duration = Toast.LENGTH_SHORT
+
+        val toast = Toast.makeText(applicationContext, text, duration)
+        toast.show()
     }
 
 }

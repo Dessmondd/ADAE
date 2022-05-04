@@ -44,7 +44,8 @@
             android:hint="@string/username"
             android:inputType="text"
             android:paddingStart="40dp"
-            android:paddingEnd="40dp" />
+            android:paddingEnd="40dp"
+            app:endIconMode="clear_text"/>
             android:id="@+id/usuario"
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -143,7 +144,8 @@
         app:layout_constraintEnd_toEndOf="@+id/forgotPasswordTv"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/rememberMeBtn"
-        app:layout_constraintTop_toBottomOf="@+id/forgotPasswordTv" />
+        app:layout_constraintTop_toBottomOf="@+id/forgotPasswordTv"
+        app:cornerRadius="11dp"/>
 
     <TextView
         android:id="@+id/signUpTv"

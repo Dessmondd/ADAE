@@ -39,4 +39,7 @@
     <string name="veinte">Comprar 20(17.99€)</string>
     <string name="new_user">¿Nuevo usuario?</string>
     <string name="title_activity_bomberman">bomberman</string>
+    <string name="accept">Aceptar</string>
+    <string name="decline">Rechazar</string>
+    <string name="long_message" />
 </resources>
