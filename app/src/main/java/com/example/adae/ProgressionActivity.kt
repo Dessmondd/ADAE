@@ -1,7 +1,10 @@
 package com.example.adae
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
@@ -30,8 +33,21 @@ class ProgressionActivity : AppCompatActivity() {
                 2->{
                     tab.text="Arena 3"
                 }
+
             }
         }.attach()
+
+
+
     }
+
+
+    fun irAtras(view: android.view.View){
+        val irAtras = Intent(this,logout::class.java).apply {
+
+        }
+        startActivity(irAtras)
+    }
+
 
 }

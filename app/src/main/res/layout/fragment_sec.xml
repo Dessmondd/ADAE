@@ -20,7 +20,7 @@
         android:textSize="35sp" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/ciudadazulona"
         android:layout_width="385dp"
         android:layout_height="230dp"
         android:layout_alignParentStart="true"

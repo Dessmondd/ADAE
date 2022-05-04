@@ -54,14 +54,6 @@ class logout : AppCompatActivity() {
         return true;
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val item_selected: Int = item.itemId
-        if (item_selected == R.id.logout) {
-            popuplogout()
-        }
-        return super.onOptionsItemSelected(item)
-    }
-
     fun MainActivity(view: android.view.View) {
         val logout = Intent(this, login::class.java).apply {
         }
@@ -117,6 +109,7 @@ class logout : AppCompatActivity() {
     fun logoutv2(view: android.view.View){
         auth.signOut()
         startActivity(Intent(this,login::class.java))
+        popuplogout()
         finish()
     }
     private fun popuplogout(){

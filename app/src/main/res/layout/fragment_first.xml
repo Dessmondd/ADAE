@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/ciudadazafran"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -18,7 +18,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="349dp"
         android:background="@null"
-        android:src="@drawable/ciudad_azafran" />
+        android:src="@drawable/ciudadazafran" />
 
     <TextView
         android:id="@+id/textView11"
@@ -34,6 +34,8 @@
         android:layout_marginBottom="143dp"
         android:text="Para alcanzar esta arena se necesitan entre 5 y 15 cartas"
         android:textSize="35sp" />
+
+
 
 
 </RelativeLayout>

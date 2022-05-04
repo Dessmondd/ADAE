@@ -8,19 +8,25 @@
     tools:context=".MainActivity"
     android:background="@color/colorBlueMidnight">
 
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        app:srcCompat="@drawable/coleccionholder" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
-        android:src="@drawable/home"/>
+        android:src="@drawable/home" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:itemCount="31"
-        tools:listitem="@layout/cardview"/>
+        tools:listitem="@layout/cardview" />
 
 </LinearLayout>

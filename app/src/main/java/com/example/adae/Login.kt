@@ -20,14 +20,17 @@ import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 
 class login : AppCompatActivity() {
+
     private val GOOGLE_SIGN_IN = 100
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         checkSession()
+        var trofeos = 0
         supportActionBar?.hide()
         val googleConf = GoogleSignInOptions.
         Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).
@@ -41,6 +44,9 @@ class login : AppCompatActivity() {
             gClient.signOut()
             val intent = gClient.getSignInIntent()
             startActivityForResult(intent, 100)
+
+
+
         }
 
 

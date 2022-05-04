@@ -25,12 +25,8 @@ class DrawerActivity : AppCompatActivity() {
         binding = ActivityDrawerBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.appBarDrawer.toolbar)
 
-        binding.appBarDrawer.fab.setOnClickListener { view ->
-            //not finish yet
-            irMenu()
-        }
+
 
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
