@@ -1,11 +1,13 @@
 package com.example.adae
 
 import android.content.Context
+import android.content.Intent
 import android.icu.number.NumberFormatter.with
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.core.app.ActivityOptionsCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.FitCenter
@@ -35,6 +37,14 @@ class AlumnoAdapter (private val context : Context, private val mList: List<Poke
                 .load(it)
                 .into(holder.img_android)
             // [END storage_load_with_glide]
+
+            holder.img_android.id = position
+
+            holder.img_android.setOnClickListener({
+                val intent = Intent(context, pop_up::class.java)
+                intent.putExtra("data", item.name)
+                context.startActivity(intent)
+            })
         }.addOnFailureListener {
             // Handle any errors
             // Download directly from StorageReference using Glide
@@ -52,6 +62,8 @@ class AlumnoAdapter (private val context : Context, private val mList: List<Poke
         init {
             img_android =
                 view.findViewById<View>(R.id.imageViewIdCard) as ImageView
+
+
         }
 
     }

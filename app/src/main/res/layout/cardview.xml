@@ -13,6 +13,7 @@
         android:background="@color/colorBlueMidnight">
         <ImageView
             android:src="@drawable/pokeball"
+            android:transitionName=""
             android:id="@+id/imageViewIdCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

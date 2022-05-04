@@ -114,7 +114,7 @@ class Coleecion: AppCompatActivity() {
         // var retr = getRetrofit()
         //var pokeApi = retr.create(PokemonAPI::class.java)
 
-        for(i in 1..31){
+        for(i in 1..9){
 
             var pidgey = comunes.child("/"+i.toString() +".png")
 
@@ -139,24 +139,7 @@ class Coleecion: AppCompatActivity() {
 
 
 */
-
-
-           data.add(PokemonRecycler("Pokemon", pidgey))
-
-           /*
-           val imageView = findViewById<ImageView>(R.id.rImage)
-
-                val url = pidgey.downloadUrl.addOnSuccessListener {
-                    // Got the download URL for 'users/me/profile.png'
-                    // (See MyAppGlideModule for Loader registration)
-
-                    // [END storage_load_with_glide]
-                }.addOnFailureListener {
-                    // Handle any errors
-                    // Download directly from StorageReference using Glide
-                }
-           * */
-
+           data.add(PokemonRecycler(i.toString(), pidgey))
         }
 
         // ImageView in your Activity
@@ -165,6 +148,9 @@ class Coleecion: AppCompatActivity() {
         val adapter = AlumnoAdapter(this@Coleecion ,data)
         // Setting the Adapter with the recyclerview
         recyclerview.adapter = adapter
+
+
+
     }
 
 private fun getRetrofit():Retrofit{

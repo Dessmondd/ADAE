@@ -14,13 +14,12 @@
         android:theme="@style/Theme.ADAE" >
         <activity
             android:name=".pop_up"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppTheme.PopUp"/>
         <activity
             android:name=".ProgressionActivity"
             android:exported="false" />
-        <activity
-            android:name=".arenas"
-            android:exported="false" />
+
         <activity
             android:name=".Shop"
             android:exported="false"
