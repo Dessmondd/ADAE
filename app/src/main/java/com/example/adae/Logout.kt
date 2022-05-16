@@ -5,8 +5,6 @@ import android.content.pm.ActivityInfo
 import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
 import android.view.Menu
-import android.view.MenuItem
-import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -42,7 +40,6 @@ class logout : AppCompatActivity() {
             finish()
         }
     */
-
 
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
 

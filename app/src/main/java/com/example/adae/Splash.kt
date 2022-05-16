@@ -14,7 +14,7 @@ class Splash : AppCompatActivity(){
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
         supportActionBar?.hide()
         Handler().postDelayed({
-          val intent = Intent(this, login::class.java)
+          val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
             music()

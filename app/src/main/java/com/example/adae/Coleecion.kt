@@ -1,31 +1,18 @@
 package com.example.adae
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
 import android.view.Menu
-import android.view.MenuItem
 import android.view.View
 import android.widget.Adapter
-import android.widget.ImageView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityOptionsCompat
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.example.adae.databinding.ActivityColeecionBinding
-import com.example.adae.interfaces.PokemonAPI
-import com.example.adae.models.Pokemon
 import com.example.adae.models.PokemonRecycler
-import com.google.firebase.database.*
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
-import com.google.firebase.*
 import com.google.firebase.storage.ktx.storage
-import com.squareup.picasso.Picasso
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -114,7 +101,7 @@ class Coleecion: AppCompatActivity() {
         // var retr = getRetrofit()
         //var pokeApi = retr.create(PokemonAPI::class.java)
 
-        for(i in 1..9){
+        for(i in 1..10){
 
             var pidgey = comunes.child("/"+i.toString() +".png")
 

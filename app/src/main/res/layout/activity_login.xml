@@ -8,15 +8,17 @@
     android:background="@drawable/gradient_list">
     tools:context="com.example.adae.MainActivity">
 
+
+
     <TextView
         android:id="@+id/titleTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="108dp"
         android:text="@string/sign_in"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/usernameEt"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,7 +42,7 @@
             style="@style/EditText.Login"
             android:layout_width="390dp"
             android:layout_height="match_parent"
-            android:background="@color/colorPurple"
+            android:background="@drawable/gradient_2"
             android:hint="@string/username"
             android:inputType="text"
             android:paddingStart="40dp"
@@ -66,7 +68,7 @@
             style="@style/EditText.Login"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorPurple"
+            android:background="@drawable/gradient_2"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:paddingStart="40dp"
@@ -81,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/remember_me"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/forgotPasswordTv"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/passwordEt"
@@ -93,23 +95,25 @@
         android:layout_height="wrap_content"
         android:background="?android:attr/selectableItemBackground"
         android:text="@string/forgot_password"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/black"
         app:layout_constraintBaseline_toBaselineOf="@+id/rememberMeBtn"
         app:layout_constraintEnd_toEndOf="@+id/passwordEt"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/rememberMeBtn"
-        android:onClick="irRecuperar"/>
+        android:onClick="irRecuperar"/>z
+
 
     <ImageButton
         android:id="@+id/buttonId"
-        android:layout_width="42dp"
-        android:layout_height="49dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:onClick="onClickGoogle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.674"
+        app:layout_constraintVertical_bias="0.713"
         app:srcCompat="@drawable/googleg_standard_color_18" />
 
     <Button
@@ -117,45 +121,30 @@
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        android:background="@color/colorOrange"
+        android:background="@drawable/gradient_2"
+
         android:onClick="onClickLoginNext"
         android:text="@string/login"
+
         android:textColor="@color/colorWhite"
+
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/forgotPasswordTv"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/rememberMeBtn"
         app:layout_constraintTop_toBottomOf="@+id/forgotPasswordTv" />
 
-    <Button
-        android:id="@+id/loginBtn4"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/colorOrange"
-        android:onClick="onClickLoginNext"
-        android:text="@string/login"
-        android:textColor="@color/colorWhite"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/forgotPasswordTv"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/rememberMeBtn"
-        app:layout_constraintTop_toBottomOf="@+id/forgotPasswordTv"
-        app:cornerRadius="11dp"/>
-
     <TextView
         android:id="@+id/signUpTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="64dp"
         android:background="?android:attr/selectableItemBackground"
         android:onClick="irRegistro"
         android:text="@string/new_user"
-        android:textColor="@color/colorBlueMidnight"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/loginBtn"
         app:layout_constraintStart_toStartOf="@+id/loginBtn"
         app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
@@ -175,38 +164,50 @@
 
     <ImageView
         android:id="@+id/imageView11"
-        android:layout_width="137dp"
-        android:layout_height="170dp"
+        android:layout_width="87dp"
+        android:layout_height="97dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.737"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939"
+        app:layout_constraintVertical_bias="0.209"
         app:srcCompat="@drawable/squirtle" />
 
     <ImageView
         android:id="@+id/imageView14"
-        android:layout_width="137dp"
-        android:layout_height="170dp"
+        android:layout_width="80dp"
+        android:layout_height="105dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintHorizontal_bias="0.894"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939"
+        app:layout_constraintVertical_bias="0.199"
         app:srcCompat="@drawable/bulbasaur" />
 
     <ImageView
         android:id="@+id/imageView15"
-        android:layout_width="137dp"
-        android:layout_height="170dp"
+        android:layout_width="78dp"
+        android:layout_height="115dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939"
+        app:layout_constraintVertical_bias="0.196"
         app:srcCompat="@drawable/charmander" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="247dp"
+        android:layout_height="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@drawable/pokemon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -70,5 +70,4 @@ fun onClickvolverLogin(view: android.view.View ){
     startActivity(volverLogin)
 }
 
-
 }
