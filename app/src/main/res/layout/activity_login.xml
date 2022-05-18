@@ -6,8 +6,6 @@
     android:id="@+id/layout"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_list">
-    tools:context="com.example.adae.MainActivity">
-
 
 
     <TextView
@@ -16,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="108dp"
+        android:fontFamily="@font/candal"
         android:text="@string/sign_in"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
@@ -30,6 +29,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
+        android:textColor="@color/black"
         app:hintTextAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,13 +42,14 @@
             style="@style/EditText.Login"
             android:layout_width="390dp"
             android:layout_height="match_parent"
-            android:background="@drawable/gradient_2"
+            android:background="@color/ELNARANJAFACHERO4"
+            android:fontFamily="@font/candal"
             android:hint="@string/username"
             android:inputType="text"
             android:paddingStart="40dp"
             android:paddingEnd="40dp"
-            app:endIconMode="clear_text"/>
-            android:id="@+id/usuario"
+            app:endIconMode="clear_text" />
+
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -68,12 +69,12 @@
             style="@style/EditText.Login"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/gradient_2"
+            android:background="@color/ELNARANJAFACHERO4"
+            android:fontFamily="@font/candal"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:paddingStart="40dp"
-            android:paddingEnd="40dp"
-            android:textColor="@color/colorWhite" />
+            android:paddingEnd="40dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -82,6 +83,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/candal"
         android:text="@string/remember_me"
         android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/forgotPasswordTv"
@@ -94,13 +96,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="@font/candal"
+        android:onClick="irRecuperar"
         android:text="@string/forgot_password"
         android:textColor="@color/black"
         app:layout_constraintBaseline_toBaselineOf="@+id/rememberMeBtn"
         app:layout_constraintEnd_toEndOf="@+id/passwordEt"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/rememberMeBtn"
-        android:onClick="irRecuperar"/>z
+        app:layout_constraintStart_toEndOf="@+id/rememberMeBtn" />
 
 
     <ImageButton
@@ -113,7 +116,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.713"
+        app:layout_constraintVertical_bias="0.765"
         app:srcCompat="@drawable/googleg_standard_color_18" />
 
     <Button
@@ -123,13 +126,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/gradient_2"
-
+        android:background="@color/ELNARANJAFACHERO4"
+        android:fontFamily="@font/candal"
         android:onClick="onClickLoginNext"
         android:text="@string/login"
-
-        android:textColor="@color/colorWhite"
-
+        android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/forgotPasswordTv"
         app:layout_constraintHorizontal_bias="0.0"
@@ -140,8 +141,9 @@
         android:id="@+id/signUpTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="76dp"
         android:background="?android:attr/selectableItemBackground"
+        android:fontFamily="@font/candal"
         android:onClick="irRegistro"
         android:text="@string/new_user"
         android:textColor="@color/black"

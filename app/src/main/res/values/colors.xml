@@ -16,6 +16,9 @@
     <color name="colorGrey">#C9C9C9</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorOrange">#FFA500</color>
-
+    <color name="ELNARANJAFACHERO1">#ED7117</color>
+    <color name="ELNARANJAFACHERO2">#FA8128</color>
+    <color name="ELNARANJAFACHERO3">#FF5E0E</color>
+    <color name="ELNARANJAFACHERO4">#FF8C00</color>
 
 </resources>

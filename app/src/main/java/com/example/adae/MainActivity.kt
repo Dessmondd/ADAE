@@ -47,9 +47,10 @@ class MainActivity : AppCompatActivity(), ViewerPagerAdapter2.OnItemSelected {
             ),
             Board(
                 fondo = R.drawable.gradient_list,
-                imagen = R.drawable.pokeball,
+                imagen = R.drawable.gifonboard,
                 titulo = "Pokemon's, mazos, colecciones...",
                 descripcion = "Montones de Pokémon te están esperando dentro, elige tus mejores cartas y crea tu mazo"
+
             ),
             Board(
                 fondo = R.drawable.gradient_list,
@@ -73,7 +74,7 @@ class MainActivity : AppCompatActivity(), ViewerPagerAdapter2.OnItemSelected {
             finish()
         }
         else{
-            val viewPager = findViewById<ViewPager2>(R.id.viewPager)
+            val viewPager = findViewById<ViewPager2>(R.id.view_pager_2)
             viewPager.setCurrentItem(position + 1, true)
         }
 

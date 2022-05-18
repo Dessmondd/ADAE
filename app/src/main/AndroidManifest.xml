@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ADAE">
         <activity
+            android:name=".Mazo"
+            android:exported="false" />
+        <activity
             android:name=".FirstScreen"
             android:exported="false" />
         <activity

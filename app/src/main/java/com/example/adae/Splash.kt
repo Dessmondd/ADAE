@@ -12,23 +12,28 @@ class Splash : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash)
 
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
+        supportActionBar?.hide()
+
         val isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
             .getBoolean("isFirstRun", true)
 
         if (isFirstRun) {
-            //show start activity
-            startActivity(Intent(this@Splash, MainActivity::class.java))
-
+            Handler().postDelayed({
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            },6000)
         }
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
-        supportActionBar?.hide()
-        Handler().postDelayed({
-          val intent = Intent(this, login::class.java)
-            startActivity(intent)
-            finish()
-            music()
-        },6000)
-        
+        else{
+            Handler().postDelayed({
+                val intent = Intent(this, login::class.java)
+                startActivity(intent)
+                finish()
+                music()
+            },6000)
+        }
+
+
     }
 
     //need revamp

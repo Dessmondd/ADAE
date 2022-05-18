@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:fontFamily="@font/candal"
+        android:textColor="@color/black"
         android:text="@string/fui_welcome_back_email_header"
         android:textSize="20sp"
 
@@ -45,6 +46,7 @@
         android:gravity="center"
         android:text="¡Únete a miles de jugadores en todo el mundo!"
         android:textSize="16sp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo" />
@@ -56,7 +58,7 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
         android:text="@string/next"
-        android:textColor="@color/colorBlueMidnight"
+        android:textColor="@color/ELNARANJAFACHERO4"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
