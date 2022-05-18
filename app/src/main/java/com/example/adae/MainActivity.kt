@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity(), ViewerPagerAdapter2.OnItemSelected {
             finish()
         }
         else{
-            val viewPager = findViewById<ViewPager2>(R.id.view_pager_2)
+            val viewPager = findViewById<ViewPager2>(R.id.view_pager)
             viewPager.setCurrentItem(position + 1, true)
         }
 

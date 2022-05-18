@@ -14,8 +14,7 @@ class Splash : AppCompatActivity(){
 
         supportActionBar?.hide()
 
-        val isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
-            .getBoolean("isFirstRun", true)
+        val isFirstRun = true // getSharedPreferences("PREFERENCE", MODE_PRIVATE).getBoolean("isFirstRun", true)
 
         if (isFirstRun) {
             Handler().postDelayed({
@@ -31,7 +30,6 @@ class Splash : AppCompatActivity(){
                 music()
             },6000)
         }
-
 
     }
 

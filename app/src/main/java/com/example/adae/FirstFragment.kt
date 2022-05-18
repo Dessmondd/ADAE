@@ -1,10 +1,12 @@
 package com.example.adae
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 
 
@@ -19,7 +21,15 @@ class FirstFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_first, container, false)
+        val v = inflater.inflate(R.layout.fragment_first, container, false)
+
+        var boton = v.findViewById<ImageButton>(R.id.ciudadazafran)
+        boton.setOnClickListener{
+            val intent = Intent(context, pop_up::class.java)
+            startActivity(intent)
+        }
+
+        return v
 
 
 

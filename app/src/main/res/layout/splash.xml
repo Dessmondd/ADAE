@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Splash"
     android:id="@id/splashFragment"
-    android:background="@color/white">
+    android:background="#F7F7F9">
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/portal"

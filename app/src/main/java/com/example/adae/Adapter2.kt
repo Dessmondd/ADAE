@@ -17,14 +17,14 @@ import com.example.adae.databinding.CardviewBinding
 import com.example.adae.models.PokemonRecycler
 import com.squareup.picasso.Picasso
 
-class AlumnoAdapter (private val context : Context, private val mList: List<PokemonRecycler>) :
-    RecyclerView.Adapter<AlumnoAdapter.ViewHolder>() {
+class Adapter2 (private val context : Context, private val mList: List<PokemonRecycler>) :
+    RecyclerView.Adapter<Adapter2.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):
-            AlumnoAdapter.ViewHolder {
+            Adapter2.ViewHolder {
         // inflates the card_view_design view
         // that is used to hold list item
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.cardview, parent, false)
+            .inflate(R.layout.activity_pop_up, parent, false)
         return ViewHolder(view)
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -40,11 +40,7 @@ class AlumnoAdapter (private val context : Context, private val mList: List<Poke
 
             holder.img_android.id = position
 
-            holder.img_android.setOnClickListener({
-                val intent = Intent(context, pop_up::class.java)
-                intent.putExtra("data", item.name)
-                context.startActivity(intent)
-            })
+
         }.addOnFailureListener {
             // Handle any errors
             // Download directly from StorageReference using Glide
@@ -61,9 +57,7 @@ class AlumnoAdapter (private val context : Context, private val mList: List<Poke
 
         init {
             img_android =
-                view.findViewById<View>(R.id.imageViewIdCard) as ImageView
-
-
+                view.findViewById<View>(R.id.popup) as ImageView
         }
 
     }

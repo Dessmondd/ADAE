@@ -2,28 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:id="@+id/layout"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_list">
 
-
-    <TextView
-        android:id="@+id/titleTv"
-        android:layout_width="177dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="8dp"
-        android:fontFamily="@font/candal"
-        android:text="@string/sign_in"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/usernameEt"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.163" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/usernameEt"
@@ -36,9 +19,9 @@
         app:hintTextAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleTv"
-        app:layout_constraintVertical_bias="0.2">
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/usuario"
@@ -61,11 +44,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        app:endIconMode="password_toggle"
         app:hintTextAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintEnd_toEndOf="@+id/usernameEt"
         app:layout_constraintStart_toStartOf="@+id/usernameEt"
-        app:layout_constraintTop_toBottomOf="@+id/usernameEt"
-        app:endIconMode="password_toggle">
+        app:layout_constraintTop_toBottomOf="@+id/usernameEt">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password"
@@ -105,8 +88,8 @@
         android:fontFamily="@font/candal"
         android:onClick="irRecuperar"
         android:text="@string/forgot_password"
-        android:textSize="12dp"
         android:textColor="@color/black"
+        android:textSize="12dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/rememberMeBtn"
         app:layout_constraintEnd_toEndOf="@+id/passwordEt"
         app:layout_constraintHorizontal_bias="0.5"
@@ -123,7 +106,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.765"
+        app:layout_constraintVertical_bias="0.853"
         app:srcCompat="@drawable/googleg_standard_color_18" />
 
     <Button
@@ -136,9 +119,9 @@
         android:background="@color/ELNARANJAFACHERO4"
         android:fontFamily="@font/candal"
         android:onClick="onClickLoginNext"
-        android:textSize="12dp"
         android:text="@string/login"
         android:textColor="@color/black"
+        android:textSize="12dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/forgotPasswordTv"
@@ -178,16 +161,15 @@
         app:layout_constraintTop_toBottomOf="@+id/signUpTv" />
 
     <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="87dp"
-        android:layout_height="97dp"
+        android:id="@+id/imageView2"
+        android:layout_width="237dp"
+        android:layout_height="161dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.731"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.197"
-        app:srcCompat="@drawable/squirtle" />
+        app:layout_constraintVertical_bias="0.11"
+        app:srcCompat="@drawable/pokemon" />
 
     <ImageView
         android:id="@+id/imageView14"
@@ -195,11 +177,22 @@
         android:layout_height="105dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintHorizontal_bias="0.682"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199"
+        app:layout_constraintVertical_bias="0.274"
         app:srcCompat="@drawable/bulbasaur" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="87dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271"
+        app:srcCompat="@drawable/squirtle" />
 
     <ImageView
         android:id="@+id/imageView15"
@@ -207,22 +200,10 @@
         android:layout_height="115dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintHorizontal_bias="0.339"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.186"
+        app:layout_constraintVertical_bias="0.262"
         app:srcCompat="@drawable/charmander" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="237dp"
-        android:layout_height="161dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.028"
-        app:srcCompat="@drawable/pokemon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
