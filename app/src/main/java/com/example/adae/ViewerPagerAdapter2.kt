@@ -56,8 +56,6 @@ inner class BoardViewHolder(itemView: View, private val onItemSelected: OnItemSe
 
 }
 
-
-
     interface OnItemSelected{
         fun onClickListener(position: Int)
     }

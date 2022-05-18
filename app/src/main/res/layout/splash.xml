@@ -12,7 +12,7 @@
         android:id="@+id/portal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/erpikachu"
+        android:src="@drawable/cut"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="-159dp">
     </pl.droidsonroids.gif.GifImageView>

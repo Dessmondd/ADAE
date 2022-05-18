@@ -11,14 +11,23 @@ class Splash : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash)
+
+        val isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+            .getBoolean("isFirstRun", true)
+
+        if (isFirstRun) {
+            //show start activity
+            startActivity(Intent(this@Splash, MainActivity::class.java))
+
+        }
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
         supportActionBar?.hide()
         Handler().postDelayed({
-          val intent = Intent(this, MainActivity::class.java)
+          val intent = Intent(this, login::class.java)
             startActivity(intent)
             finish()
             music()
-        },3000)
+        },6000)
         
     }
 
