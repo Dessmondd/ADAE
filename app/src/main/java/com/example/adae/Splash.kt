@@ -1,7 +1,6 @@
 package com.example.adae
 
 import android.content.Intent
-import android.content.pm.ActivityInfo
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.Handler
@@ -12,7 +11,7 @@ class Splash : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash)
 
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
+
         supportActionBar?.hide()
 
         val isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
