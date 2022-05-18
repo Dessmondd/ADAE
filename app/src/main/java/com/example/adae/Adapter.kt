@@ -42,7 +42,7 @@ class AlumnoAdapter (private val context : Context, private val mList: List<Poke
 
             holder.img_android.setOnClickListener({
                 val intent = Intent(context, pop_up::class.java)
-                intent.putExtra("data", item.name)
+                intent.putExtra("id", item.name)
                 context.startActivity(intent)
             })
         }.addOnFailureListener {

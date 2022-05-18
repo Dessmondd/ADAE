@@ -14,7 +14,8 @@ class Splash : AppCompatActivity(){
 
         supportActionBar?.hide()
 
-        val isFirstRun = true // getSharedPreferences("PREFERENCE", MODE_PRIVATE).getBoolean("isFirstRun", true)
+        val isFirstRun =  getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+            .getBoolean("isFirstRun", true)
 
         if (isFirstRun) {
             Handler().postDelayed({
