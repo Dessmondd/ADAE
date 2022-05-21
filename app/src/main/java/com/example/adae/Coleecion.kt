@@ -101,9 +101,9 @@ class Coleecion: AppCompatActivity() {
         // var retr = getRetrofit()
         //var pokeApi = retr.create(PokemonAPI::class.java)
 
-        for(i in 1..10){
+        for(i in 1..30){
 
-            var pidgey = comunes.child("/"+i.toString() +".png")
+            var pidgey = comunes.child("/"+i.toString() +".gif")
 
 //Llamar nombre desde Pokeapi
             /*var nombre = ""

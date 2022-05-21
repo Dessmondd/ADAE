@@ -41,11 +41,11 @@ class Adapter2 (private val context : Context, private val mList: List<PokemonRe
             holder.img_android.id = position
 
 
+
         }.addOnFailureListener {
             // Handle any errors
             // Download directly from StorageReference using Glide
         }
-
 
 
     }

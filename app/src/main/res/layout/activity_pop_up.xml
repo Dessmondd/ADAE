@@ -14,6 +14,5 @@
       android:layout_marginEnd="300dp"
       android:layout_marginBottom="300dp"
       android:id="@+id/popup"
-      android:textSize="22sp" />
-
+      android:textSize="22sp"/>
 </RelativeLayout>

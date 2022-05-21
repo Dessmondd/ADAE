@@ -16,18 +16,22 @@
             android:name=".Mazo"
             android:exported="false" />
         <activity
-            android:name=".FirstScreen"
+            android:name=".FirstFragment"
             android:exported="false" />
         <activity
-            android:name=".SecondScreen"
+            android:name=".SecondFragment"
             android:exported="false" />
         <activity
-            android:name=".ThirdScreen"
+            android:name=".ThirdFragment"
             android:exported="false" />
         <activity
             android:name=".pop_up"
             android:exported="false"
             android:theme="@style/AppTheme.PopUp" />
+
+        <activity android:name=".pop_up2"
+            android:theme="@style/AppTheme.PopUp"/>
+
         <activity
             android:name=".ProgressionActivity"
             android:exported="false" />
@@ -36,6 +40,7 @@
             android:exported="false"
             android:label="@string/title_activity_shop"
             android:theme="@style/Theme.ADAE.NoActionBar" />
+        
         <activity
             android:name=".bomberman"
             android:exported="false"

@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@id/container"
-    android:background="@drawable/gradient_list"
-    >
+    android:background="@drawable/gradient_list">
 
 
     <pl.droidsonroids.gif.GifImageView
@@ -27,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:fontFamily="@font/candal"
-        android:text="@string/fui_welcome_back_email_header"
+        android:text="@string/titulo"
         android:textColor="@color/black"
         android:textSize="20sp"
 

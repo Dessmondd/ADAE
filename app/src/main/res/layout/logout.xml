@@ -47,6 +47,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.661"
+        android:onClick="mazo"
         app:srcCompat="@drawable/mazocua" />
 
     <Button

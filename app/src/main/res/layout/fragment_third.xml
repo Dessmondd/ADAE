@@ -16,7 +16,7 @@
         android:textSize="35sp" />
 
     <ImageButton
-        android:id="@+id/imageView17"
+        android:id="@+id/ciudadarenosa"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"

@@ -25,6 +25,8 @@ class FirstFragment : Fragment() {
 
         var boton = v.findViewById<ImageButton>(R.id.ciudadazafran)
         boton.setOnClickListener{
+
+            // working not sure why not in v2
             val intent = Intent(context, pop_up::class.java)
             startActivity(intent)
         }
