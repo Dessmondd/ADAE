@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity(), ViewerPagerAdapter2.OnItemSelected {
             ),
             Board(
                 fondo = R.drawable.gradient_list,
-                imagen = R.drawable.pokemon,
+                imagen = R.drawable.gif5,
                 titulo = "¡Mejor con amigos!",
                 descripcion = "¡Miles de jugadores ya lo juegan, comparte, disfruta y pasa un buen rato, revive esos momentos de la infancia"
             )

@@ -41,27 +41,28 @@
         android:layout_width="186dp"
         android:layout_height="181dp"
         android:background="@null"
+        android:onClick="mazo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.661"
-        android:onClick="mazo"
+        app:layout_constraintVertical_bias="0.676"
         app:srcCompat="@drawable/mazocua" />
 
-    <Button
+    <ImageButton
         android:id="@+id/progression"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="186dp"
+        android:layout_height="181dp"
+        android:background="@null"
         android:onClick="progression"
-        android:text="Progression"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintHorizontal_bias="0.955"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintVertical_bias="0.676"
+        app:srcCompat="@drawable/arenacua" />
 
     <Button
         android:id="@+id/logout"
@@ -71,18 +72,18 @@
         android:text="logout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintVertical_bias="0.841" />
 
     <ImageView
         android:id="@+id/logoPokemon"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="544dp"
+        android:layout_width="376dp"
+        android:layout_height="172dp"
+        android:layout_marginBottom="560dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/pokemon" />
 
@@ -106,7 +107,8 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Perfil"
+            android:id="@+id/tienda"
+            android:text="Tienda"
             tools:ignore="MissingConstraints" />
 
 

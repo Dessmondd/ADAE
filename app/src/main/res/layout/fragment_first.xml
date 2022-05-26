@@ -18,24 +18,22 @@
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="349dp"
         android:background="@null"
-        android:src="@drawable/ciudadazafran" />
+        android:src="@drawable/ciudadazafran"/>
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="395dp"
-        android:layout_height="163dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="403dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="165dp"
-        android:fontFamily="@font/lato_bold"
-        android:text="Para alcanzar esta arena se necesitan entre 5 y 15 cartas"
-        android:textColor="@color/colorOrange"
-        android:textSize="35sp" />
-
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="176dp"
+        android:fontFamily="@font/candal"
+        android:text="Para alcanzar esta arena se necesitan entre 5 y 10 cartas"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
 </RelativeLayout>

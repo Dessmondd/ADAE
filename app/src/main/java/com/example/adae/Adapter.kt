@@ -10,6 +10,7 @@ import android.widget.ImageView
 import androidx.core.app.ActivityOptionsCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.load.resource.bitmap.FitCenter
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
@@ -35,6 +36,7 @@ class AlumnoAdapter (private val context : Context, private val mList: List<Poke
             // (See MyAppGlideModule for Loader registration)
             Glide.with(context)
                 .load(it)
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(holder.img_android)
             // [END storage_load_with_glide]
 

@@ -7,13 +7,19 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="460dp"
-        android:layout_marginBottom="121dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="176dp"
+        android:fontFamily="@font/candal"
         android:text="Para alcanzar esta arena se necesitan entre 15 y 20 cartas"
-        android:textSize="35sp" />
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <ImageButton
         android:id="@+id/ciudadarenosa"
@@ -23,10 +29,10 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="155dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="349dp"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="162dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="342dp"
         android:background="@null"
         app:srcCompat="@drawable/ciudadcanela" />
 

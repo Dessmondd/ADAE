@@ -125,6 +125,14 @@ class logout : AppCompatActivity() {
         val mazo = Intent(this, MazoView::class.java).apply {
         }
         startActivity(mazo)
+
+
     }
+
+
+
+
+
+
     }
 

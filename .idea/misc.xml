@@ -109,18 +109,19 @@
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/drawable/gradient_list.xml" value="0.1" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/drawable/ic_launcher2_background.xml" value="0.1" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/drawable/side_nav_bar.xml" value="0.1" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/font/just_me_again_down_here.xml" value="0.10462962962962963" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout-normal/activity_login.xml" value="0.33796296296296297" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout-normal/activity_pop_up2.xml" value="0.2" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout-normal/board_item.xml" value="0.33796296296296297" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout-small/activity_login.xml" value="0.33796296296296297" />
-        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_coleecion.xml" value="0.1" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_coleecion.xml" value="0.18" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_drawer.xml" value="0.33" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_mazo.xml" value="0.10277777777777777" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_onboarding.xml" value="0.36102564102564105" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_pop_up.xml" value="0.2111111111111111" />
-        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_pop_up2.xml" value="0.1" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_pop_up2.xml" value="0.25" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_progression.xml" value="0.1" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_shop2.xml" value="0.22" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/app_bar_drawer.xml" value="0.36102564102564105" />
@@ -129,7 +130,7 @@
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/cardview.xml" value="0.1" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/content_bomberman.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/content_drawer.xml" value="0.36102564102564105" />
-        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/fragment_first.xml" value="0.22" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/fragment_first.xml" value="0.1" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/fragment_first2.xml" value="0.33" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/fragment_first_screen.xml" value="0.25" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/fragment_gallery.xml" value="0.36102564102564105" />
@@ -147,7 +148,7 @@
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/gradient_2.xml" value="0.11574074074074074" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/gradient_3.xml" value="0.11574074074074074" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/gradient_list.xml" value="0.11574074074074074" />
-        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/logout.xml" value="0.1" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/logout.xml" value="0.33" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/main.xml" value="0.24814814814814815" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/nav_header_drawer.xml" value="0.36102564102564105" />

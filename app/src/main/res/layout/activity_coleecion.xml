@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/imageView16"
         android:layout_width="match_parent"
-        android:layout_height="84dp"
+        android:layout_height="100dp"
         app:srcCompat="@drawable/coleccionholder" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -27,7 +27,7 @@
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:itemCount="30"
+        tools:itemCount="31"
         tools:listitem="@layout/cardview" />
 
 </LinearLayout>
