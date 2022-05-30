@@ -51,7 +51,26 @@
     <string name="warning">Esta aplicación está siendo desarrollada por 2 estudiantes y se irá actualizando poco a poco, es posible que haya funcionalidades que no estén disponibles</string>
     <string name="textociudadverde"></string>
     <string name="ciudadarenosa">Ciudad Arenosa</string>
-    <string name="textociudadarenosa"></string>
-    <string name="textociudadazafran">La ciudad azafrán es la ciudad para los entrenadores y coleccionistas novatos, pero con grandes desafios que afrontar. La leyenda cuenta que todos los entrenadores que pasan por esta ciudad acaban siendo grandes leyendas.</string>
+    <string name="textociudadarenosa"></string>>
+    <string name="ciudadceleste">Ciudad Celeste</string>
+    <string name="ciudadacarmin">Ciudad Carmin</string>
+    <string name="ciudadafucsia">Ciudad Fucsia</string>
+    <string name="ciudadcanela">Isla Canela</string>
+    <string name="ciudadplateada">Ciudad Plateada</string>
+    <string name="ciudadazafran">Ciudad Azafran</string>
+    <string name="liderverde">Giovanni, lider del gimnasio de Ciudad Verde y a su vez líder del Team Rocket. Usa pokémons tipo tierra, es una persona muy ambicioas que desea controlar el mundo usando a los pokémon</string>
+    <string name="liderazulona">Erika, líder del gimansio de Ciudad Azulona, ella es especialista en pokémon tipo planta, su gimnasio es a su ve un invernadero lleno de flores</string>
+    <string name="liderceleste">Misty, líder del gimnasio de Ciudad Celeste, especialista en pokémon tipo agua.</string>
+    <string name="lidercarmin">Lt. surge o Teniente Surge es el lider del gimnasio en ciudad Carmin. Surge tenía como mote "El rayo americano" esto fue en su época en el ejército donde susaba sus pokémon tipo eléctrico para poner en marcha su avión. Es por ello que siu gimansio esta todo lleno de torres de electricidad y sus pokémon son todos tipo eléctrico.</string>
+    <string name="liderfucsia">Koga, lider de gimnasio de  ciudad Fucsia, Además de entrenador tiene conocimientos en ediciana, el elabora sus propias medicinas con sus pokémon tipo veneno.</string>
+    <string name="lidercanela">Blaine, líder del gimnasio de Isla Canela, considereado de los hombres más inteligentes de la región que usa pokémon tipo fuego.</string>
+    <string name="liderplateada">Brock, líder del gimnasio de Ciudad Plateada especializado en pokémon tipo roca, a pesar de ser líder de gimnasio su deseo es llegar a ser uno de los mejores doctores pokémon.</string>
+    <string name="liderazafran">Sabrina, lider del gimnasio en Ciudad Azafran, controla pokemons tipo psíquico, es actriz en Teselia ademas de ser considerada una de las mejores cantantes de la región.</string>
+    <string name="textociudadceleste">La ciudad Celeste tiene un lugar misterioso donde podrás encontrar pokemons extraordinarios. Tambien tiene la tienda de bicis más importante de la región de Kanto</string>
+    <string name="textociudadcarmin">La ciudad Carmín tiene el mayor puerto de toda la región, ahí encontrarás los barcos mas lujosos, famosos.</string>
+    <string name="textociudadfucsia">La ciudad Fucsia consta con una gran variedad de pokemons gracias a su Zona Safari.</string>
+    <string name="textociudadcanela">La Isla Canela es la isla más importante, ahí encontrarás un volcán actualmente sin actividad así como los laboratorios más importantes. A pesar de su importancia la isla en la actualidad esta completamente deshabitada.</string>
+    <string name="textociudadplateada">La ciudad Plateada tiene el museo más grande de ciencia de la región. Este museo consta con una inmensa variedad de fósiles de pokemons.</string>
+    <string name="textociudadazafran">La ciudad azafrán es la cuidad mas extensa de Kanto, considerada la capita de esta región, a su vez conocida como la "Hebra de Oro" ya que hace honor a su nombre siendo la ciudad con más comercio.</string>
 </resources>
 
