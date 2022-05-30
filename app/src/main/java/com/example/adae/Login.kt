@@ -87,6 +87,11 @@ private fun logout(){
         var login = Intent(this, logout::class.java)
         startActivity(login)
     }
+    private fun popupwarning(){
+        val intent = Intent(this,pop_up_warning::class.java)
+        startActivity(intent)
+        }
+
 
 
     //En caso de error, se muestra un mensaje
@@ -124,6 +129,7 @@ private fun logout(){
                         .addOnCompleteListener {
                             if (it.isSuccessful) {
                                 login()
+                                popupwarning()
                             } else {
 
                             }
@@ -148,6 +154,7 @@ private fun logout(){
         }
         startActivity(recuperar)
     }
+
 
 
 

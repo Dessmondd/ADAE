@@ -14,13 +14,13 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 
 
-class pop_up2 : AppCompatActivity() {
+class pop_up3 : AppCompatActivity() {
     private lateinit var binding: ActivityColeecionBinding
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
-        setContentView(R.layout.activity_pop_up2)
+        setContentView(R.layout.activity_pop_up3)
         binding = ActivityColeecionBinding.inflate(layoutInflater)
         val dm = DisplayMetrics()
         windowManager.defaultDisplay.getMetrics(dm)
@@ -28,7 +28,7 @@ class pop_up2 : AppCompatActivity() {
         val width = dm.widthPixels
         val height = dm.heightPixels
 
-        window.setLayout((width * .9).toInt(), (height * .8).toInt())
+        window.setLayout((width * .9).toInt(), (height * .7).toInt())
 
     }
 

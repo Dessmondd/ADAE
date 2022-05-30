@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ADAE">
         <activity
-            android:name=".Mazo"
+            android:name=".MazoView"
             android:exported="false" />
         <activity
             android:name=".FirstFragment"
@@ -25,12 +25,20 @@
             android:name=".ThirdFragment"
             android:exported="false" />
         <activity
-            android:name=".pop_up"
+            android:name=".pop_up1"
             android:exported="false"
             android:theme="@style/AppTheme.PopUp" />
 
         <activity android:name=".pop_up2"
             android:theme="@style/AppTheme.PopUp"/>
+
+        <activity android:name=".pop_up3"
+            android:theme="@style/AppTheme.PopUp"/>
+
+        <activity android:name=".pop_up_warning"
+            android:theme="@style/AppTheme.PopUp"/>
+
+
 
         <activity
             android:name=".ProgressionActivity"

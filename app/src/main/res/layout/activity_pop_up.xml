@@ -5,14 +5,14 @@
     android:layout_height="wrap_content"
     android:background="@drawable/gradient_list">
 
-  <ImageView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+  q<ImageView
+      android:id="@+id/popup"
+      android:layout_width="158dp"
+      android:layout_height="223dp"
       android:layout_centerInParent="true"
       android:layout_marginStart="300dp"
       android:layout_marginTop="300dp"
       android:layout_marginEnd="300dp"
       android:layout_marginBottom="300dp"
-      android:id="@+id/popup"
-      android:textSize="22sp"/>
+      android:textSize="22sp" />
 </RelativeLayout>

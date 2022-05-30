@@ -2,6 +2,7 @@ package com.example.adae
 
 import android.os.Bundle
 import android.util.DisplayMetrics
+import android.view.WindowManager
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
@@ -14,13 +15,13 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 
 
-class pop_up2 : AppCompatActivity() {
+class pop_up1 : AppCompatActivity() {
     private lateinit var binding: ActivityColeecionBinding
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
-        setContentView(R.layout.activity_pop_up2)
+        setContentView(R.layout.activity_pop_up1)
         binding = ActivityColeecionBinding.inflate(layoutInflater)
         val dm = DisplayMetrics()
         windowManager.defaultDisplay.getMetrics(dm)

@@ -1,5 +1,6 @@
 package com.example.adae
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.util.DisplayMetrics
 import android.widget.ImageView
@@ -22,9 +23,10 @@ class pop_up : AppCompatActivity() {
         supportActionBar?.hide()
         setContentView(R.layout.activity_pop_up)
         binding = ActivityColeecionBinding.inflate(layoutInflater)
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
         val dm = DisplayMetrics()
         windowManager.defaultDisplay.getMetrics(dm)
-
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
         val width = dm.widthPixels
         val height = dm.heightPixels
 

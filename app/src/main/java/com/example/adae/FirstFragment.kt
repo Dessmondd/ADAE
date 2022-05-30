@@ -27,8 +27,9 @@ class FirstFragment : Fragment() {
         boton.setOnClickListener{
 
             // working not sure why not in v2
-            val intent = Intent(context, pop_up::class.java)
+            val intent = Intent(context, pop_up1::class.java)
             startActivity(intent)
+
         }
 
         return v

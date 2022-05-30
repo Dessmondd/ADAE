@@ -29,7 +29,7 @@ class ThirdFragment : Fragment() {
 
         var button = b.findViewById<ImageButton>(R.id.ciudadarenosa)
         button.setOnClickListener{
-            val intent = Intent(context, pop_up2::class.java)
+            val intent = Intent(context, pop_up3::class.java)
             startActivity(intent)
 
         }

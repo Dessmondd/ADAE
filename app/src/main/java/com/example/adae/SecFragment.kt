@@ -27,13 +27,13 @@ class SecFragment : Fragment() {
             // Inflate the layout for this fragment
             val v = inflater.inflate(R.layout.fragment_sec,container, false)
             //return inflater.inflate(R.layout.fragment_sec, container, false)
-            return v
 
-            val botton = v.findViewById<ImageButton>(R.id.ciudadazulona)
+            val botton = v.findViewById<ImageButton>(R.id.ciudadverde)
             botton.setOnClickListener{
                 val intent = Intent(context, pop_up2::class.java)
                 startActivity(intent)
             }
+            return v
         }
 
 

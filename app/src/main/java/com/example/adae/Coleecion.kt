@@ -1,5 +1,6 @@
 package com.example.adae
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.Menu
 import android.view.View
@@ -25,8 +26,10 @@ class Coleecion: AppCompatActivity() {
     var recyclerView: RecyclerView? = null
     var Manager: GridLayoutManager? = null
     var adapter: Adapter? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
         binding = ActivityColeecionBinding.inflate(layoutInflater)
     loadWithGlide()
         supportActionBar?.hide()

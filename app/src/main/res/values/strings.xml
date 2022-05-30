@@ -44,4 +44,14 @@
     <string name="decline">Rechazar</string>
     <string name="long_message" />
     <string name="titulo">titulo</string>
+    <string name="atrás">Volver al menú principal</string>
+    <string name="Entrenador">Entrenador destacado</string>
+    <string name="ciudadazulona">Ciudad Azulona</string>
+    <string name="ciudadverde">Ciudad Verde</string>
+    <string name="warning">Esta aplicación está siendo desarrollada por 2 estudiantes y se irá actualizando poco a poco, es posible que haya funcionalidades que no estén disponibles</string>
+    <string name="textociudadverde"></string>
+    <string name="ciudadarenosa">Ciudad Arenosa</string>
+    <string name="textociudadarenosa"></string>
+    <string name="textociudadazafran">La ciudad azafrán es la ciudad para los entrenadores y coleccionistas novatos, pero con grandes desafios que afrontar. La leyenda cuenta que todos los entrenadores que pasan por esta ciudad acaban siendo grandes leyendas.</string>
 </resources>
+
