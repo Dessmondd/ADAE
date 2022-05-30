@@ -49,7 +49,7 @@
     <string name="ciudadazulona">Ciudad Azulona</string>
     <string name="ciudadverde">Ciudad Verde</string>
     <string name="warning">Esta aplicación está siendo desarrollada por 2 estudiantes y se irá actualizando poco a poco, es posible que haya funcionalidades que no estén disponibles</string>
-    <string name="textociudadverde"></string>
+    <string name="textociudadverde">La ciudad Verde consta con un amplio bosque alrededor, ahí podrás encontrar una gran variedad de pokémon tipo bicho subidos a los árboles.</string>
     <string name="ciudadarenosa">Ciudad Arenosa</string>
     <string name="textociudadarenosa"></string>>
     <string name="ciudadceleste">Ciudad Celeste</string>
@@ -61,7 +61,7 @@
     <string name="liderverde">Giovanni, lider del gimnasio de Ciudad Verde y a su vez líder del Team Rocket. Usa pokémons tipo tierra, es una persona muy ambicioas que desea controlar el mundo usando a los pokémon</string>
     <string name="liderazulona">Erika, líder del gimansio de Ciudad Azulona, ella es especialista en pokémon tipo planta, su gimnasio es a su ve un invernadero lleno de flores</string>
     <string name="liderceleste">Misty, líder del gimnasio de Ciudad Celeste, especialista en pokémon tipo agua.</string>
-    <string name="lidercarmin">Lt. surge o Teniente Surge es el lider del gimnasio en ciudad Carmin. Surge tenía como mote "El rayo americano" esto fue en su época en el ejército donde susaba sus pokémon tipo eléctrico para poner en marcha su avión. Es por ello que siu gimansio esta todo lleno de torres de electricidad y sus pokémon son todos tipo eléctrico.</string>
+    <string name="lidercarmin">Lt. surge o Teniente Surge es el lider del gimnasio en ciudad Carmin. Surge tenía como mote "El rayo americano" esto fue en su época en el ejército donde usaba sus pokémon tipo eléctrico para poner en marcha su avión. Es por ello que su gimansio está todo lleno de torres de electricidad y sus pokémon son todos tipo eléctrico.</string>
     <string name="liderfucsia">Koga, lider de gimnasio de  ciudad Fucsia, Además de entrenador tiene conocimientos en ediciana, el elabora sus propias medicinas con sus pokémon tipo veneno.</string>
     <string name="lidercanela">Blaine, líder del gimnasio de Isla Canela, considereado de los hombres más inteligentes de la región que usa pokémon tipo fuego.</string>
     <string name="liderplateada">Brock, líder del gimnasio de Ciudad Plateada especializado en pokémon tipo roca, a pesar de ser líder de gimnasio su deseo es llegar a ser uno de los mejores doctores pokémon.</string>

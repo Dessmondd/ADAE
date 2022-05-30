@@ -11,7 +11,7 @@
         android:layout_width="333dp"
         android:layout_height="180dp"
         android:fontFamily="@font/candal"
-        android:text="@string/textociudadazafran"
+        android:text="@string/textociudadcanela"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/candal"
-        android:text="@string/ciudadverde"
+        android:text="@string/ciudadarenosa"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +46,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.171"
         app:srcCompat="@drawable/ciudadcanela" />
-
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
@@ -59,18 +58,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.581" />
+
     <ImageView
         android:id="@+id/imageView17"
-        android:layout_width="253dp"
-        android:layout_height="147dp"
+        android:layout_width="385dp"
+        android:layout_height="239dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.837"
-        app:srcCompat="@drawable/gymverde" />
-
-
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/gymcanela" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,7 +11,7 @@
         android:layout_width="333dp"
         android:layout_height="180dp"
         android:fontFamily="@font/candal"
-        android:text="@string/textociudadazafran"
+        android:text="@string/textociudadverde"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
