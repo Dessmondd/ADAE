@@ -30,7 +30,7 @@
             android:layout_height="match_parent"
             android:background="@color/ELNARANJAFACHERO4"
             android:fontFamily="@font/candal"
-            android:hint="@string/username"
+            android:hint="@string/email"
             android:inputType="text"
             android:paddingStart="40dp"
             android:paddingEnd="40dp"
@@ -173,37 +173,38 @@
 
     <ImageView
         android:id="@+id/imageView14"
-        android:layout_width="80dp"
-        android:layout_height="105dp"
+        android:layout_width="68dp"
+        android:layout_height="115dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.274"
+        app:layout_constraintVertical_bias="0.279"
         app:srcCompat="@drawable/bulbasaur" />
 
     <ImageView
         android:id="@+id/imageView11"
-        android:layout_width="87dp"
-        android:layout_height="97dp"
+        android:layout_width="73dp"
+        android:layout_height="115dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.742"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271"
+        app:layout_constraintVertical_bias="0.279"
         app:srcCompat="@drawable/squirtle" />
 
     <ImageView
         android:id="@+id/imageView15"
-        android:layout_width="78dp"
-        android:layout_height="115dp"
+        android:layout_width="66dp"
+        android:layout_height="113dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintHorizontal_bias="0.252"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262"
+        app:layout_constraintVertical_bias="0.278"
         app:srcCompat="@drawable/charmander" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

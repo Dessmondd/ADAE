@@ -16,7 +16,7 @@
         android:layout_marginTop="76dp"
         android:text="@string/register"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/usernameEt"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,8 +40,8 @@
             style="@style/EditText.Login"
             android:layout_width="390dp"
             android:layout_height="match_parent"
-            android:background="@color/colorPurple"
-            android:hint="@string/username"
+            android:background="@color/ELNARANJAFACHERO4"
+            android:hint="@string/email"
             android:inputType="text"
             android:paddingStart="40dp"
             android:paddingEnd="40dp" />
@@ -65,12 +65,12 @@
             style="@style/EditText.Login"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorPurple"
+            android:background="@color/ELNARANJAFACHERO4"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:paddingStart="40dp"
             android:paddingEnd="40dp"
-            android:textColor="@color/colorWhite" />
+            android:textColor="@color/black" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -78,10 +78,10 @@
         android:id="@+id/loginBtn"
         android:layout_width="291dp"
         android:layout_height="46dp"
-        android:background="@color/colorOrange"
+        android:background="@color/ELNARANJAFACHERO4"
         android:onClick="onClickNext"
         android:text="@string/register"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,10 +93,10 @@
         android:id="@+id/loginBtn2"
         android:layout_width="262dp"
         android:layout_height="36dp"
-        android:background="@color/colorOrange"
+        android:background="@color/ELNARANJAFACHERO4"
         android:onClick="onClickvolverLogin"
         android:text="Volver al login"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
