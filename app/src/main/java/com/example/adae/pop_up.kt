@@ -58,13 +58,12 @@ class pop_up : AppCompatActivity() {
         var comunes =storageReference.child(getString(R.string.cartas))
 
 
-        val firebaseDatabase = FirebaseDatabase.getInstance()
-        val databaseReference = firebaseDatabase.reference
-        val getImage = databaseReference.child("comunes/" + id + ".png")
 
+        val getImage =comunes.child("comunes/" + id + ".png")
+        val imageView = findViewById<ImageView>(R.id.popup)
         // [START storage_load_with_glide]
         // Reference to an image file in Cloud Storage
-        Glide.with(this).load(getImage).into(findViewById<ImageView>(R.id.popup))
+        Glide.with(this).load(getImage).into(imageView)
 
     }
 

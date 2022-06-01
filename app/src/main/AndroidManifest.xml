@@ -36,6 +36,9 @@
         <activity android:name=".pop_up2"
             android:theme="@style/AppTheme.PopUp"/>
 
+        <activity android:name=".pop_up"
+            android:theme="@style/AppTheme.PopUp"/>
+        
         <activity android:name=".pop_up3"
             android:theme="@style/AppTheme.PopUp"/>
 
