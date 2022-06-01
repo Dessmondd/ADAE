@@ -35,12 +35,45 @@
         app:layout_constraintVertical_bias="0.976"
         tools:ignore="MissingConstraints" />
 
+    
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="186dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorOrange"
+        android:fontFamily="@font/candal"
+        android:text="Entrenadores"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.878" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="186dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorOrange"
+        android:fontFamily="@font/candal"
+        android:text="Medallas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822" />
+
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager_2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="36dp"
         tools:layout_editor_absoluteY="-160dp" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

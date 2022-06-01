@@ -11,16 +11,14 @@
 
   <ImageView
       android:id="@+id/popup"
-      android:layout_width="160dp"
-      android:layout_height="79dp"
+      android:layout_width="319dp"
+      android:layout_height="572dp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintHorizontal_bias="0.597"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.171"/>
-
-
+      app:layout_constraintVertical_bias="0.496" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
