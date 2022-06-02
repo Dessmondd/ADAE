@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Register"
-    android:background="@drawable/gradient_list">
+    android:background="@drawable/gradient_psiquico">
 
 
     <ImageView

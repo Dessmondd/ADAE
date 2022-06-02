@@ -2,6 +2,7 @@ package com.example.adae
 
 
 import android.content.Intent
+import android.graphics.drawable.AnimationDrawable
 import android.media.Image
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,6 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import androidx.constraintlayout.widget.ConstraintLayout
 
 
 class ThirdFragment : Fragment() {

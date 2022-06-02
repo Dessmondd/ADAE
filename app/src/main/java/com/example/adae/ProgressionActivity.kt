@@ -21,6 +21,7 @@ class ProgressionActivity : AppCompatActivity() {
 
         viewPager2.adapter=adapter
 
+
         TabLayoutMediator(tabLayout,viewPager2){tab,position->
             when(position){
                 0->{

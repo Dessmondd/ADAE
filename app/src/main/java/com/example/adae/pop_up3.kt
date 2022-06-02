@@ -30,6 +30,7 @@ class pop_up3 : AppCompatActivity() {
 
         window.setLayout((width * .9).toInt(), (height * .7).toInt())
 
+
     }
 
 }
