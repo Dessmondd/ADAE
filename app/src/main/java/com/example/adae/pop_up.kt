@@ -93,6 +93,16 @@ class pop_up : AppCompatActivity() {
         var comunes =storageReference.child(getString(R.string.cartas))
 
 
+        supportActionBar?.hide()
+        setContentView(R.layout.activity_pop_up)
+        binding = ActivityColeecionBinding.inflate(layoutInflater)
+        val dm = DisplayMetrics()
+        windowManager.defaultDisplay.getMetrics(dm)
+
+        val width = dm.widthPixels
+        val height = dm.heightPixels
+
+        window.setLayout((width * .9).toInt(), (height * .693).toInt())
 
         val getImage =comunes.child( id + ".png")
         val imageView = findViewById<ImageView>(R.id.popup)
@@ -107,6 +117,7 @@ class pop_up : AppCompatActivity() {
             // Handle any errors
             // Download directly from StorageReference using Glide
         }
+
     }
 
 }

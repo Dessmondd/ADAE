@@ -13,7 +13,7 @@
         android:id="@+id/imageView16"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        app:srcCompat="@drawable/coleccionholder" />
+        app:srcCompat="@drawable/coleccionholderdrak" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"

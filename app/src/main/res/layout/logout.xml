@@ -72,7 +72,7 @@
         android:onClick="logoutv2"
         android:text="logout"
         android:backgroundTint="@color/colorOrange"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:fontFamily="@font/candal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

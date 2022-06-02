@@ -61,15 +61,14 @@
 
     <ImageView
         android:id="@+id/imageView17"
-        android:layout_width="385dp"
-        android:layout_height="239dp"
+        android:layout_width="235dp"
+        android:layout_height="158dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8"
-        app:srcCompat="@drawable/gymcanela" />
+        app:layout_constraintVertical_bias="0.886"
+        app:srcCompat="@drawable/gymcaneladark" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
