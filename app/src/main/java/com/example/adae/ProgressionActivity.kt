@@ -46,6 +46,12 @@ class ProgressionActivity : AppCompatActivity() {
         }
         startActivity(irAtras)
     }
+    fun medallas(){
+        val intent = Intent(this,pop_up_warning::class.java)
+        startActivity(intent)
+    }
+
+
 
 
 }

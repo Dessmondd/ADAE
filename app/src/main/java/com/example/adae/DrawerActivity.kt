@@ -38,6 +38,7 @@ class DrawerActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.drawer, menu)
@@ -53,5 +54,5 @@ class DrawerActivity : AppCompatActivity() {
         val irMenu = Intent(this, logout::class.java)
         startActivity(irMenu)
     }
-
+    
 }

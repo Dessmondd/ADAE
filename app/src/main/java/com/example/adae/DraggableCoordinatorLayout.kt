@@ -22,14 +22,14 @@ class DraggableCoordinatorLayout @JvmOverloads constructor(context: Context?, at
     private val draggableChildren: MutableList<View> = ArrayList()
     private var viewDragListener: ViewDragListener? = null
 
-    fun addDraggableChild(child: View) {
-        require(!(child.parent !== this))
-        draggableChildren.add(child)
-    }
-
     fun removeDraggableChild(child: View) {
         require(!(child.parent !== this))
         draggableChildren.remove(child)
+    }
+
+    fun addDraggableChild(child: View) {
+        require(!(child.parent !== this))
+        draggableChildren.add(child)
     }
 
     override fun onInterceptTouchEvent(ev: MotionEvent): Boolean {

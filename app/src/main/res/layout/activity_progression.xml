@@ -34,6 +34,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
         tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/medallas"
+        android:layout_width="185dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorOrange"
+        android:fontFamily="@font/candal"
+        android:onClick="irAtras"
+        android:text="@string/atrás"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="MissingConstraints" />
 
     
 

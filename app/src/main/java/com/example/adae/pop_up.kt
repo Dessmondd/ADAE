@@ -3,6 +3,7 @@ package com.example.adae
 import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.util.DisplayMetrics
+import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
@@ -13,10 +14,15 @@ import com.example.adae.models.PokemonRecycler
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
+import com.squareup.picasso.Callback
+import com.squareup.picasso.Picasso
+import java.lang.System.load
 
 
 class pop_up : AppCompatActivity() {
     private lateinit var binding: ActivityColeecionBinding
+
+    private lateinit var data: String
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -33,7 +39,7 @@ class pop_up : AppCompatActivity() {
         window.setLayout((width * .8).toInt(), (height * .6).toInt())
         val extras = intent.extras
         if (extras != null){
-            var data: String? = extras!!.getString("id")
+             data = extras!!.getString("id")!!
             if(data != null){
                 loadWithGlide(data)
 
@@ -49,22 +55,58 @@ class pop_up : AppCompatActivity() {
     }
 
 
+     fun pulsar(view : View){
+
+    }
+/*
+ override fun onResume(){
+        super.onResume()
+        if(data != null){
+            loadWithGlide(data)
+
+        }
+    }
+
+    override fun onPostCreate(savedInstanceState: Bundle?){
+        super.onPostCreate(savedInstanceState)
+        if(data != null){
+            loadWithGlide(data)
+
+        }
+    }
+
+    override fun onStart(){
+        super.onStart()
+        if(data != null){
+            loadWithGlide(data)
+
+        }
+    }
+*/
+
     fun loadWithGlide(id : String) {
 
         // This loop will create 20 Views containing
         // the image with the count of view
-
+        val firebaseDatabase = FirebaseDatabase.getInstance()
         val storageReference = Firebase.storage.reference //.toString() + "/comunes/#016-Pidgey.png"//Firebase.storage.reference
         var comunes =storageReference.child(getString(R.string.cartas))
 
 
 
-        val getImage =comunes.child("comunes/" + id + ".png")
+        val getImage =comunes.child( id + ".png")
         val imageView = findViewById<ImageView>(R.id.popup)
-        // [START storage_load_with_glide]
-        // Reference to an image file in Cloud Storage
-        Glide.with(this).load(getImage).into(imageView)
 
+        getImage.downloadUrl.addOnSuccessListener {
+
+            Glide.with(this)
+                .load(it)
+                .into(imageView)
+
+        }.addOnFailureListener {
+            // Handle any errors
+            // Download directly from StorageReference using Glide
+        }
     }
 
 }
