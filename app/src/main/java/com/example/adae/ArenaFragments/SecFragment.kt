@@ -1,8 +1,7 @@
-package com.example.adae
+package com.example.adae.ArenaFragments
 
 
 import android.content.Intent
-import android.media.Image
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import com.example.adae.R
-
+import com.example.adae.pop_up2
 
 
 class SecFragment : Fragment() {

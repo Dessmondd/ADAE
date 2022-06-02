@@ -4,6 +4,7 @@ import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
@@ -16,7 +17,7 @@ class ProgressionActivity : AppCompatActivity() {
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
         val tabLayout=findViewById<TabLayout>(R.id.tab_layout)
         val viewPager2=findViewById<ViewPager2>(R.id.view_pager_2)
-
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         val adapter=ViewPagerAdapter(supportFragmentManager,lifecycle)
 
         viewPager2.adapter=adapter

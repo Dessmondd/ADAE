@@ -17,15 +17,15 @@
             android:name=".MazoView"
             android:exported="false" />
         <activity
-            android:name=".FirstFragment"
+            android:name=".ArenaFragments.FirstFragment"
             android:exported="false"
             tools:ignore="Instantiatable" />
         <activity
-            android:name=".SecFragment"
+            android:name=".ArenaFragments.SecFragment"
             android:exported="false"
             tools:ignore="Instantiatable" />
         <activity
-            android:name=".ThirdFragment"
+            android:name=".ArenaFragments.ThirdFragment"
             android:exported="false"
             tools:ignore="Instantiatable" />
         <activity
