@@ -5,7 +5,7 @@
         <item name="colorControlActivated">@color/colorGrey</item>
     </style>
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
-       
+        <item name="android:forceDarkAllowed">false</item>
     </style>
 
     <style name="AppTheme.PopUp">
@@ -16,7 +16,10 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
 
 
     <style name="ThemeOverlay_MaterialComponents_MaterialAlertDialog_FullWidthButtons"></style>

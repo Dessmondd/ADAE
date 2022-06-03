@@ -10,7 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import com.example.adae.R
-import com.example.adae.pop_up3
+import com.example.adae.PopUpArenas.pop_up3
 
 
 class ThirdFragment : Fragment() {

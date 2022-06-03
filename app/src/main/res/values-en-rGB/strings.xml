@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ADAE</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="recuperarcontraseña">Recover Password</string>
+    <string name="recuperar">Recover Password</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="new_user">New User?</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Reject</string>
+    <string name="ciudadverde">Green City</string>
+    <string name="ciudadazulona">Azulona City</string>
+    <string name="ciudadceleste">Celeste City</string>
+    <string name="ciudadacarmin">Carmin City</string>
+    <string name="ciudadafucsia">Fucsia City</string>
+    <string name="ciudadcanela">Canela Island</string>
+    <string name="ciudadplateada">Silver City</string>
+    <string name="ciudadazafran">Azafran City</string>
+</resources>

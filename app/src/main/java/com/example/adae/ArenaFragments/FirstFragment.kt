@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import com.example.adae.R
-import com.example.adae.pop_up1
+import com.example.adae.PopUpArenas.pop_up1
 
 
 class FirstFragment : Fragment() {

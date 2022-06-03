@@ -13,6 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
+        android:textSize="4sp"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
         app:tabTextColor="@color/black"
         app:tabIndicatorColor="@color/colorOrange"
         app:tabSelectedTextColor="@color/colorOrange"

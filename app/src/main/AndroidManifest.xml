@@ -29,18 +29,18 @@
             android:exported="false"
             tools:ignore="Instantiatable" />
         <activity
-            android:name=".pop_up1"
+            android:name=".PopUpArenas.pop_up1"
             android:exported="false"
             android:theme="@style/AppTheme.PopUp" />
 
          <activity android:name=".pop_up"
             android:theme="@style/AppTheme.PopUp"/>
 
-        <activity android:name=".pop_up2"
+        <activity android:name=".PopUpArenas.pop_up2"
             android:theme="@style/AppTheme.PopUp"/>
 
 
-        <activity android:name=".pop_up3"
+        <activity android:name=".PopUpArenas.pop_up3"
             android:theme="@style/AppTheme.PopUp"/>
 
         <activity android:name=".pop_up_warning"

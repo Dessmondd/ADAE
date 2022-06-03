@@ -9,7 +9,7 @@ import com.example.adae.ArenaFragments.*
 
 class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle): FragmentStateAdapter(fragmentManager, lifecycle) {
     override fun getItemCount(): Int {
-        return 7
+        return 6
     }
 
     override fun createFragment(position: Int): Fragment {
