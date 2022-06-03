@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_tierra">
+    android:background="@drawable/gradient_plata">
 
 
     <TextView
@@ -11,7 +11,7 @@
         android:layout_width="333dp"
         android:layout_height="180dp"
         android:fontFamily="@font/candal"
-        android:text="@string/textociudadverde"
+        android:text="@string/textociudadplateada"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/candal"
-        android:text="@string/ciudadverde"
+        android:text="@string/ciudadplateada"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +45,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.171"
-        app:srcCompat="@drawable/ciudadmasverde" />
+        app:srcCompat="@drawable/ciudadplateada" />
 
     <TextView
         android:id="@+id/textView10"
@@ -69,7 +69,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.837"
-        app:srcCompat="@drawable/gymverdedark" />
+        app:srcCompat="@drawable/gymplateadadark" />
 
 
 

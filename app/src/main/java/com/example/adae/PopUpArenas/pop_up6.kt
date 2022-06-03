@@ -13,7 +13,7 @@ class pop_up6 : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
-        setContentView(R.layout.activity_pop_up1)
+        setContentView(R.layout.activity_pop_up6)
         binding = ActivityColeecionBinding.inflate(layoutInflater)
         val dm = DisplayMetrics()
         windowManager.defaultDisplay.getMetrics(dm)

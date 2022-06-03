@@ -16,7 +16,7 @@
         android:layout_marginTop="76dp"
         android:text="@string/register"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/black"
+        android:color="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/usernameEt"
         app:layout_constraintTop_toTopOf="parent" />

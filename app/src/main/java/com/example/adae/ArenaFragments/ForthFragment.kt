@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import com.example.adae.R
 import com.example.adae.PopUpArenas.pop_up3
+import com.example.adae.PopUpArenas.pop_up4
 
 
 class ForthFragment : Fragment() {
@@ -27,11 +28,11 @@ class ForthFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
        // return inflater.inflate(R.layout.fragment_third, container, false)
-        val b = inflater.inflate(R.layout.fragment_third, container, false)
+        val b = inflater.inflate(R.layout.fragment_forth, container, false)
 
-        var button = b.findViewById<ImageButton>(R.id.ciudadarenosa)
+        var button = b.findViewById<ImageButton>(R.id.ciudadfucsia2)
         button.setOnClickListener{
-            val intent = Intent(context, pop_up3::class.java)
+            val intent = Intent(context, pop_up4::class.java)
             startActivity(intent)
 
         }

@@ -39,8 +39,6 @@ class login : AppCompatActivity() {
             val intent = gClient.getSignInIntent()
             startActivityForResult(intent, 100)
 
-
-
         }
 
 

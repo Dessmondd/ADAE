@@ -13,19 +13,13 @@ import com.example.adae.models.Board
 class MainActivity : AppCompatActivity(), ViewerPagerAdapter2.OnItemSelected {
 
     private lateinit var boardList: List<Board>
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_main)
         supportActionBar?.hide()
 
-
-
-
         getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
             .putBoolean("isFirstRun", false).commit()
-
-
 
 
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.R){

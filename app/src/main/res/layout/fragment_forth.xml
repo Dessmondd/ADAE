@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/ciudadfucsia2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="189dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="348dp"
+        android:background="@null"
+        android:src="@drawable/ciudadfucsia" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="176dp"
+        android:fontFamily="@font/candal"
+        android:text="Para alcanzar esta arena se necesitan entre 20 y 25 cartas"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>
