@@ -56,13 +56,13 @@
     
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Entrenadores"
         android:layout_width="186dp"
         android:layout_height="39dp"
         android:layout_alignParentBottom="true"
         android:backgroundTint="@color/colorOrange"
         android:fontFamily="@font/candal"
-        android:text="Entrenadores"
+        android:text="@string/Entrenador"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.56"
@@ -77,7 +77,7 @@
         android:layout_alignParentBottom="true"
         android:backgroundTint="@color/colorOrange"
         android:fontFamily="@font/candal"
-        android:text="Medallas"
+        android:text="@string/Medallas"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"

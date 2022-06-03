@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ADAE</string>
     <string name="password">Password</string>
     <string name="register">Register</string>
     <string name="recuperarcontraseña">Recover Password</string>
@@ -41,4 +40,6 @@
     <string name="textociudadplateada">The Pewter city has the largest cience museum from the region. This museum has a wide range of pokemon-fossils.</string>
     <string name="textociudadazafran">The Saffron city is the biggest and most populated cities in Kanto, considered the capital of the region as well as being known as The golden thread as it makes reference to its name, it is the city with the most quantity of market</string>
     <string name="gracias">Thanks for playing!</string>
+    <string name="Medallas">Medals</string>
+    <string name="Entrenadores">Trainers</string>
 </resources>

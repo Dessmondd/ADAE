@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ADAE</string>
+    <string name="app_name" translatable="false">Pokemon DE</string>
     <string name="preferences" translatable="false">com.example.adae.PREFERENCE_KEY</string>
     <string name="gracias">¡Gracias por jugar!</string>
     <string name="title_activity_drawer" translatable="false">DrawerActivity</string>
@@ -26,9 +26,9 @@
     <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
     <string name="remember_me">Recordar datos</string>
     <string name="username">Usuario</string>
-    <string name="email">Email</string>
+    <string name="email" translatable="false">Email</string>
     <string name="password">Contraseña</string>
-    <string name="login">Login</string>
+    <string name="login" translatable="false">Login</string>
     <string name="register">Registrarse</string>
     <string name="recuperarcontraseña">Recuperar</string>
     <string name="recuperar">Recuperar contraseña</string>
@@ -67,7 +67,8 @@
     <string name="textociudadcanela">La Isla Canela es la isla más importante, ahí encontrarás un volcán actualmente sin actividad así como los laboratorios más importantes. A pesar de su importancia la isla en la actualidad esta completamente deshabitada.</string>
     <string name="textociudadplateada">La ciudad Plateada tiene el museo más grande de ciencia de la región. Este museo consta con una inmensa variedad de fósiles de pokemons.</string>
     <string name="textociudadazafran">La ciudad azafrán es la cuidad mas extensa de Kanto, considerada la capital de esta región, a su vez conocida como la Hebra de Oro ya que hace honor a su nombre siendo la ciudad con más comercio.</string>
+    <string name="Medallas">Medallas</string>
+    <string name="Entrenadores">Entrenadores</string>
     <string name="liderazulona">Erika, líder del gimansio de Ciudad Azulona, ella es especialista en pokémon tipo planta, su gimnasio es a su ve un invernadero lleno de flores</string>
-    <string name="liderceleste">Misty, líder del gimnasio de Ciudad Celeste, especialista en pokémon tipo agua.</string>
 </resources>
 

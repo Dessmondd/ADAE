@@ -7,12 +7,13 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.adae.databinding.BoardItemBinding
 import com.example.adae.models.Board
+import java.util.*
 
 
 class ViewerPagerAdapter2(private val boardList: List<Board>, private val onItemSelected: OnItemSelected? = null):
     RecyclerView.Adapter<ViewerPagerAdapter2.BoardViewHolder>(){
 
-
+    val language = Locale.getDefault().getDisplayLanguage().toString()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BoardViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.board_item, parent, false)
@@ -46,8 +47,11 @@ inner class BoardViewHolder(itemView: View, private val onItemSelected: OnItemSe
         descripcion.text = board.descripcion
 
         if (adapterPosition.equals(boardList.size - 1)) {
-
-            boton.text = "Finalizar"
+            if(language != "English"){
+                boton.text = "Finalizar"
+            }else{
+                boton.text = "Finish"
+            }
         }
         boton.setOnClickListener{
             onItemSelected?.onClickListener(adapterPosition)
