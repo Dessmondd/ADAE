@@ -34,6 +34,24 @@ class ProgressionActivity : AppCompatActivity() {
                 2->{
                     tab.text="Arena 3"
                 }
+                3->{
+                    tab.text="Arena 4"
+                }
+                4->{
+                    tab.text="Arena 5"
+                }
+                5->{
+                    tab.text="Arena 6"
+                }
+                6->{
+                    tab.text="Arena 7"
+                }
+                7->{
+                    tab.text="Arena 8"
+                }
+
+
+
 
             }
         }.attach()
