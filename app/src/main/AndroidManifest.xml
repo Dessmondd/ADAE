@@ -16,6 +16,7 @@
         <activity
             android:name=".MazoView"
             android:exported="false" />
+
         <activity
             android:name=".ArenaFragments.FirstFragment"
             android:exported="false"
@@ -28,7 +29,6 @@
             android:name=".ArenaFragments.ThirdFragment"
             android:exported="false"
             tools:ignore="Instantiatable" />
-
         <activity
             android:name=".ArenaFragments.ForthFragment"
             android:exported="false"
@@ -44,24 +44,19 @@
 
 
 
+
         <activity
             android:name=".PopUpArenas.pop_up1"
             android:exported="false"
             android:theme="@style/AppTheme.PopUp" />
-
          <activity android:name=".pop_up"
             android:theme="@style/AppTheme.PopUp"/>
-
         <activity android:name=".PopUpArenas.pop_up2"
             android:theme="@style/AppTheme.PopUp"/>
-
-
         <activity android:name=".PopUpArenas.pop_up3"
             android:theme="@style/AppTheme.PopUp"/>
-
         <activity android:name=".pop_up_warning"
             android:theme="@style/AppTheme.PopUp"/>
-
         <activity
             android:name=".PopUpArenas.pop_up4"
             android:exported="false"
@@ -77,6 +72,7 @@
 
 
 
+
         <activity
             android:name=".ProgressionActivity"
             android:exported="false" />
@@ -85,7 +81,6 @@
             android:exported="false"
             android:label="@string/title_activity_shop"
             android:theme="@style/Theme.ADAE.NoActionBar" />
-
         <activity
             android:name=".Coleecion"
             android:exported="false" />
