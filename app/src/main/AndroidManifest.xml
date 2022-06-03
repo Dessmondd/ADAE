@@ -28,6 +28,22 @@
             android:name=".ArenaFragments.ThirdFragment"
             android:exported="false"
             tools:ignore="Instantiatable" />
+
+        <activity
+            android:name=".ArenaFragments.ForthFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".ArenaFragments.FifthFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".ArenaFragments.SixthFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+
+
+
         <activity
             android:name=".PopUpArenas.pop_up1"
             android:exported="false"
@@ -45,6 +61,19 @@
 
         <activity android:name=".pop_up_warning"
             android:theme="@style/AppTheme.PopUp"/>
+
+        <activity
+            android:name=".PopUpArenas.pop_up4"
+            android:exported="false"
+            android:theme="@style/AppTheme.PopUp" />
+        <activity
+            android:name=".PopUpArenas.pop_up5"
+            android:exported="false"
+            android:theme="@style/AppTheme.PopUp" />
+        <activity
+            android:name=".PopUpArenas.pop_up6"
+            android:exported="false"
+            android:theme="@style/AppTheme.PopUp" />
 
 
 
