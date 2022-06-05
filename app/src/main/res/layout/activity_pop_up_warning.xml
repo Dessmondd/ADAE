@@ -25,7 +25,7 @@
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/imageView2"
-        android:layout_width="378dp"
+        android:layout_width="350dp"
         android:layout_height="157dp"
         android:src="@drawable/gif5"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +42,7 @@
         android:fontFamily="@font/minecraft"
         android:text="@string/warning"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"

@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:fontFamily="@font/minecraft"
-        android:textSize="4sp"
+        android:textSize="0.5dp"
         app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
         app:tabTextColor="@color/black"
         app:tabIndicatorColor="@color/colorOrange"

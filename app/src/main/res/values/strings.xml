@@ -70,7 +70,7 @@
     <string name="textociudadazafran">La ciudad azafrán es la cuidad mas extensa de Kanto, considerada la capital de esta región, a su vez conocida como la Hebra de Oro ya que hace honor a su nombre siendo la ciudad con más comercio.</string>
     <string name="Medallas">Medallas</string>
     <string name="Entrenadores">Entrenadores</string>
-    <string name="logout">Logout</string>
+    <string name="logout" translatable="false">Logout</string>
     <string name="liderazulona">Erika, líder del gimansio de Ciudad Azulona, ella es especialista en pokémon tipo planta, su gimnasio es a su ve un invernadero lleno de flores</string>
 </resources>
 

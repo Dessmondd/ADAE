@@ -36,7 +36,7 @@ class pop_up : AppCompatActivity() {
         val width = dm.widthPixels
         val height = dm.heightPixels
 
-        window.setLayout((width * .8).toInt(), (height * .6).toInt())
+        window.setLayout((width * .8).toInt(), (height * .7).toInt())
         val extras = intent.extras
         if (extras != null){
              data = extras!!.getString("id")!!
@@ -63,7 +63,7 @@ class pop_up : AppCompatActivity() {
         val width = dm.widthPixels
         val height = dm.heightPixels
 
-        window.setLayout((width * .9).toInt(), (height * .693).toInt())
+        window.setLayout((width * .95).toInt(), (height * .75).toInt())
 
         val getImage =comunes.child( id + ".png")
         val imageView = findViewById<ImageView>(R.id.popup)
