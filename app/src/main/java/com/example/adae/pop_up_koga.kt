@@ -20,13 +20,13 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 
 
-class pop_up_medallas : AppCompatActivity() {
+class pop_up_koga : AppCompatActivity() {
     private lateinit var binding: ActivityColeecionBinding
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
-        setContentView(R.layout.activity_pop_up_medallas)
+        setContentView(R.layout.activity_pop_up_koga)
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
         binding = ActivityColeecionBinding.inflate(layoutInflater)
         val dm = DisplayMetrics()
@@ -37,12 +37,7 @@ class pop_up_medallas : AppCompatActivity() {
 
         window.setLayout((width * 0.8).toInt(), (height * 0.4).toInt())
 
-        val button3 = findViewById<ImageButton>(R.id.imageView26)
 
-        button3.setOnClickListener(){
-            val intent = Intent(this, pop_up_koga::class.java)
-            startActivity(intent)
-        }
     }
 
 }

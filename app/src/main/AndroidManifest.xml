@@ -41,7 +41,10 @@
             android:name=".ArenaFragments.SixthFragment"
             android:exported="false"
             tools:ignore="Instantiatable" />
-
+        <activity
+            android:name=".pop_up_koga"
+            android:exported="false"
+            android:theme="@style/AppTheme.PopUp" />
         <activity
             android:name=".pop_up_medallas"
             android:exported="false"

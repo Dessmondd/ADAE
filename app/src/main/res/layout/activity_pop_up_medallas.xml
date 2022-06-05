@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/candal"
-        android:text="@string/ciudadazulona"
+        android:text="@string/Medallas"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,55 +19,59 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView25"
         android:layout_width="122dp"
         android:layout_height="82dp"
+        android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.614"
         app:srcCompat="@drawable/azulonamedal" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView19"
         android:layout_width="108dp"
         android:layout_height="72dp"
+        android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/plateada_medal" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView21"
         android:layout_width="122dp"
         android:layout_height="82dp"
+        android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.614"
         app:srcCompat="@drawable/celestemedal" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView24"
         android:layout_width="122dp"
         android:layout_height="82dp"
+        android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.989"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.270"
+        app:layout_constraintVertical_bias="0.252"
         app:srcCompat="@drawable/azafranmedal" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView26"
         android:layout_width="122dp"
         android:layout_height="82dp"
@@ -77,12 +81,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.614"
+        android:background="@null"
         app:srcCompat="@drawable/fucsiamedal" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView20"
         android:layout_width="122dp"
         android:layout_height="82dp"
+        android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.525"
@@ -91,10 +97,11 @@
         app:layout_constraintVertical_bias="0.238"
         app:srcCompat="@drawable/isla_canela_medal" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView23"
         android:layout_width="122dp"
         android:layout_height="76dp"
+        android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.055"

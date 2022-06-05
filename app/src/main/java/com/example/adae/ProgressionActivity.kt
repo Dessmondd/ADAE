@@ -60,7 +60,13 @@ class ProgressionActivity : AppCompatActivity() {
             val intent = Intent(this, pop_up_medallas::class.java)
             startActivity(intent)
         }
+        val button3 = findViewById<Button>(R.id.Entrenadores)
+        button3.setOnClickListener(){
+            val intent = Intent(this, pop_up_koga::class.java)
+            startActivity(intent)
+        }
     }
+
 
     fun irAtras(view: android.view.View){
         val irAtras = Intent(this,logout::class.java).apply {
