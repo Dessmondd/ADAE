@@ -43,7 +43,6 @@ class Adapter2 (private val context : Context, private val mList: List<PokemonRe
 
 
 
-
         }.addOnFailureListener {
             // Handle any errors
             // Download directly from StorageReference using Glide

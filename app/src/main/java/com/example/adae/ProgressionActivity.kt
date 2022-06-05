@@ -3,9 +3,11 @@ package com.example.adae
 import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.viewpager2.widget.ViewPager2
+import com.example.adae.PopUpArenas.pop_up3
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -43,33 +45,30 @@ class ProgressionActivity : AppCompatActivity() {
                 5->{
                     tab.text="Arena 6"
                 }
-                6->{
-                    tab.text="Arena 7"
-                }
-                7->{
-                    tab.text="Arena 8"
-                }
-
-
-
 
             }
         }.attach()
 
+        val button = findViewById<Button>(R.id.medallas)
+        button.setOnClickListener(){
+            val intent = Intent(this, pop_up_medallas::class.java)
+            startActivity(intent)
+        }
 
-
+        val button2 = findViewById<Button>(R.id.Entrenadores)
+        button2.setOnClickListener(){
+            val intent = Intent(this, pop_up_medallas::class.java)
+            startActivity(intent)
+        }
     }
 
     fun irAtras(view: android.view.View){
         val irAtras = Intent(this,logout::class.java).apply {
-
         }
         startActivity(irAtras)
     }
-    fun medallas(){
-        val intent = Intent(this,pop_up_warning::class.java)
-        startActivity(intent)
-    }
+
+
 
 
 

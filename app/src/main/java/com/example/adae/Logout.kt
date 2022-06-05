@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.firebase.auth.FirebaseAuth
+import java.util.*
 
 
 class logout : AppCompatActivity() {
@@ -17,7 +18,6 @@ class logout : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.logout)
         supportActionBar?.hide()
-
         val constraintLayout = findViewById<ConstraintLayout>(R.id.layout2)
         val animationDrawable: AnimationDrawable = constraintLayout.background as AnimationDrawable
         animationDrawable.setEnterFadeDuration(3000)
@@ -44,7 +44,7 @@ class logout : AppCompatActivity() {
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
 
     }
-
+    val language =  Locale.getDefault().getDisplayLanguage().toString()
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.drawer, menu)
@@ -78,7 +78,6 @@ class logout : AppCompatActivity() {
    fun inProgressv2(view: android.view.View){
         val text = "No disponible en la alpha"
         val duration = Toast.LENGTH_SHORT
-
         val toast = Toast.makeText(applicationContext, text, duration)
         toast.show()
     }
@@ -109,15 +108,17 @@ class logout : AppCompatActivity() {
         popuplogout()
         finish()
     }
-    private fun popuplogout(){
-        val text = "Desconectado con éxito"
+     fun popuplogout(){
+        var text = "Desconectado con éxito"
+         if(language == "English"){
+             text = "Successfully disconnected"
+         }
         val duration = Toast.LENGTH_SHORT
         val toast = Toast.makeText(applicationContext, text, duration)
         toast.show()
     }
      fun progression(view: android.view.View){
         val progression = Intent(this, ProgressionActivity::class.java).apply {
-
         }
         startActivity(progression)
         }
@@ -125,7 +126,6 @@ class logout : AppCompatActivity() {
         val mazo = Intent(this, MazoView::class.java).apply {
         }
         startActivity(mazo)
-
 
     }
 

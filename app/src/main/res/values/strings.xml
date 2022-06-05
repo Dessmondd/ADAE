@@ -41,6 +41,7 @@
     <string name="decline">Rechazar</string>
     <string name="long_message" translatable="false" />
     <string name="titulo">titulo</string>
+    <string name="volverlogin">Volver al login</string>
     <string name="atrás">Volver al menú principal</string>
     <string name="Entrenador">Entrenador destacado</string>
     <string name="warning">Esta aplicación está siendo desarrollada por 2 estudiantes y se irá actualizando poco a poco, es posible que haya funcionalidades que no estén disponibles</string>

@@ -65,12 +65,12 @@
         app:layout_constraintVertical_bias="0.499" />
 
     <Button
-        android:id="@+id/loginBtn3"
+        android:id="@+id/volverlogin"
         android:layout_width="262dp"
         android:layout_height="36dp"
         android:backgroundTint="@color/ELNARANJAFACHERO4"
         android:onClick="volveralLogin"
-        android:text="Volver al login"
+        android:text="@string/volverlogin"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

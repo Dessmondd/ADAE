@@ -45,53 +45,14 @@ class pop_up : AppCompatActivity() {
 
             }
         }
-
-        // getting ImageView by its id
-        // we will get the default FirebaseDatabase instance
         val firebaseDatabase = FirebaseDatabase.getInstance()
-
-        // we will get a DatabaseReference for the database root node
         val databaseReference = firebaseDatabase.reference
     }
 
-
-     fun pulsar(view : View){
-
-    }
-/*
- override fun onResume(){
-        super.onResume()
-        if(data != null){
-            loadWithGlide(data)
-
-        }
-    }
-
-    override fun onPostCreate(savedInstanceState: Bundle?){
-        super.onPostCreate(savedInstanceState)
-        if(data != null){
-            loadWithGlide(data)
-
-        }
-    }
-
-    override fun onStart(){
-        super.onStart()
-        if(data != null){
-            loadWithGlide(data)
-
-        }
-    }
-*/
-
     fun loadWithGlide(id : String) {
-
-        // This loop will create 20 Views containing
-        // the image with the count of view
         val firebaseDatabase = FirebaseDatabase.getInstance()
         val storageReference = Firebase.storage.reference //.toString() + "/comunes/#016-Pidgey.png"//Firebase.storage.reference
         var comunes =storageReference.child(getString(R.string.cartas))
-
 
         supportActionBar?.hide()
         setContentView(R.layout.activity_pop_up)

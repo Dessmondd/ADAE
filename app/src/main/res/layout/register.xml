@@ -95,7 +95,7 @@
         android:layout_height="36dp"
         android:backgroundTint="@color/ELNARANJAFACHERO4"
         android:onClick="onClickvolverLogin"
-        android:text="Volver al login"
+        android:text="@string/volverlogin"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

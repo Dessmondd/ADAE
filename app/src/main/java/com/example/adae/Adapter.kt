@@ -22,26 +22,19 @@ class AlumnoAdapter (private val context : Context, private val mList: List<Poke
     RecyclerView.Adapter<AlumnoAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):
             AlumnoAdapter.ViewHolder {
-        // inflates the card_view_design view
-        // that is used to hold list item
+
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.cardview, parent, false)
         return ViewHolder(view)
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = mList[position]
-
         val url = item.url.downloadUrl.addOnSuccessListener {
-            // Got the download URL for 'users/me/profile.png'
-            // (See MyAppGlideModule for Loader registration)
             Glide.with(context)
                 .load(it)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(holder.img_android)
-            // [END storage_load_with_glide]
-
             holder.img_android.id = position
-
             holder.img_android.setOnClickListener({
                 val intent = Intent(context, pop_up::class.java)
                 intent.putExtra("id", item.name)

@@ -33,48 +33,10 @@ class Coleecion: AppCompatActivity() {
         binding = ActivityColeecionBinding.inflate(layoutInflater)
     loadWithGlide()
         supportActionBar?.hide()
-        // getting ImageView by its id
-        // we will get the default FirebaseDatabase instance
+
         val firebaseDatabase = FirebaseDatabase.getInstance()
-
-        // we will get a DatabaseReference for the database root node
         val databaseReference = firebaseDatabase.reference
-
-        // Here "image" is the child node value we are getting
-        // child node data in the getImage variable
-
-        //val getImage = databaseReference.child("pidgey")
-        // Adding listener for a single change
-        // in the data at this location.
-        // this listener will triggered once
-        // with the value of the data at the location
         val activity = this
-        // Reference to an image file in Cloud Storage
-
-        //Glide.with(activity).load(getImage).into(rImage)
-
-/*
-        getImage.addListenerForSingleValueEvent(object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                // getting a DataSnapshot for the location at the specified
-                // relative path and getting in the link variable
-                val link = dataSnapshot.getValue(String::class.java)
-
-                // loading that data into rImage
-                // variable which is ImageView
-                Glide.with(activity).load("https://firebasestorage.googleapis.com/v0/b/pokemoncard-f77c4.appspot.com/o/comunes%2F%23016-Pidgey.png?alt=media&token=940d67dc-4804-4fc2-b1e3-0074fa418790").into(rImage)
-
-            }
-
-            // this will called when any problem
-            // occurs in getting data
-            override fun onCancelled(databaseError: DatabaseError) {
-                // we are showing that error message in toast
-                Toast.makeText(this@Coleecion, "Error cogiendo la imagen de la base de datos", Toast.LENGTH_SHORT).show()
-            }
-        })
-
-*/
         val fab: View = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
             inicio()
@@ -85,61 +47,19 @@ class Coleecion: AppCompatActivity() {
 
         val view = binding.root
         setContentView(view)
-        // [START storage_load_with_glide]
-        // Reference to an image file in Cloud Storage
         val recyclerview = findViewById<RecyclerView>(R.id.recyclerview)
-        // this creates a vertical layout Manager
         recyclerview.layoutManager = GridLayoutManager(this, 2)
-        // ArrayList of class ItemsViewModel
         val data = ArrayList<PokemonRecycler>()
-        // This loop will create 20 Views containing
-        // the image with the count of view
-
-        val storageReference = Firebase.storage.reference //.toString() + "/comunes/#016-Pidgey.png"//Firebase.storage.reference
+        val storageReference = Firebase.storage.reference 
         var comunes =storageReference.child(getString(R.string.comunes))
-
         var a = comunes
        var b = arrayOf(a)
-
-        // var retr = getRetrofit()
-        //var pokeApi = retr.create(PokemonAPI::class.java)
-
         for(i in 1..30){
-
             var pidgey = comunes.child("/"+i.toString() +".gif")
-
-//Llamar nombre desde Pokeapi
-            /*var nombre = ""
-            var callPoke = pokeApi.getPokemonByDexNumOrName(i.toString())
-            callPoke.execute()
-            object: Callback<Pokemon> {
-                override fun onResponse(
-                    call: Call<Pokemon>?,
-                    response: Response<Pokemon>?
-                ){
-                    var pokemon : Pokemon? = response?.body()
-                    if(pokemon?.name != null){
-                        nombre = pokemon.name!!
-                    }
-                }
-                override fun onFailure(call: Call<Pokemon>, t: Throwable) {
-                }
-
-            }
-
-
-*/
            data.add(PokemonRecycler(i.toString(), pidgey))
         }
-
-        // ImageView in your Activity
-
-        // This will pass the ArrayList to our Adapter
         val adapter = AlumnoAdapter(this@Coleecion ,data)
-        // Setting the Adapter with the recyclerview
         recyclerview.adapter = adapter
-
-
 
     }
 
@@ -154,17 +74,6 @@ private fun getRetrofit():Retrofit{
         menuInflater.inflate(R.menu.drawer2, menu)
         return true;
     }
-
-    //override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        //val item_selected: Int = item.itemId
-       // if (item_selected == R.id.inicio) {
-        //        inicio()
-        //}
-
-
-   // return super.onOptionsItemSelected(item)
-   // }
-
 
 
     fun inicio(){
