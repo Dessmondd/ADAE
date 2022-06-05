@@ -29,12 +29,12 @@
             android:layout_width="390dp"
             android:layout_height="match_parent"
             android:background="@color/ELNARANJAFACHERO4"
-            android:fontFamily="@font/candal"
+            android:fontFamily="@font/minecraft"
             android:hint="@string/email"
-            android:textColorHighlight="@color/white"
             android:inputType="text"
             android:paddingStart="40dp"
             android:paddingEnd="40dp"
+            android:textColorHighlight="@color/white"
             app:endIconMode="clear_text" />
 
 
@@ -57,12 +57,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/ELNARANJAFACHERO4"
-            android:fontFamily="@font/candal"
+            android:fontFamily="@font/minecraft"
             android:hint="@string/password"
-            android:textColorHighlight="@color/white"
             android:inputType="textPassword"
             android:paddingStart="40dp"
-            android:paddingEnd="40dp" />
+            android:paddingEnd="40dp"
+            android:textColorHighlight="@color/white" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -71,7 +71,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:fontFamily="@font/candal"
+        android:fontFamily="@font/minecraft"
         android:text="@string/remember_me"
         android:textColor="@color/black"
         android:textSize="12dp"
@@ -87,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="?android:attr/selectableItemBackground"
-        android:fontFamily="@font/candal"
+        android:fontFamily="@font/minecraft"
         android:onClick="irRecuperar"
         android:text="@string/forgot_password"
         android:textColor="@color/black"
@@ -118,7 +118,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="@color/ELNARANJAFACHERO4"
-        android:fontFamily="@font/candal"
+        android:fontFamily="@font/minecraft"
         android:onClick="onClickLoginNext"
         android:text="@string/login"
         android:textColor="@color/white"
@@ -135,7 +135,7 @@
         android:id="@+id/signUpTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/candal"
+        android:fontFamily="@font/minecraft"
         android:onClick="irRegistro"
         android:text="@string/new_user"
         android:textColor="@color/black"

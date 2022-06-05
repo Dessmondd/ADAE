@@ -4,20 +4,11 @@ import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.util.DisplayMetrics
-import android.view.WindowManager
 import android.widget.ImageButton
-import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.example.adae.PopUpArenas.pop_up1
-import com.example.adae.PopUpArenas.pop_up4
+import com.example.adae.PopUpArenas.*
+import com.example.adae.PopUpEntrenadores.pop_up_koga
 import com.example.adae.databinding.ActivityColeecionBinding
-import com.example.adae.models.PokemonRecycler
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.ktx.Firebase
-import com.google.firebase.storage.ktx.storage
 
 
 class pop_up_medallas : AppCompatActivity() {
@@ -37,12 +28,39 @@ class pop_up_medallas : AppCompatActivity() {
 
         window.setLayout((width * 0.8).toInt(), (height * 0.4).toInt())
 
-        val button3 = findViewById<ImageButton>(R.id.imageView26)
+        val button3 = findViewById<ImageButton>(R.id.fucsia)
 
         button3.setOnClickListener(){
             val intent = Intent(this, pop_up_koga::class.java)
             startActivity(intent)
         }
+
+        val button4 = findViewById<ImageButton>(R.id.azafran)
+        button4.setOnClickListener(){
+            val intent = Intent(this, pop_up1::class.java)
+            startActivity(intent)
+        }
+        val button5 = findViewById<ImageButton>(R.id.verde)
+        button5.setOnClickListener(){
+            val intent = Intent(this, pop_up2::class.java)
+            startActivity(intent)
+        }
+        val button6 = findViewById<ImageButton>(R.id.canela)
+        button6.setOnClickListener(){
+            val intent = Intent(this, pop_up3::class.java)
+            startActivity(intent)
+        }
+        val button7 = findViewById<ImageButton>(R.id.azulona)
+        button7.setOnClickListener(){
+            val intent = Intent(this, pop_up5::class.java)
+            startActivity(intent)
+        }
+        val button8 = findViewById<ImageButton>(R.id.plateada)
+        button8.setOnClickListener(){
+            val intent = Intent(this, pop_up6::class.java)
+            startActivity(intent)
+        }
+
     }
 
 }

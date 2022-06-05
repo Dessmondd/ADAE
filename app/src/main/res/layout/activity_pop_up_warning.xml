@@ -13,7 +13,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/candal"
+        android:fontFamily="@font/minecraft"
         android:text="¡Gracias por jugar!"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -37,9 +37,9 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="336dp"
-        android:layout_height="88dp"
-        android:fontFamily="@font/candal"
+        android:layout_width="337dp"
+        android:layout_height="86dp"
+        android:fontFamily="@font/minecraft"
         android:text="@string/warning"
         android:textColor="@color/black"
         android:textSize="12sp"
