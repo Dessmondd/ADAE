@@ -16,6 +16,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
+import java.util.*
 
 class login : AppCompatActivity() {
 
@@ -25,6 +26,7 @@ class login : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         checkSession()
         var trofeos = 0
+
         supportActionBar?.hide()
         val googleConf = GoogleSignInOptions.
         Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).
@@ -95,10 +97,14 @@ private fun logout(){
     //En caso de error, se muestra un mensaje
 
     private fun ShowAlert2() {
+
         var builder = AlertDialog.Builder(this)
+
+
         builder.setTitle("Error")
         builder.setMessage("Email & Password erróneos")
-        builder.setPositiveButton("Aceptar", null)
+        builder.setPositiveButton("Acceptar", null)
+
         val dialog: AlertDialog = builder.create()
         dialog.show()
     }

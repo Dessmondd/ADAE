@@ -37,7 +37,7 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="337dp"
+        android:layout_width="286dp"
         android:layout_height="86dp"
         android:fontFamily="@font/minecraft"
         android:text="@string/warning"

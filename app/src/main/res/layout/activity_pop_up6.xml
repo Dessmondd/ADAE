@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="333dp"
-        android:layout_height="180dp"
+        android:layout_width="286dp"
+        android:layout_height="179dp"
         android:fontFamily="@font/minecraft"
         android:text="@string/textociudadplateada"
         android:textColor="@color/black"

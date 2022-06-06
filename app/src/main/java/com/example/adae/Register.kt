@@ -9,6 +9,7 @@ import androidx.appcompat.app.AlertDialog
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import java.util.*
 
 class Register : AppCompatActivity() {
     private val db = FirebaseFirestore.getInstance()
@@ -56,9 +57,12 @@ class Register : AppCompatActivity() {
     }
 
     private fun ShowError(){
+
         var builder = AlertDialog.Builder(this)
-        builder.setTitle("Error")
-        builder.setMessage("No hay conexión con la base de datos o los datos son incorrectos")
+
+
+        builder.setTitle("Error" )
+        builder.setMessage("No hay conexión con la base de datos o los datos son incorrectos\"")
         builder.setPositiveButton("Aceptar", null)
         val dialog: AlertDialog = builder.create()
         dialog.show()
