@@ -46,7 +46,7 @@
         app:srcCompat="@drawable/plateada_medal" />
 
     <ImageButton
-        android:id="@+id/azafran"
+        android:id="@+id/canela"
         android:layout_width="122dp"
         android:layout_height="82dp"
         android:background="@null"
@@ -56,7 +56,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.252"
-        app:srcCompat="@drawable/azafranmedal" />
+        app:srcCompat="@drawable/isla_canela_medal" />
 
     <ImageButton
         android:id="@+id/fucsia"
@@ -72,7 +72,7 @@
         app:srcCompat="@drawable/fucsiamedal" />
 
     <ImageButton
-        android:id="@+id/canela"
+        android:id="@+id/verde"
         android:layout_width="122dp"
         android:layout_height="82dp"
         android:background="@null"
@@ -82,10 +82,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.238"
-        app:srcCompat="@drawable/isla_canela_medal" />
+        app:srcCompat="@drawable/verde_medal" />
 
     <ImageButton
-        android:id="@+id/verde"
+        android:id="@+id/azafran"
         android:layout_width="122dp"
         android:layout_height="76dp"
         android:background="@null"
@@ -95,7 +95,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.238"
-        app:srcCompat="@drawable/verde_medal" />
+        app:srcCompat="@drawable/azafranmedal" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

@@ -35,19 +35,19 @@ class pop_up_medallas : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val button4 = findViewById<ImageButton>(R.id.azafran)
+        val button4 = findViewById<ImageButton>(R.id.canela)
         button4.setOnClickListener(){
+            val intent = Intent(this, pop_up3::class.java)
+            startActivity(intent)
+        }
+        val button5 = findViewById<ImageButton>(R.id.azafran)
+        button5.setOnClickListener(){
             val intent = Intent(this, pop_up1::class.java)
             startActivity(intent)
         }
-        val button5 = findViewById<ImageButton>(R.id.verde)
-        button5.setOnClickListener(){
-            val intent = Intent(this, pop_up2::class.java)
-            startActivity(intent)
-        }
-        val button6 = findViewById<ImageButton>(R.id.canela)
+        val button6 = findViewById<ImageButton>(R.id.verde)
         button6.setOnClickListener(){
-            val intent = Intent(this, pop_up3::class.java)
+            val intent = Intent(this, pop_up2::class.java)
             startActivity(intent)
         }
         val button7 = findViewById<ImageButton>(R.id.azulona)
