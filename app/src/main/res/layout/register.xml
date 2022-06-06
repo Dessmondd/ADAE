@@ -44,6 +44,8 @@
             android:background="@color/ELNARANJAFACHERO4"
             android:fontFamily="@font/minecraft"
             android:hint="@string/email"
+            android:textColor="@color/colorWhite"
+            android:textColorHighlight="@color/colorWhite"
             android:inputType="text"
             android:paddingStart="40dp"
             android:paddingEnd="40dp" />
@@ -73,7 +75,8 @@
             android:inputType="textPassword"
             android:paddingStart="40dp"
             android:paddingEnd="40dp"
-            android:textColor="@color/black" />
+            android:textColor="@color/colorWhite"
+            android:textColorHighlight="@color/colorWhite"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -86,6 +89,7 @@
         android:fontFamily="@font/minecraft"
         android:text="@string/register"
         android:textColor="@color/white"
+        android:textColorHighlight="@color/colorWhite"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

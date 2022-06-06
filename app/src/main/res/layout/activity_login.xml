@@ -34,7 +34,8 @@
             android:inputType="text"
             android:paddingStart="40dp"
             android:paddingEnd="40dp"
-            android:textColorHighlight="@color/white"
+            android:textColor="@color/colorWhite"
+            android:textColorHighlight="@color/colorWhite"
             app:endIconMode="clear_text" />
 
 
@@ -62,7 +63,8 @@
             android:inputType="textPassword"
             android:paddingStart="40dp"
             android:paddingEnd="40dp"
-            android:textColorHighlight="@color/colorWhite" />
+            android:textColor="@color/colorWhite"
+            android:textColorHighlight="@color/colorWhite"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
