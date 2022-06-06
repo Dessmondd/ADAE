@@ -97,13 +97,25 @@ private fun logout(){
     //En caso de error, se muestra un mensaje
 
     private fun ShowAlert2() {
-
+        val language = Locale.getDefault().getDisplayLanguage().toString()
         var builder = AlertDialog.Builder(this)
 
-
-        builder.setTitle("Error")
-        builder.setMessage("Email & Password erróneos")
-        builder.setPositiveButton("Acceptar", null)
+        var tittle="Error"
+        var msg="Email & Contraseña erróneos"
+        var button="Aceptar"
+        if(language == "English"){
+            tittle ="Error"
+            msg="Incorrect Email & Password"
+            button="Acept"
+        }
+        if(language == "Deutsch"){
+            tittle="Error"
+            msg="Falsche Email & Passwort"
+            button="akzeptieren"
+        }
+        builder.setTitle(tittle)
+        builder.setMessage(msg)
+        builder.setPositiveButton(button, null)
 
         val dialog: AlertDialog = builder.create()
         dialog.show()

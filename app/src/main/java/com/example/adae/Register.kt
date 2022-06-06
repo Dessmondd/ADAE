@@ -59,11 +59,25 @@ class Register : AppCompatActivity() {
     private fun ShowError(){
 
         var builder = AlertDialog.Builder(this)
+        val language = Locale.getDefault().getDisplayLanguage().toString()
 
+        var tittle="Error"
+        var msg="No hay conexión con la base de datos o los datos son incorrectos"
+        var button="Aceptar"
+        if(language == "English"){
+            tittle ="Error"
+            msg="There's no connection with the database or the data is incorrect"
+            button="Acept"
+        }
+        if(language == "Deutsch"){
+            tittle="Error"
+            msg="Es besteht keine Verbindung zur Datenbank oder die Daten sind falsch"
+            button="akzeptieren"
+        }
 
-        builder.setTitle("Error" )
-        builder.setMessage("No hay conexión con la base de datos o los datos son incorrectos\"")
-        builder.setPositiveButton("Aceptar", null)
+        builder.setTitle(tittle )
+        builder.setMessage(msg)
+        builder.setPositiveButton(button, null)
         val dialog: AlertDialog = builder.create()
         dialog.show()
     }
