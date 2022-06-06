@@ -21,7 +21,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ADAE">
         <activity
-            android:name=".activity_entrenadores"
+            android:name=".Entrenadores"
             android:exported="false" />
         <activity
             android:name=".MazoView"

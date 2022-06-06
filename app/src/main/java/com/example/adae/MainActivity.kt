@@ -83,6 +83,32 @@ class MainActivity : AppCompatActivity(), ViewerPagerAdapter2.OnItemSelected {
             )
 
         }
+
+        if(language == "Deutsch"){
+            boardList = listOf(
+                Board(
+                    fondo = R.drawable.gradient_list,
+                    imagen = R.drawable.pikachugif,
+                    titulo = "Here bby!",
+                    descripcion = "¡Únete al mundo de las cartas de Pokémon y pasalo en grande!"
+                ),
+                Board(
+                    fondo = R.drawable.gradient_list,
+                    imagen = R.drawable.gifonboard,
+                    titulo = "Pokemon's, mazos, colecciones...",
+                    descripcion = "Montones de Pokémon te están esperando dentro, elige tus mejores cartas y crea tu mazo"
+
+                ),
+                Board(
+                    fondo = R.drawable.gradient_list,
+                    imagen = R.drawable.gif4,
+                    titulo = "¡Mejor con amigos!",
+                    descripcion = "¡Miles de jugadores ya lo juegan, comparte, disfruta y pasa un buen rato, revive esos momentos de la infancia"
+                )
+
+            )
+
+        }
        
 
         val adapter = ViewerPagerAdapter2(boardList, this)
