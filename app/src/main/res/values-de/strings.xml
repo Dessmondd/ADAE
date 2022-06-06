@@ -34,14 +34,20 @@
     <string name="liderplateada">Brock, Leiter des Marmoria-Fitnessstudios, spezialisiert auf Rock-Pokémon, obwohl er Fitnessstudioleiter ist, ist es sein Traum, einer der besten Pokémon-Doktoren zu werden.</string>
     <string name="liderazafran">Sabrina, Sportleiterin aus Saffronia City, sie hat einen psychischen Pokémon-Typ, sie ist Schauspielerin in Teselia, abgesehen davon, dass sie eine der besten Sängerinnen der Region ist.</string>
     <string name="textociudadverde">Die Vertania City hat einen riesigen Wald, der das Fitnessstudio umgibt, mit einer der größten Schulen und Labors der Region, also als Basis des Team Rocket, das vom Fitnessstudioleiter Giovanni geleitet wird</string>
-    <string name="textociudadazulona">Die Stadt Prismania hat viele Einkaufszentren sowie Freizeitzentren wie ein Casino oder eines der besten Restaurants.</string>
+    <string name="textociudadazulona">Die Prismania Stadt hat viele Einkaufszentren sowie Freizeitzentren wie ein Casino oder eines der besten Restaurants.</string>
     <string name="textociudadceleste">Die Azuria Stadt hat einen mysteriösen Ort, an dem Sie außergewöhnliche Pokémon finden können. Dort finden Sie auch den wichtigsten Fahrradladen der Region.</string>
     <string name="textociudadcarmin">Die Oaria Stadt hat den größten Hafen der Region, in dem Sie die luxuriösesten und berühmtesten Boote finden können</string>
     <string name="textociudadfucsia">Die Fuchsania-Stadt hat dank der Safari-Zone die größte Vielfalt an Pokémon.</string>
     <string name="textociudadcanela">Die Zinnober Insel ist die wichtigste, auf der sich ein Vulkan befindet, der derzeit nicht aktiv ist, sowie die wichtigsten Labors. Obwohl die Insel im Moment die wichtigste ist, ist sie völlig unbewohnt</string>
     <string name="textociudadplateada">Die Marmoria Stadt hat das größte Wissenschaftsmuseum der Region. Dieses Museum hat eine große Auswahl an Pokémon-Fossilien.</string>
-    <string name="textociudadazafran">Die Safronia Stadt ist die größte und am dichtesten besiedelte Stadt in Kanto, gilt als Hauptstadt der Region und ist als Goldener Faden bekannt, da sie sich auf ihren Namen bezieht. Sie ist die Stadt mit dem größten Marktvolumen</string>
+    <string name="textociudadazafran">Die Saffronia Stadt ist die größte und am dichtesten besiedelte Stadt in Kanto, gilt als Hauptstadt der Region und ist als Goldener Faden bekannt, da sie sich auf ihren Namen bezieht. Sie ist die Stadt mit dem größten Marktvolumen</string>
     <string name="Medallas">Medaillen</string>
     <string name="Entrenadores">Trainers</string>
     <string name="liderazulona">Erika, Leiterin des Prismania Stadt-Fitnessstudios, sie ist Spezialistin für Pflanzenpokémon, ihr Fitnessstudio ist ein Gewächshaus voller Blumen</string>
+    <string name="arena1">Um diese Arena zu erreichen, benötigen Sie zwischen 5 und 10 Karten</string>
+    <string name="arena2">Um diese Arena zu erreichen, benötigen Sie zwischen 10 und 15 Karten</string>
+    <string name="arena3">Um diese Arena zu erreichen, benötigen Sie zwischen 15 und 20 Karten</string>
+    <string name="arena4">Um diese Arena zu erreichen, benötigen Sie zwischen 20 und 25 Karten</string>
+    <string name="arena5">Um diese Arena zu erreichen, benötigen Sie zwischen 25 und 30 Karten</string>
+    <string name="arena6">Um diese Arena zu erreichen, benötigen Sie 30 Karten</string>
 </resources>

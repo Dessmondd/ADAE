@@ -113,6 +113,9 @@ class logout : AppCompatActivity() {
          if(language == "English"){
              text = "Successfully disconnected"
          }
+         if(language == "Deutsch"){
+             text = "Erfolgreich  abgemeldet!"
+         }
         val duration = Toast.LENGTH_SHORT
         val toast = Toast.makeText(applicationContext, text, duration)
         toast.show()

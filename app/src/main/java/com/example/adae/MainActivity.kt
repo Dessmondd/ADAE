@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity(), ViewerPagerAdapter2.OnItemSelected {
                 Board(
                     fondo = R.drawable.gradient_list,
                     imagen = R.drawable.gifonboard,
-                    titulo = "Pokemon's, mazos, colecciones...",
+                    titulo = "Pokemons, mazos, colecciones...",
                     descripcion = "Montones de Pokémon te están esperando dentro, elige tus mejores cartas y crea tu mazo"
 
                 ),
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity(), ViewerPagerAdapter2.OnItemSelected {
                     fondo = R.drawable.gradient_list,
                     imagen = R.drawable.gif4,
                     titulo = "¡Mejor con amigos!",
-                    descripcion = "¡Miles de jugadores ya lo juegan, comparte, disfruta y pasa un buen rato, revive esos momentos de la infancia"
+                    descripcion = "¡Miles de jugadores ya lo juegan, comparte, disfruta y pasa un buen rato, revive esos momentos de la infancia!"
                 )
 
             )
@@ -69,8 +69,8 @@ class MainActivity : AppCompatActivity(), ViewerPagerAdapter2.OnItemSelected {
                 Board(
                     fondo = R.drawable.gradient_list,
                     imagen = R.drawable.gifonboard,
-                    titulo = "Pokemon's, decks, collections...",
-                    descripcion = "Tons of Pokemon are waiting inside, choose your best cards and create your deck!"
+                    titulo = "Pokemons, decks, collections...",
+                    descripcion = "Lots of Pokemon are waiting inside, choose your best cards and create your deck!"
 
                 ),
                 Board(
@@ -89,21 +89,21 @@ class MainActivity : AppCompatActivity(), ViewerPagerAdapter2.OnItemSelected {
                 Board(
                     fondo = R.drawable.gradient_list,
                     imagen = R.drawable.pikachugif,
-                    titulo = "Here bby!",
-                    descripcion = "¡Únete al mundo de las cartas de Pokémon y pasalo en grande!"
+                    titulo = "Willkommen bei Pokémon!",
+                    descripcion = "Begleiten Sie uns in eine Welt der Karten und haben Sie Spaß!"
                 ),
                 Board(
                     fondo = R.drawable.gradient_list,
                     imagen = R.drawable.gifonboard,
-                    titulo = "Pokemon's, mazos, colecciones...",
-                    descripcion = "Montones de Pokémon te están esperando dentro, elige tus mejores cartas y crea tu mazo"
+                    titulo = "Pokemons, Decks, Sammlungen...",
+                    descripcion = "Viele Pokémon warten im Inneren, wählen Sie Ihre besten Karten und erstellen Sie Ihr Deck!"
 
                 ),
                 Board(
                     fondo = R.drawable.gradient_list,
                     imagen = R.drawable.gif4,
-                    titulo = "¡Mejor con amigos!",
-                    descripcion = "¡Miles de jugadores ya lo juegan, comparte, disfruta y pasa un buen rato, revive esos momentos de la infancia"
+                    titulo = "Besser mit freunden!",
+                    descripcion = "Tausende von Völker spielen bereits das Spiel, teilen, genießen und haben eine lustige Zeit, lassen diese nostalgischen Momente wieder aufleben!"
                 )
 
             )

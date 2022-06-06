@@ -32,7 +32,7 @@
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="176dp"
         android:fontFamily="@font/minecraft"
-        android:text="Para alcanzar esta arena se necesitan entre 5 y 10 cartas"
+        android:text="@string/arena1"
         android:textColor="@color/black"
         android:textSize="20sp" />
 

@@ -52,6 +52,11 @@ inner class BoardViewHolder(itemView: View, private val onItemSelected: OnItemSe
             }else{
                 boton.text = "Finish"
             }
+            if(language != "Deutsch"){
+                boton.text = "Finalizar"
+            }else{
+                boton.text = "Fertig"
+            }
         }
         boton.setOnClickListener{
             onItemSelected?.onClickListener(adapterPosition)

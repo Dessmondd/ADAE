@@ -33,7 +33,10 @@ class RecoverPassword : AppCompatActivity() {
                 if (task.isSuccessful) {
                     Log.d(TAG, "Email enviado")
                     if(language == "English"){
-                        Log.d(TAG, "Email enviado")
+                        Log.d(TAG, "Email sent")
+                    }
+                    if(language == "Deutsch"){
+                        Log.d(TAG, "EMail gesendet")
                     }
                     login()
                     popuppassword()
@@ -41,6 +44,9 @@ class RecoverPassword : AppCompatActivity() {
                     Log.d(TAG, "La cuenta no existe.")
                     if(language == "English"){
                         Log.d(TAG, "Account doesn't exist")
+                    }
+                    if(language == "Deutsch"){
+                        Log.d(TAG, "Konto existiert nicht")
                     }
                 }
             }
@@ -61,6 +67,9 @@ class RecoverPassword : AppCompatActivity() {
         var text = "Email de recuperación enviado con éxito"
         if(language == "English"){
             text = "Account recover email sent successfully"
+        }
+        if(language == "Deutsch"){
+            text = "EMail zur Kontowiederherstellung erfolgreich gesendet"
         }
         val duration = Toast.LENGTH_LONG
         val toast = Toast.makeText(applicationContext, text, duration)
