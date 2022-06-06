@@ -49,6 +49,8 @@ class RecoverPassword : AppCompatActivity() {
                         Log.d(TAG, "Konto existiert nicht")
                     }
                 }
+
+
             }
         // Termina de enviar la petición de resetear
     }

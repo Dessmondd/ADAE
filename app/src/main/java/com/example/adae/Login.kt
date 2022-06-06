@@ -10,6 +10,7 @@ import android.widget.EditText
 import android.widget.ImageButton
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -26,8 +27,8 @@ class login : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         checkSession()
         var trofeos = 0
-
         supportActionBar?.hide()
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         val googleConf = GoogleSignInOptions.
         Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).
         requestIdToken(getString(R.string.default_web_client_id))

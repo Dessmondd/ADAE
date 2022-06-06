@@ -54,7 +54,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/loginBtn"
+        android:id="@+id/recover"
         android:layout_width="291dp"
         android:layout_height="46dp"
         android:backgroundTint="@color/ELNARANJAFACHERO4"

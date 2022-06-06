@@ -8,4 +8,6 @@ class Entrenadores : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.entrenadores)
     }
+
+
 }

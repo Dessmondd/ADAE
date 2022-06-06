@@ -62,7 +62,7 @@ class ProgressionActivity : AppCompatActivity() {
         }
         val button3 = findViewById<Button>(R.id.Entrenadores)
         button3.setOnClickListener(){
-            val intent = Intent(this, pop_up_koga::class.java)
+            val intent = Intent(this, Entrenadores::class.java)
             startActivity(intent)
         }
     }
