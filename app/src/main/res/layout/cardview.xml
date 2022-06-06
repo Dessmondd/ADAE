@@ -16,9 +16,8 @@
         <pl.droidsonroids.gif.GifImageView
             android:id="@+id/imageViewIdCard"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="200dp"
             android:src="@drawable/pokeball"
-            android:transitionName=""
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
