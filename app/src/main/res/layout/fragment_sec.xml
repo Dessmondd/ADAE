@@ -8,17 +8,17 @@
     <ImageButton
         android:id="@+id/ciudadverde"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="314dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="118dp"
-        android:layout_marginTop="158dp"
-        android:layout_marginEnd="103dp"
-        android:layout_marginBottom="379dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="296dp"
         android:background="@null"
-        app:srcCompat="@drawable/ciudadverdebien" />
+        app:srcCompat="@drawable/ciudadverdegr" />
 
     <TextView
         android:layout_width="match_parent"
