@@ -14,7 +14,8 @@
             <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
                 android:layout_height="116dp"
-                android:src="@drawable/mrmime">
+                android:layout_marginTop="20dp"
+                android:src="@drawable/sabrina">
             </pl.droidsonroids.gif.GifImageView>
             <TextView
                 android:id="@+id/TextView01"
@@ -26,10 +27,14 @@
                 android:text="@string/liderazafran" >
             </TextView>
 
+
+
+
             <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
                 android:layout_height="116dp"
-                android:src="@drawable/dugtrio">
+                android:layout_marginTop="50dp"
+                android:src="@drawable/giovanni">
             </pl.droidsonroids.gif.GifImageView>
             <TextView
                 android:id="@+id/TextView02"
@@ -41,10 +46,14 @@
                 android:text="@string/liderverde" >
             </TextView>
 
+
+
+
             <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
                 android:layout_height="116dp"
-                android:src="@drawable/ponyta">
+                android:layout_marginTop="50dp"
+                android:src="@drawable/blaine">
             </pl.droidsonroids.gif.GifImageView>
             <TextView
                 android:id="@+id/TextView03"
@@ -56,10 +65,13 @@
                 android:text="@string/lidercanela" >
             </TextView>
 
+
+
             <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
                 android:layout_height="116dp"
-                android:src="@drawable/koffing">
+                android:layout_marginTop="50dp"
+                android:src="@drawable/kogaimg">
             </pl.droidsonroids.gif.GifImageView>
             <TextView
                 android:id="@+id/TextView04"
@@ -71,10 +83,14 @@
                 android:text="@string/liderfucsia" >
             </TextView>
 
+
+
+
             <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
                 android:layout_height="116dp"
-                android:src="@drawable/vileplume">
+                android:layout_marginTop="50dp"
+                android:src="@drawable/erika">
             </pl.droidsonroids.gif.GifImageView>
             <TextView
                 android:id="@+id/TextView05"
@@ -86,10 +102,14 @@
                 android:text="@string/liderazulona" >
             </TextView>
 
+
+
+
             <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
                 android:layout_height="116dp"
-                android:src="@drawable/onix">
+                android:layout_marginTop="50dp"
+                android:src="@drawable/brock">
             </pl.droidsonroids.gif.GifImageView>
             <TextView
                 android:id="@+id/TextView06"
