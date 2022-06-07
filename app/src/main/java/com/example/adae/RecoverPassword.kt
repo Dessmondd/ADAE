@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
@@ -41,13 +42,7 @@ class RecoverPassword : AppCompatActivity() {
                     login()
                     popuppassword()
                 }else{
-                    Log.d(TAG, "La cuenta no existe.")
-                    if(language == "English"){
-                        Log.d(TAG, "Account doesn't exist")
-                    }
-                    if(language == "Deutsch"){
-                        Log.d(TAG, "Konto existiert nicht")
-                    }
+                    ShowError()
                 }
 
 
@@ -55,6 +50,31 @@ class RecoverPassword : AppCompatActivity() {
         // Termina de enviar la petición de resetear
     }
 
+    private fun ShowError(){
+
+        var builder = AlertDialog.Builder(this)
+        val language = Locale.getDefault().getDisplayLanguage().toString()
+
+        var tittle="Error"
+        var msg="El email no existe o está mal escrito"
+        var button="Aceptar"
+        if(language == "English"){
+            tittle ="Error"
+            msg="The email does not exist or is not well written"
+            button="Acept"
+        }
+        if(language == "Deutsch"){
+            tittle="Error"
+            msg="Die E-Mail existiert nicht oder ist nicht gut geschrieben"
+            button="akzeptieren"
+        }
+
+        builder.setTitle(tittle )
+        builder.setMessage(msg)
+        builder.setPositiveButton(button, null)
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+    }
     fun login() {
         var irLogin = Intent(this, login::class.java)
         startActivity(irLogin)

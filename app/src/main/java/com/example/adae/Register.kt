@@ -62,16 +62,16 @@ class Register : AppCompatActivity() {
         val language = Locale.getDefault().getDisplayLanguage().toString()
 
         var tittle="Error"
-        var msg="No hay conexión con la base de datos o los datos son incorrectos"
+        var msg="Puede que no haya conexión con la base de datos o compruebe que el mail introducido existe o que la contraseña introducida tenga 6 carateres o más"
         var button="Aceptar"
         if(language == "English"){
             tittle ="Error"
-            msg="There's no connection with the database or the data is incorrect"
+            msg="There might be no connection with the database or check that the mail exists as well as that the password has 6 or more digits"
             button="Acept"
         }
         if(language == "Deutsch"){
             tittle="Error"
-            msg="Es besteht keine Verbindung zur Datenbank oder die Daten sind falsch"
+            msg="Möglicherweise besteht keine Verbindung zur Datenbank oder überprüfen Sie, ob die E-Mail existiert und ob das Passwort 6 oder mehr Ziffern hat"
             button="akzeptieren"
         }
 
