@@ -9,100 +9,95 @@
             android:id="@+id/LinearLayout01"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical" >
 
             <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/mrmime"
-                >
+                android:layout_height="116dp"
+                android:src="@drawable/mrmime">
             </pl.droidsonroids.gif.GifImageView>
-
             <TextView
                 android:id="@+id/TextView01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dip"
-                android:textSize="20sp"
+                android:layout_margin="22dip"
+                android:textSize="18sp"
                 android:fontFamily="@font/minecraft"
                 android:text="@string/liderazafran" >
             </TextView>
 
             <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="116dp"
                 android:src="@drawable/dugtrio">
             </pl.droidsonroids.gif.GifImageView>
-
             <TextView
                 android:id="@+id/TextView02"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dip"
-                android:textSize="20sp"
+                android:layout_margin="22dip"
+                android:textSize="18sp"
                 android:fontFamily="@font/minecraft"
                 android:text="@string/liderverde" >
             </TextView>
+
             <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="116dp"
                 android:src="@drawable/ponyta">
             </pl.droidsonroids.gif.GifImageView>
-
             <TextView
                 android:id="@+id/TextView03"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dip"
-                android:textSize="20sp"
+                android:layout_margin="22dip"
+                android:textSize="18sp"
                 android:fontFamily="@font/minecraft"
                 android:text="@string/lidercanela" >
             </TextView>
 
             <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="116dp"
                 android:src="@drawable/koffing">
             </pl.droidsonroids.gif.GifImageView>
-
             <TextView
                 android:id="@+id/TextView04"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dip"
-                android:textSize="20sp"
+                android:layout_margin="22dip"
+                android:textSize="18sp"
                 android:fontFamily="@font/minecraft"
                 android:text="@string/liderfucsia" >
             </TextView>
+
             <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="116dp"
                 android:src="@drawable/vileplume">
             </pl.droidsonroids.gif.GifImageView>
-
             <TextView
                 android:id="@+id/TextView05"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dip"
-                android:textSize="20sp"
+                android:layout_margin="22dip"
+                android:textSize="18sp"
                 android:fontFamily="@font/minecraft"
                 android:text="@string/liderazulona" >
             </TextView>
+
             <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="116dp"
                 android:src="@drawable/onix">
             </pl.droidsonroids.gif.GifImageView>
-
             <TextView
                 android:id="@+id/TextView06"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dip"
+                android:layout_margin="22dip"
+                android:textSize="18sp"
                 android:fontFamily="@font/minecraft"
-                android:textSize="20sp"
                 android:text="@string/liderplateada" >
             </TextView>
 
