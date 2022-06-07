@@ -3,74 +3,96 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
-    <RelativeLayout
-        android:id="@+id/RelativeLayout01"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
 
         <LinearLayout
             android:id="@+id/LinearLayout01"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical" >
 
             <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/gif3">
+                android:src="@drawable/azafransabrina">
             </pl.droidsonroids.gif.GifImageView>
 
-            <TextView
+            <EditText
                 android:id="@+id/TextView01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dip"
                 android:text="@string/liderazafran" >
-            </TextView>
+            </EditText>
 
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/verdegiovanni">
+            </pl.droidsonroids.gif.GifImageView>
 
-            <TextView
+            <EditText
                 android:id="@+id/TextView02"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dip"
-                android:text="@+id/TextView01" >
-            </TextView>
+                android:text="@string/liderverde" >
+            </EditText>
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/canelablaine">
+            </pl.droidsonroids.gif.GifImageView>
 
-            <TextView
+            <EditText
                 android:id="@+id/TextView03"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dip"
-                android:text="@+id/TextView01" >
-            </TextView>
+                android:text="@string/lidercanela" >
+            </EditText>
 
-            <TextView
-                android:id="@+id/TextView4"
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/fucsiakoga">
+            </pl.droidsonroids.gif.GifImageView>
+
+            <EditText
+                android:id="@+id/TextView04"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dip"
-                android:text="@+id/TextView01" >
-            </TextView>
+                android:text="@string/liderfucsia" >
+            </EditText>
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/azulonaerika">
+            </pl.droidsonroids.gif.GifImageView>
 
-            <TextView
+            <EditText
                 android:id="@+id/TextView05"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dip"
-                android:text="@+id/TextView01" >
-            </TextView>
+                android:text="@string/liderazulona" >
+            </EditText>
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/plateadabrock">
+            </pl.droidsonroids.gif.GifImageView>
 
-            <TextView
+            <EditText
                 android:id="@+id/TextView06"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dip"
-                android:text="@+id/TextView01" >
-            </TextView>
+                android:text="@string/liderplateada" >
+            </EditText>
 
 
         </LinearLayout>
-    </RelativeLayout>
+
 
 </ScrollView>
