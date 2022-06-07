@@ -65,6 +65,7 @@ class login : AppCompatActivity() {
                     .addOnCompleteListener {
                         if (it.isSuccessful) {
                             login()
+                            popupwarning()
                         } else {
                             //error
                             ShowAlert2()
