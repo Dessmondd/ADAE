@@ -55,6 +55,26 @@
             android:exported="false"
             android:theme="@style/AppTheme.PopUp" />
         <activity
+            android:name=".PopUpEntrenadores.pop_up_blaine"
+            android:exported="false"
+            android:theme="@style/AppTheme.PopUp" />
+        <activity
+            android:name=".PopUpEntrenadores.pop_up_brock"
+            android:exported="false"
+            android:theme="@style/AppTheme.PopUp" />
+        <activity
+            android:name=".PopUpEntrenadores.pop_up_erika"
+            android:exported="false"
+            android:theme="@style/AppTheme.PopUp" />
+        <activity
+            android:name=".PopUpEntrenadores.pop_up_giovanni"
+            android:exported="false"
+            android:theme="@style/AppTheme.PopUp" />
+        <activity
+            android:name=".PopUpEntrenadores.pop_up_sabrina"
+            android:exported="false"
+            android:theme="@style/AppTheme.PopUp" />
+        <activity
             android:name=".pop_up_medallas"
             android:exported="false"
             android:theme="@style/AppTheme.PopUp" />
@@ -103,6 +123,7 @@
             android:label="@string/title_activity_drawer"
             android:theme="@style/Theme.ADAE.NoActionBar" />
         <activity
+
             android:name=".Splash"
             android:exported="true">
             <intent-filter>
