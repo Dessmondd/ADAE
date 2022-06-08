@@ -13,6 +13,8 @@
     <string name="menu_gallery" translatable="false">Gallery</string>
     <string name="menu_slideshow" translatable="false">Slideshow</string>
     <string name="cartas" translatable="false">/comunes</string>
+    <string name="cartasde" translatable="false">/comunesde</string>
+    <string name="cartasen" translatable="false">/comunesen</string>
     <string name="comunes" translatable="false">/pixelart</string>
     <string name="epic" translatable="false">/epic</string>
     <string name="legendarias" translatable="false">/legendarias</string>

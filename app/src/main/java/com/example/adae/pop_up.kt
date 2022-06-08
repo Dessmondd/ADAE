@@ -17,6 +17,7 @@ import com.google.firebase.storage.ktx.storage
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import java.lang.System.load
+import java.util.*
 
 
 class pop_up : AppCompatActivity() {
@@ -47,12 +48,16 @@ class pop_up : AppCompatActivity() {
         }
         val firebaseDatabase = FirebaseDatabase.getInstance()
         val databaseReference = firebaseDatabase.reference
+
     }
 
     fun loadWithGlide(id : String) {
+        val language = Locale.getDefault().getDisplayLanguage().toString()
         val firebaseDatabase = FirebaseDatabase.getInstance()
         val storageReference = Firebase.storage.reference //.toString() + "/comunes/#016-Pidgey.png"//Firebase.storage.reference
-        var comunes =storageReference.child(getString(R.string.cartas))
+        var comunes = storageReference.child(getString(R.string.cartas))
+        var comunesde = storageReference.child(getString(R.string.cartasde))
+        var comunesen = storageReference.child(getString(R.string.cartasen))
 
         supportActionBar?.hide()
         setContentView(R.layout.activity_pop_up)
@@ -64,8 +69,18 @@ class pop_up : AppCompatActivity() {
         val height = dm.heightPixels
 
         window.setLayout((width * .95).toInt(), (height * .75).toInt())
+        var getImage =comunes.child( id + ".png")
 
-        val getImage =comunes.child( id + ".png")
+        if(language == "English"){
+            getImage = comunesen.child(id + ".png")
+        }
+        if(language == "Deutsch"){
+            getImage =comunesde.child( id + ".png")
+        }else{
+            getImage =comunes.child( id + ".png")
+        }
+
+
         val imageView = findViewById<ImageView>(R.id.popup)
 
         getImage.downloadUrl.addOnSuccessListener {

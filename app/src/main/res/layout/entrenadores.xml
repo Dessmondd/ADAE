@@ -27,9 +27,6 @@
                 android:text="@string/liderazafran" >
             </TextView>
 
-
-
-
             <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
                 android:layout_height="116dp"
