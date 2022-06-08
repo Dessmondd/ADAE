@@ -21,8 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
-        android:src="@drawable/home"
-        android:contentDescription="Salir"/>
+        android:contentDescription="Salir"
+        android:src="@drawable/home" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"

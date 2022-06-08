@@ -18,8 +18,10 @@ import com.example.adae.databinding.CardviewBinding
 import com.example.adae.models.PokemonRecycler
 import com.squareup.picasso.Picasso
 
-class AlumnoAdapter2 (private val context : Context, private val mList: List<PokemonRecycler>) :
+class AlumnoAdapter2 (private val context : Context, private val mList: List<PokemonRecycler>, private val img: ImageView, private val img2: ImageView) :
     RecyclerView.Adapter<AlumnoAdapter2.ViewHolder>() {
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):
             AlumnoAdapter2.ViewHolder {
 
@@ -28,14 +30,37 @@ class AlumnoAdapter2 (private val context : Context, private val mList: List<Pok
         return ViewHolder(view)
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
         val item = mList[position]
         val url = item.url.downloadUrl.addOnSuccessListener {
+
+            val imgcarta = it
             Glide.with(context)
                 .load(it)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(holder.img_android2)
             holder.img_android2.id = position
             holder.img_android2.setOnClickListener({
+
+                if (img.drawable == null)
+                {
+                    Glide.with(context)
+                        .load(imgcarta)
+                        .diskCacheStrategy(DiskCacheStrategy.ALL)
+                        .into(img)
+                }
+                else if(img2.drawable == null){
+                    Glide.with(context)
+                        .load(imgcarta)
+                        .diskCacheStrategy(DiskCacheStrategy.ALL)
+                        .into(img2)
+                }
+
+
+
+
+                //img.setImageResource(R.drawable.arena_button)
+
             })
         }.addOnFailureListener {
             // Handle any errors
@@ -46,6 +71,7 @@ class AlumnoAdapter2 (private val context : Context, private val mList: List<Pok
 
     }
     override fun getItemCount(): Int = mList.size
+
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val binding = CardviewBinding.bind(view)
 
