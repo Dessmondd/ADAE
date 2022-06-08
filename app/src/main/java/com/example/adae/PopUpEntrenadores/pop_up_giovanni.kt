@@ -14,7 +14,7 @@ class pop_up_giovanni : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
-        setContentView(R.layout.activity_pop_up_koga)
+        setContentView(R.layout.activity_pop_up_giovanni)
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
         binding = ActivityColeecionBinding.inflate(layoutInflater)
         val dm = DisplayMetrics()
