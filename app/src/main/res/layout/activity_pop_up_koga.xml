@@ -5,16 +5,18 @@
     android:layout_height="300dp"
     android:background="@drawable/gradient_2">
 
-    <ImageView
-        android:id="@+id/entrenadorcarta"
-        android:layout_width="236dp"
-        android:layout_height="260dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+     <ImageView
+         android:id="@+id/entrenadorcarta"
+         android:layout_width="253dp"
+         android:layout_height="147dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.837"
+         app:srcCompat="@drawable/fucsiaespa" />
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
