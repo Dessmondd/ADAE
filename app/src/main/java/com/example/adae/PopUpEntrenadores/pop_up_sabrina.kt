@@ -27,9 +27,9 @@ class pop_up_sabrina : AppCompatActivity() {
 
         window.setLayout((width * 0.8).toInt(), (height * 0.4).toInt())
 
-        val view = findViewById<ImageView>(R.id.erikacard3)
+        val view = findViewById<ImageView>(R.id.erikacard6)
         if(language == "English"){
-            view.setImageResource(R.drawable.azafraneng)
+            view.setImageResource(R.drawable.azafranengl)
         }
         if(language == "Deutsch"){
             view.setImageResource(R.drawable.azafranaleman)
