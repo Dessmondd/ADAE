@@ -71,13 +71,14 @@ class pop_up : AppCompatActivity() {
         window.setLayout((width * .95).toInt(), (height * .75).toInt())
         var getImage =comunes.child( id + ".png")
 
-        if(language == "English"){
-            getImage = comunesen.child(id + ".png")
-        }
+
         if(language == "Deutsch"){
             getImage =comunesde.child( id + ".png")
         }else{
             getImage =comunes.child( id + ".png")
+        }
+        if(language == "English"){
+            getImage = comunesen.child(id + ".png")
         }
 
 
