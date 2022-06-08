@@ -8,7 +8,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.adae.PopUpArenas.*
-import com.example.adae.PopUpEntrenadores.pop_up_koga
+import com.example.adae.PopUpEntrenadores.*
 import com.example.adae.databinding.ActivityColeecionBinding
 import com.example.adae.models.PokemonRecycler
 
@@ -43,27 +43,27 @@ class pop_up_medallas : AppCompatActivity() {
 
         val button4 = findViewById<ImageButton>(R.id.canela)
         button4.setOnClickListener(){
-            val intent = Intent(this, pop_up3::class.java)
+            val intent = Intent(this, pop_up_blaine::class.java)
             startActivity(intent)
         }
         val button5 = findViewById<ImageButton>(R.id.azafran)
         button5.setOnClickListener(){
-            val intent = Intent(this, pop_up1::class.java)
+            val intent = Intent(this, pop_up_sabrina::class.java)
             startActivity(intent)
         }
         val button6 = findViewById<ImageButton>(R.id.verde)
         button6.setOnClickListener(){
-            val intent = Intent(this, pop_up2::class.java)
+            val intent = Intent(this, pop_up_giovanni::class.java)
             startActivity(intent)
         }
         val button7 = findViewById<ImageButton>(R.id.azulona)
         button7.setOnClickListener(){
-            val intent = Intent(this, pop_up5::class.java)
+            val intent = Intent(this, pop_up_erika::class.java)
             startActivity(intent)
         }
         val button8 = findViewById<ImageButton>(R.id.plateada)
         button8.setOnClickListener(){
-            val intent = Intent(this, pop_up6::class.java)
+            val intent = Intent(this, pop_up_brock::class.java)
             startActivity(intent)
         }
 
