@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.adae.PopUpArenas.*
 import com.example.adae.PopUpEntrenadores.*
 import com.example.adae.databinding.ActivityColeecionBinding
-import com.example.adae.models.PokemonRecycler
 
 
 class pop_up_medallas : AppCompatActivity() {
@@ -30,12 +29,11 @@ class pop_up_medallas : AppCompatActivity() {
 
         window.setLayout((width * 0.8).toInt(), (height * 0.4).toInt())
 
+
+        val image = findViewById<ImageView>(R.id.erikacard)
+
+
         val button3 = findViewById<ImageButton>(R.id.fucsia)
-
-        val image = findViewById<ImageView>(R.id.entrenadorcarta)
-
-
-        
         button3.setOnClickListener(){
             val intent = Intent(this, pop_up_koga::class.java)
             startActivity(intent)

@@ -6,7 +6,7 @@
     android:background="@drawable/gradient_2">
 
     <ImageView
-        android:id="@+id/entrenadorcarta"
+        android:id="@+id/erikacard"
         android:layout_width="253dp"
         android:layout_height="147dp"
         app:layout_constraintBottom_toBottomOf="parent"
