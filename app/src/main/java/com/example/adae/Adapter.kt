@@ -46,7 +46,6 @@ class AlumnoAdapter (private val context : Context, private val mList: List<Poke
         }
 
 
-
     }
     override fun getItemCount(): Int = mList.size
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {

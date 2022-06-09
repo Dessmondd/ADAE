@@ -36,7 +36,7 @@ class Coleecion: AppCompatActivity() {
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
         binding = ActivityColeecionBinding.inflate(layoutInflater)
         loadWithGlide()
-        checkSession()
+
         supportActionBar?.hide()
         val firebaseDatabase = FirebaseDatabase.getInstance()
         val databaseReference = firebaseDatabase.reference
@@ -56,17 +56,7 @@ class Coleecion: AppCompatActivity() {
         }
     }
 
-
-
-    private fun checkSession() {
-        val preferences =
-            getSharedPreferences(getString(R.string.preferences), Context.MODE_PRIVATE)
-        val email = preferences.getString("email", null);
-        if (email != null) {
-            logout()
-        }
-    }
-
+    
 
     fun loadWithGlide() {
 

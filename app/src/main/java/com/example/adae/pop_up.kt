@@ -85,7 +85,6 @@ class pop_up : AppCompatActivity() {
         val imageView = findViewById<ImageView>(R.id.popup)
 
         getImage.downloadUrl.addOnSuccessListener {
-
             Glide.with(this)
                 .load(it)
                 .into(imageView)
