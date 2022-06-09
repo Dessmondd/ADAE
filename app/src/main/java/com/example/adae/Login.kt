@@ -20,7 +20,6 @@ import com.google.firebase.auth.GoogleAuthProvider
 import java.util.*
 
 class login : AppCompatActivity() {
-
     private val GOOGLE_SIGN_IN = 100
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,6 +40,7 @@ class login : AppCompatActivity() {
             gClient.signOut()
             val intent = gClient.getSignInIntent()
             startActivityForResult(intent, 100)
+
 
         }
 
@@ -81,6 +81,7 @@ class login : AppCompatActivity() {
         }
 
     }
+
 private fun logout(){
     var logout = Intent(this, Menu::class.java)
     startActivity(logout)

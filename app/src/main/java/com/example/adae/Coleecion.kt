@@ -1,4 +1,5 @@
 package com.example.adae
+import android.content.Context
 import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Bundle
@@ -31,9 +32,9 @@ class Coleecion: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
         binding = ActivityColeecionBinding.inflate(layoutInflater)
-    loadWithGlide()
+        loadWithGlide()
+        checkSession()
         supportActionBar?.hide()
-
         val firebaseDatabase = FirebaseDatabase.getInstance()
         val databaseReference = firebaseDatabase.reference
         val activity = this
@@ -42,6 +43,18 @@ class Coleecion: AppCompatActivity() {
             inicio()
         }
     }
+
+
+
+    private fun checkSession() {
+        val preferences =
+            getSharedPreferences(getString(R.string.preferences), Context.MODE_PRIVATE)
+        val email = preferences.getString("email", null);
+        if (email != null) {
+            logout()
+        }
+    }
+
 
     fun loadWithGlide() {
 

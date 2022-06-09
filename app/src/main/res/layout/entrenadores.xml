@@ -11,6 +11,15 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="16dp"
+                android:onClick="volverAtrás"
+                android:src="@drawable/home" />
+
             <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
                 android:layout_height="116dp"

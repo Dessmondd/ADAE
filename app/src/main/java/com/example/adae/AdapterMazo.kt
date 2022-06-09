@@ -18,7 +18,7 @@ import com.example.adae.databinding.CardviewBinding
 import com.example.adae.models.PokemonRecycler
 import com.squareup.picasso.Picasso
 
-class AlumnoAdapter2 (private val context : Context, private val mList: List<PokemonRecycler>, private val img: ImageView, private val img2: ImageView) :
+class AlumnoAdapter2 (private val context : Context, private val mList: List<PokemonRecycler>, private val img: ImageView, private val img2: ImageView, private val img3: ImageView, private val img4: ImageView , private val img5: ImageView, private val img6: ImageView) :
     RecyclerView.Adapter<AlumnoAdapter2.ViewHolder>() {
 
 
@@ -55,6 +55,33 @@ class AlumnoAdapter2 (private val context : Context, private val mList: List<Pok
                         .diskCacheStrategy(DiskCacheStrategy.ALL)
                         .into(img2)
                 }
+                else if(img3.drawable == null){
+                    Glide.with(context)
+                        .load(imgcarta)
+                        .diskCacheStrategy(DiskCacheStrategy.ALL)
+                        .into(img3)
+                }
+                else if(img4.drawable == null){
+                    Glide.with(context)
+                        .load(imgcarta)
+                        .diskCacheStrategy(DiskCacheStrategy.ALL)
+                        .into(img4)
+                }
+                else if(img5.drawable == null){
+                    Glide.with(context)
+                        .load(imgcarta)
+                        .diskCacheStrategy(DiskCacheStrategy.ALL)
+                        .into(img5)
+                }
+                else if(img6.drawable == null){
+                    Glide.with(context)
+                        .load(imgcarta)
+                        .diskCacheStrategy(DiskCacheStrategy.ALL)
+                        .into(img6)
+                }
+
+
+
 
 
 

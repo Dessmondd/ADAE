@@ -1,5 +1,6 @@
 package com.example.adae
 
+import android.content.Context
 import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Bundle
@@ -13,7 +14,6 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.adae.databinding.ActivityColeecionBinding
 import com.example.adae.databinding.ActivityMazoBinding
 import com.example.adae.models.PokemonRecycler
 import com.google.firebase.database.FirebaseDatabase
@@ -37,7 +37,7 @@ class MazoView : AppCompatActivity() {
         binding = ActivityMazoBinding.inflate(layoutInflater)
         loadWithGlide()
         supportActionBar?.hide()
-
+        checkSession()
         val firebaseDatabase = FirebaseDatabase.getInstance()
         val databaseReference = firebaseDatabase.reference
         val activity = this
@@ -64,10 +64,13 @@ class MazoView : AppCompatActivity() {
         }
         val aaa = findViewById<ImageView>(R.id.container1)
         val a2 = findViewById<ImageView>(R.id.container2)
+        val a3 = findViewById<ImageView>(R.id.container3)
+        val a4 = findViewById<ImageView>(R.id.container4)
+        val a5 = findViewById<ImageView>(R.id.container5)
+        val a6 = findViewById<ImageView>(R.id.container6)
         a2.setImageDrawable(null)
-        val adapter = AlumnoAdapter2(this@MazoView ,data, aaa, a2)
+        val adapter = AlumnoAdapter2(this@MazoView ,data, aaa,a2,a3,a4,a5,a6)
         recyclerview.adapter = adapter
-
     }
 
     private fun getRetrofit(): Retrofit {
@@ -90,5 +93,14 @@ class MazoView : AppCompatActivity() {
     fun borrar(view: android.view.View){
         val a2 = findViewById<ImageView>(R.id.container2)
         a2.setImageDrawable(null)
+    }
+
+    private fun checkSession() {
+        val preferences =
+            getSharedPreferences(getString(R.string.preferences), Context.MODE_PRIVATE)
+        val email = preferences.getString("email", null);
+        if (email != null) {
+            logout()
+        }
     }
 }
