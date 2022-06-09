@@ -40,11 +40,7 @@ class login : AppCompatActivity() {
             gClient.signOut()
             val intent = gClient.getSignInIntent()
             startActivityForResult(intent, 100)
-
-
         }
-
-
 
 
         val constraintLayout = findViewById<ConstraintLayout>(R.id.layout)

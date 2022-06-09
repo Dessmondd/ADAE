@@ -8,6 +8,7 @@ import android.view.Menu
 import android.view.View
 import android.widget.Adapter
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -68,8 +69,30 @@ class MazoView : AppCompatActivity() {
         val a4 = findViewById<ImageView>(R.id.container4)
         val a5 = findViewById<ImageView>(R.id.container5)
         val a6 = findViewById<ImageView>(R.id.container6)
-        a2.setImageDrawable(null)
-        val adapter = AlumnoAdapter2(this@MazoView ,data, aaa,a2,a3,a4,a5,a6)
+        var contarcartas = findViewById<TextView>(R.id.contarcartas)
+
+
+        aaa.setOnClickListener(){
+            aaa.setImageDrawable(null)
+        }
+        a3.setOnClickListener(){
+            a3.setImageDrawable(null)
+        }
+        a2.setOnClickListener(){
+            a2.setImageDrawable(null)
+        }
+        a4.setOnClickListener(){
+            a4.setImageDrawable(null)
+        }
+        a5.setOnClickListener(){
+            a5.setImageDrawable(null)
+        }
+        a6.setOnClickListener(){
+            a6.setImageDrawable(null)
+        }
+
+
+        val adapter= AlumnoAdapter2(this@MazoView ,data, aaa,a2,a3,a4,a5,a6,contarcartas)
         recyclerview.adapter = adapter
     }
 
