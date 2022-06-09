@@ -21,7 +21,7 @@ class pop_up3 : AppCompatActivity() {
         val width = dm.widthPixels
         val height = dm.heightPixels
 
-        window.setLayout((width * .9).toInt(), (height * .7).toInt())
+        window.setLayout((width * .9).toInt(), (height * .8).toInt())
 
 
     }

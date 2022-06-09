@@ -13,7 +13,7 @@
         android:fontFamily="@font/minecraft"
         android:text="@string/textociudadplateada"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.712"
@@ -27,12 +27,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/minecraft"
         android:text="@string/ciudadplateada"
+        android:textSize="20sp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096" />
+        app:layout_constraintVertical_bias="0.076" />
 
 
     <ImageView
@@ -58,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.581" />
+        app:layout_constraintVertical_bias="0.654"/>
 
     <ImageView
         android:id="@+id/erikacard"
@@ -68,7 +70,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.837"
+        app:layout_constraintVertical_bias="0.885"
         app:srcCompat="@drawable/gymplateadadark" />
 
 
