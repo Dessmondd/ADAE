@@ -37,8 +37,8 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="334dp"
-        android:layout_height="157dp"
+        android:layout_width="296dp"
+        android:layout_height="123dp"
         android:fontFamily="@font/minecraft"
         android:text="@string/warning"
         android:textColor="@color/black"
@@ -48,7 +48,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.482" />
+        app:layout_constraintVertical_bias="0.442" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
