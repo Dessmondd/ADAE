@@ -22,6 +22,8 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class MazoView : AppCompatActivity() {
@@ -35,6 +37,7 @@ class MazoView : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
+        val language = Locale.getDefault().getDisplayLanguage().toString()
         binding = ActivityMazoBinding.inflate(layoutInflater)
         loadWithGlide()
         supportActionBar?.hide()
@@ -49,7 +52,7 @@ class MazoView : AppCompatActivity() {
     }
 
     fun loadWithGlide() {
-
+        val language = Locale.getDefault().getDisplayLanguage().toString()
         val view = binding.root
         setContentView(view)
         val recyclerview = findViewById<RecyclerView>(R.id.recyclerview2)
@@ -57,10 +60,19 @@ class MazoView : AppCompatActivity() {
         val data = ArrayList<PokemonRecycler>()
         val storageReference = Firebase.storage.reference
         var comunes =storageReference.child(getString(R.string.cartas))
+        var comunesde = storageReference.child(getString(R.string.cartasde))
+        var comunesen = storageReference.child(getString(R.string.cartasen))
         var a = comunes
         var b = arrayOf(a)
         for(i in 1..30){
             var pidgey = comunes.child("/"+i.toString() +".png")
+            if(language == "English"){
+                pidgey = comunesen.child("/"+i.toString() +".png")
+            }
+            if(language == "Deutsch"){
+                pidgey = comunesde.child("/"+i.toString() +".png")
+            }
+
             data.add(PokemonRecycler(i.toString(), pidgey))
         }
         val aaa = findViewById<ImageView>(R.id.container1)
