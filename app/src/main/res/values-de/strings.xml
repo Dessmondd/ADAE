@@ -50,4 +50,6 @@
     <string name="arena4">Um diese Arena zu erreichen, benötigen Sie zwischen 20 und 25 Karten</string>
     <string name="arena5">Um diese Arena zu erreichen, benötigen Sie zwischen 25 und 30 Karten</string>
     <string name="arena6">Um diese Arena zu erreichen, benötigen Sie 30 Karten</string>
+    <string name="creamazo">Erstellen Sie Ihr Deck!</string>
+    <string name="nombremazo">Deckname 1</string>
 </resources>
