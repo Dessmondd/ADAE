@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.View
 import android.widget.Adapter
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.recyclerview.widget.GridLayoutManager
@@ -17,6 +18,8 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class Coleecion: AppCompatActivity() {
@@ -41,6 +44,15 @@ class Coleecion: AppCompatActivity() {
         val fab: View = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
             inicio()
+        }
+
+        val language = Locale.getDefault().getDisplayLanguage().toString()
+        val view = findViewById<ImageView>(R.id.headercoleccion)
+        if(language == "English"){
+            view.setImageResource(R.drawable.collectionheader)
+        }
+        if(language == "Deutsch"){
+            view.setImageResource(R.drawable.samlungheader)
         }
     }
 
