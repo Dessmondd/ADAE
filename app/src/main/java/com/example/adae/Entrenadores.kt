@@ -16,7 +16,7 @@ class Entrenadores : AppCompatActivity() {
     }
 
     fun volverAtrás(view: android.view.View){
-        val intent = Intent(this, logout::class.java).apply{
+        val intent = Intent(this, ProgressionActivity::class.java).apply{
 
         }
         startActivity(intent)
