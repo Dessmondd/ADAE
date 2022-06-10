@@ -18,6 +18,7 @@ class logout : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.logout)
         supportActionBar?.hide()
+
         val constraintLayout = findViewById<ConstraintLayout>(R.id.layout2)
         val animationDrawable: AnimationDrawable = constraintLayout.background as AnimationDrawable
         animationDrawable.setEnterFadeDuration(3000)

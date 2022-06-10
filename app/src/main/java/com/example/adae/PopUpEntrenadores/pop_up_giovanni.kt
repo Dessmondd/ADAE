@@ -25,6 +25,7 @@ class pop_up_giovanni : AppCompatActivity() {
         val width = dm.widthPixels
         val height = dm.heightPixels
 
+
         window.setLayout((width * 0.8).toInt(), (height * 0.4).toInt())
 
         val view = findViewById<ImageView>(R.id.erikacard4)
