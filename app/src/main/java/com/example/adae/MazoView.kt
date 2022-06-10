@@ -81,7 +81,7 @@ class MazoView : AppCompatActivity() {
         val a4 = findViewById<ImageView>(R.id.container4)
         val a5 = findViewById<ImageView>(R.id.container5)
         val a6 = findViewById<ImageView>(R.id.container6)
-        var contarcartas = findViewById<TextView>(R.id.contarcartas)
+
 
 
         aaa.setOnClickListener(){
@@ -104,7 +104,7 @@ class MazoView : AppCompatActivity() {
         }
 
 
-        val adapter= AlumnoAdapter2(this@MazoView ,data, aaa,a2,a3,a4,a5,a6,contarcartas)
+        val adapter= AlumnoAdapter2(this@MazoView ,data, aaa,a2,a3,a4,a5,a6)
         recyclerview.adapter = adapter
     }
 

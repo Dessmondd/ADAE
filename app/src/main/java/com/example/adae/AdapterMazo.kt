@@ -19,7 +19,7 @@ import com.example.adae.databinding.CardviewBinding
 import com.example.adae.models.PokemonRecycler
 import com.squareup.picasso.Picasso
 
-class AlumnoAdapter2 (private val context : Context, private val mList: List<PokemonRecycler>, private val img: ImageView, private val img2: ImageView, private val img3: ImageView, private val img4: ImageView, private val img5: ImageView, private val img6: ImageView, private var contarcartas:  TextView) :
+class AlumnoAdapter2 (private val context : Context, private val mList: List<PokemonRecycler>, private val img: ImageView, private val img2: ImageView, private val img3: ImageView, private val img4: ImageView, private val img5: ImageView, private val img6: ImageView) :
     RecyclerView.Adapter<AlumnoAdapter2.ViewHolder>() {
 
 
@@ -34,7 +34,7 @@ class AlumnoAdapter2 (private val context : Context, private val mList: List<Pok
 
         val item = mList[position]
         val url = item.url.downloadUrl.addOnSuccessListener {
-        var contar: TextView = contarcartas
+
             val imgcarta = it
             Glide.with(context)
                 .load(it)
@@ -45,7 +45,6 @@ class AlumnoAdapter2 (private val context : Context, private val mList: List<Pok
 
                 if (img.drawable == null)
                 {
-
                     Glide.with(context)
                         .load(imgcarta)
                         .diskCacheStrategy(DiskCacheStrategy.ALL)
@@ -81,7 +80,6 @@ class AlumnoAdapter2 (private val context : Context, private val mList: List<Pok
                         .diskCacheStrategy(DiskCacheStrategy.ALL)
                         .into(img6)
                 }
-
 
 
 
