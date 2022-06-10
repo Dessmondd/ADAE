@@ -134,6 +134,7 @@
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_pop_up1.xml" value="0.251063829787234" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_pop_up2.xml" value="0.33" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_pop_up3.xml" value="0.33958333333333335" />
+        <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_pop_up_giovanni.xml" value="0.14735866543095458" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_pop_up_warning.xml" value="0.33" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_progression.xml" value="0.33" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/activity_shop2.xml" value="0.22" />
@@ -176,21 +177,17 @@
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/splash.xml" value="0.11574074074074074" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/layout/tablayout.xml" value="0.25" />
         <entry key="..\:/Users/Dessmondh/AndroidStudioProjects/Daniel-Erika-s-World/app/src/main/res/menu/drawer2.xml" value="0.2" />
-        <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/drawable/background1.xml" value="0.1" />
-        <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/drawable/gradient_marron.xml" value="0.1" />
-        <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/drawable/gradient_plata.xml" value="0.1" />
         <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/layout/activity_bomberman.xml" value="0.1" />
         <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/layout/activity_coleecion.xml" value="0.1" />
         <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/layout/activity_drawer.xml" value="0.1" />
         <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/layout/activity_login.xml" value="0.13333333333333333" />
-        <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/layout/activity_mazo.xml" value="0.13788968824940048" />
+        <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/layout/activity_mazo.xml" value="0.1" />
         <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/layout/activity_onboarding.xml" value="0.1" />
         <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/layout/activity_pop_up.xml" value="0.1" />
         <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/layout/activity_pop_up1.xml" value="0.1" />
         <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/layout/activity_pop_up2.xml" value="0.22" />
         <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/layout/activity_pop_up3.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/layout/activity_pop_up_medallas.xml" value="0.16394927536231885" />
-        <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/layout/activity_pop_up_warning.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/layout/activity_pop_up_warning.xml" value="0.1" />
         <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/layout/activity_progression.xml" value="0.10666666666666667" />
         <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/layout/activity_shop2.xml" value="0.1" />
         <entry key="..\:/Users/eriki/AndroidStudioProjects/FINAL/app/src/main/res/layout/app_bar_drawer.xml" value="0.1" />

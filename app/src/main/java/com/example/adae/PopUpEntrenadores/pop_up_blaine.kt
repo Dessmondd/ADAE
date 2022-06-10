@@ -17,6 +17,7 @@ class pop_up_blaine : AppCompatActivity() {
         val language = Locale.getDefault().getDisplayLanguage().toString()
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
+
         setContentView(R.layout.activity_pop_up_blaine)
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
         binding = ActivityColeecionBinding.inflate(layoutInflater)

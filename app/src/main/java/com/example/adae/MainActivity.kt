@@ -1,6 +1,7 @@
 package com.example.adae
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.os.Build
 import android.os.Bundle
 import android.view.WindowInsets
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity(), ViewerPagerAdapter2.OnItemSelected {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_main)
         supportActionBar?.hide()
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
         val language = Locale.getDefault().getDisplayLanguage().toString()
         getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
             .putBoolean("isFirstRun", false).commit()

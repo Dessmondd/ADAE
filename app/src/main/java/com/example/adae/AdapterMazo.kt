@@ -29,6 +29,7 @@ class AlumnoAdapter2 (private val context : Context, private val mList: List<Pok
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.cardview, parent, false)
         return ViewHolder(view)
+
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 

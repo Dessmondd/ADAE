@@ -2,6 +2,7 @@ package com.example.adae
 
 import android.content.Context
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -10,6 +11,7 @@ class Entrenadores : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
         checkSession()
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
         setContentView(R.layout.entrenadores)
     }
 

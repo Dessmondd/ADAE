@@ -82,8 +82,6 @@ class MazoView : AppCompatActivity() {
         val a5 = findViewById<ImageView>(R.id.container5)
         val a6 = findViewById<ImageView>(R.id.container6)
 
-
-
         aaa.setOnClickListener(){
             aaa.setImageDrawable(null)
         }
