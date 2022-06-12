@@ -80,19 +80,20 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.158" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
+        <ImageButton
             android:id="@+id/fab2"
-            android:layout_width="53dp"
-            android:layout_height="90dp"
+            android:layout_width="115dp"
+            android:layout_height="57dp"
             android:layout_gravity="end|bottom"
+            android:background="@null"
             android:contentDescription="Salir"
-            android:src="@drawable/home"
+            android:src="@drawable/buttonexit4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.991"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.993" />
+            app:layout_constraintVertical_bias="0.994" />
 
         <ImageView
             android:id="@+id/container4"

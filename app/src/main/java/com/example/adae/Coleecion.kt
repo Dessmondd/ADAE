@@ -42,12 +42,14 @@ class Coleecion: AppCompatActivity() {
         val databaseReference = firebaseDatabase.reference
         val activity = this
         val fab: View = findViewById(R.id.fab)
+
         fab.setOnClickListener { view ->
             inicio()
         }
 
         val language = Locale.getDefault().getDisplayLanguage().toString()
         val view = findViewById<ImageView>(R.id.headercoleccion)
+
         if(language == "English"){
             view.setImageResource(R.drawable.collectionheader)
         }
@@ -59,7 +61,6 @@ class Coleecion: AppCompatActivity() {
     
 
     fun loadWithGlide() {
-
         val view = binding.root
         setContentView(view)
         val recyclerview = findViewById<RecyclerView>(R.id.recyclerview)
@@ -75,16 +76,13 @@ class Coleecion: AppCompatActivity() {
         }
         val adapter = AlumnoAdapter(this@Coleecion ,data)
         recyclerview.adapter = adapter
-
     }
 
-private fun getRetrofit():Retrofit{
+    private fun getRetrofit():Retrofit{
     return Retrofit.Builder().
             baseUrl("https://pokeapi.co/api/v2/")
         .addConverterFactory(GsonConverterFactory.create()).build()
-
 }
-
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.drawer2, menu)
         return true;

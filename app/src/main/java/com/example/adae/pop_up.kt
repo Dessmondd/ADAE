@@ -43,12 +43,10 @@ class pop_up : AppCompatActivity() {
              data = extras!!.getString("id")!!
             if(data != null){
                 loadWithGlide(data)
-
             }
         }
         val firebaseDatabase = FirebaseDatabase.getInstance()
         val databaseReference = firebaseDatabase.reference
-
     }
 
     fun loadWithGlide(id : String) {
@@ -88,7 +86,6 @@ class pop_up : AppCompatActivity() {
             Glide.with(this)
                 .load(it)
                 .into(imageView)
-
         }.addOnFailureListener {
             // Handle any errors
             // Download directly from StorageReference using Glide
