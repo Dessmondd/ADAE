@@ -1,5 +1,4 @@
 package com.example.adae
-import android.content.Context
 import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Bundle
@@ -41,7 +40,7 @@ class Coleecion: AppCompatActivity() {
         val firebaseDatabase = FirebaseDatabase.getInstance()
         val databaseReference = firebaseDatabase.reference
         val activity = this
-        val fab: View = findViewById(R.id.fab)
+        val fab: View = findViewById(R.id.exit)
 
         fab.setOnClickListener { view ->
             inicio()
