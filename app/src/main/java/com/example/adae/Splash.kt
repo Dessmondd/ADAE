@@ -31,18 +31,13 @@ class Splash : AppCompatActivity(){
                 val intent = Intent(this, login::class.java)
                 startActivity(intent)
                 finish()
-                music()
             },6000)
         }
 
-    }
+  }
 
     //need revamp
-    fun music(){
-        var mediaPlayer: MediaPlayer = MediaPlayer.create(this, R.raw.backgroundsound)
-        mediaPlayer.isLooping;
-        mediaPlayer.start()
-    }
+
 
 //hola
 }
